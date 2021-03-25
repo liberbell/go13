@@ -14,4 +14,6 @@ func main() {
 	fmt.Println(("Hello World"))
 	// var hello = "Hello"
 	// fmt.Println(hello, ok)
+	bye()
+	hey()
 }
