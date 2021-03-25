@@ -7,6 +7,7 @@ import "fmt"
 func nope() {
 	const ok = true
 	var hello = "HELLO"
+	_ = hello
 }
 
 func main() {
