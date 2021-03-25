@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-const ok = True
+const ok = true
 
 func main() {
 	// fmt.Println(("Hello World"))
