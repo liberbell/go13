@@ -1,6 +1,6 @@
 package main
 
-import "fmt"
+import f "fmt"
 
 const ok = true
 
@@ -11,7 +11,7 @@ const ok = true
 // }
 
 func main() {
-	fmt.Println(("Hello World"))
+	f.Println(("Hello World"))
 	// var hello = "Hello"
 	// fmt.Println(hello, ok)
 	// bye()
@@ -19,5 +19,5 @@ func main() {
 }
 
 func bye() {
-	fmt.Println("Bye")
+	f.Println("Bye")
 }
