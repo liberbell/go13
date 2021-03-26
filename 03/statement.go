@@ -11,7 +11,7 @@ func main() {
 	fmt.Println(runtime.NumCPU() + 1)
 	// fmt.Println(runtime.CPUProfile())
 
-	if 5 > 1 {
-		fmt.Println("Bigger")
-	}
+	// if 5 > 1 {
+	// 	fmt.Println("Bigger")
+	// }
 }
