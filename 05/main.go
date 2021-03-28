@@ -17,5 +17,5 @@ func main() {
 	fmt.Println(speed)
 	fmt.Println(heat)
 	fmt.Println(off)
-	fmt.Println(brand)
+	fmt.Printf("%q\n", brand)
 }
