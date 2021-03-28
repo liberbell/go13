@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 // var speed int
 
 func main() {
@@ -9,13 +7,16 @@ func main() {
 	// fmt.Println(-50.1, -20.4, -0, 1., 100.26)
 	// fmt.Println(true, false)
 	// fmt.Println("", "hi", "こんにちは")
-	var speed int
-	var heat float64
-	var off bool
-	var brand string
+	// var speed int
+	// var heat float64
+	// var off bool
+	// var brand string
 
-	fmt.Println(speed)
-	fmt.Println(heat)
-	fmt.Println(off)
-	fmt.Printf("%q\n", brand)
+	// fmt.Println(speed)
+	// fmt.Println(heat)
+	// fmt.Println(off)
+	// fmt.Printf("%q\n", brand)
+
+	var speed int
+	_ = speed
 }
