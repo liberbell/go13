@@ -11,7 +11,7 @@ func main() {
 	// fmt.Println("", "hi", "こんにちは")
 	var speed int
 	var heat float64
-	var off blool
+	var off bool
 	var brand string
 
 	fmt.Println(speed)
