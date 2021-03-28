@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-var speed int
+// var speed int
 
 func main() {
 	// fmt.Println(-200, -100, 0, 50, 100, 200)
@@ -16,4 +16,6 @@ func main() {
 
 	fmt.Println(speed)
 	fmt.Println(heat)
+	fmt.Println(off)
+	fmt.Println(brand)
 }
