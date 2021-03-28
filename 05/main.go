@@ -37,6 +37,8 @@ func main() {
 	// fmt.Println(speed, velocity)
 	var myAge int
 	var yourAge int
+	var temperature float64
 
 	fmt.Println(myAge, yourAge)
+	fmt.Println(temperature)
 }
