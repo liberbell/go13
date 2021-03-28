@@ -33,6 +33,8 @@ func main() {
 	// fmt.Println(off)
 	// fmt.Printf("%q\n", brand)
 
-	var speed, velocity int
-	fmt.Println(speed, velocity)
+	// var speed, velocity int
+	// fmt.Println(speed, velocity)
+
+	fmt.Println(myAge)
 }
