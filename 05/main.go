@@ -9,8 +9,11 @@ func main() {
 	// fmt.Println(-50.1, -20.4, -0, 1., 100.26)
 	// fmt.Println(true, false)
 	// fmt.Println("", "hi", "こんにちは")
-	// var speed int
+	var speed int
+	var heat float64
+	var off blool
+	var brand string
 
 	fmt.Println(speed)
-	// var speed int
+	fmt.Println(heat)
 }
