@@ -17,7 +17,13 @@ func main() {
 	// fmt.Println(off)
 	// fmt.Printf("%q\n", brand)
 
-	var speed int
-	_ = speed
+	// var speed int
+	// _ = speed
 	// fmt.Println(speed)
+	var (
+		speed int
+		heat  float64
+		off   bool
+		brand string
+	)
 }
