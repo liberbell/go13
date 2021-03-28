@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 // var speed int
 
 func main() {
@@ -21,5 +19,5 @@ func main() {
 
 	var speed int
 	_ = speed
-	fmt.Println(speed)
+	// fmt.Println(speed)
 }
