@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 // var speed int
 
 func main() {
@@ -26,4 +28,8 @@ func main() {
 		off   bool
 		brand string
 	)
+	fmt.Println(speed)
+	fmt.Println(heat)
+	fmt.Println(off)
+	fmt.Printf("%q\n", brand)
 }
