@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-// var speed int
+var speed int
 
 func main() {
 	// fmt.Println(-200, -100, 0, 50, 100, 200)
@@ -12,5 +12,5 @@ func main() {
 	// var speed int
 
 	fmt.Println(speed)
-	var speed int
+	// var speed int
 }
