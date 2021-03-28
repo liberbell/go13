@@ -35,6 +35,8 @@ func main() {
 
 	// var speed, velocity int
 	// fmt.Println(speed, velocity)
+	var myAge int
+	var yourAge int
 
-	fmt.Println(myAge)
+	fmt.Println(myAge, yourAge)
 }
