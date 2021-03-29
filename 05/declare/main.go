@@ -28,4 +28,7 @@ func main() {
 
 	degree, ratio, heat := 10.55, 40.5, 20.
 	fmt.Println(degree, ratio, heat)
+
+	nFiles, valid, msg := 10, true, "Hello"
+	fmt.Println(nFiles, valid, msg)
 }
