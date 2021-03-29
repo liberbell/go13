@@ -1,5 +1,9 @@
 package main
 
+import "fmt"
+
 func main() {
-	var safe bool
+	var safe bool = true
+
+	fmt.Println(safe)
 }
