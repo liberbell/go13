@@ -38,7 +38,9 @@ func main() {
 	var myAge int
 	var yourAge int
 	var temperature float64
+	var success bool
 
 	fmt.Println(myAge, yourAge)
 	fmt.Println(temperature)
+	fmt.Println((success))
 }
