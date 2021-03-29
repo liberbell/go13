@@ -17,6 +17,9 @@ func main() {
 	// safe, speed := true, 50
 	// fmt.Println(safe, speed)
 
-	name, nickname := "Nicola", "Tesla"
+	name, nickname := "Nikola", "Tesla"
 	fmt.Println(name, nickname)
+
+	birth, death := 1856, 1943
+	fmt.Println(birth, death)
 }
