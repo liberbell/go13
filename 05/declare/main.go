@@ -22,4 +22,7 @@ func main() {
 
 	birth, death := 1856, 1943
 	fmt.Println(birth, death)
+
+	on, off := true, false
+	fmt.Println(on, off)
 }
