@@ -7,13 +7,16 @@ func main() {
 
 	// fmt.Println(safe)
 
-	var name = "Carl"
-	var isScientist = true
-	var age = 62
-	var degree float64 = 5.
+	// var name = "Carl"
+	// var isScientist = true
+	// var age = 62
+	// var degree float64 = 5.
 
-	fmt.Println(name, isScientist, age, degree)
+	// fmt.Println(name, isScientist, age, degree)
 
-	safe, speed := true, 50
-	fmt.Println(safe, speed)
+	// safe, speed := true, 50
+	// fmt.Println(safe, speed)
+
+	name, nickname := "Nicola", "Tesla"
+	fmt.Println(name, nickname)
 }
