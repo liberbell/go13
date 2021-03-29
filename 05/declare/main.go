@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	var safe = true
+	safe := true
 
 	fmt.Println(safe)
 }
