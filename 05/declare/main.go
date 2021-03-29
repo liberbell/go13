@@ -13,4 +13,7 @@ func main() {
 	var degree float64 = 5.
 
 	fmt.Println(name, isScientist, age, degree)
+
+	safe, speed := true, 50
+	fmt.Println(safe, speed)
 }
