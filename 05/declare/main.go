@@ -25,4 +25,7 @@ func main() {
 
 	on, off := true, false
 	fmt.Println(on, off)
+
+	degree, ratio, heat := 10.55, 40.5, 20.
+	fmt.Println(degree, ratio, heat)
 }
