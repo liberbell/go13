@@ -11,5 +11,6 @@ func main() {
 		now   time.Time
 	)
 
+	speed, now = 100, time.Now()
 	fmt.Println(speed, now)
 }
