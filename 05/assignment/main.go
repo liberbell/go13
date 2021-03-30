@@ -8,4 +8,7 @@ func main() {
 
 	speed = 100
 	fmt.Println(speed)
+
+	speed = speed - 25
+	fmt.Println(speed)
 }
