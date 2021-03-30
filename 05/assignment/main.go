@@ -12,7 +12,12 @@ func main() {
 	speed = speed - 25
 	fmt.Println(speed)
 
-	var running bool
-	running = 1
-	fmt.Println(running)
+	// var running bool
+	// running = 1
+	// fmt.Println(running)
+
+	var force float64
+	force = 1
+	fmt.Println(force)
+
 }
