@@ -17,6 +17,7 @@ func main() {
 	// fmt.Println(running)
 
 	var force float64
+	// speed = force
 	force = 1
 	fmt.Println(force)
 
