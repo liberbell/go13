@@ -40,5 +40,6 @@ func main() {
 	prevName = name
 	name = "Einstein"
 	fmt.Println("Previous name: ", prevName)
+	fmt.Println("current name: ", name)
 
 }
