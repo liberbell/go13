@@ -26,6 +26,8 @@ func main() {
 		age    int
 		famous bool
 	)
+	name = "Newton"
+
 	fmt.Println(name, age, famous)
 
 }
