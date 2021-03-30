@@ -29,7 +29,11 @@ func main() {
 	name = "Newton"
 	age = 84
 	famous = true
+	fmt.Println(name, age, famous)
 
+	name = "Someone"
+	age = 20
+	famous = false
 	fmt.Println(name, age, famous)
 
 }
