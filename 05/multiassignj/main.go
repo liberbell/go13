@@ -7,10 +7,15 @@ import (
 
 func main() {
 	var (
-		speed int
-		now   time.Time
+		speed     = 100
+		prevSpeed = 50
+		now       time.Time
 	)
 
 	speed, now = 100, time.Now()
 	fmt.Println(speed, now)
+
+	fmt.Println(speed, prevSpeed)
+	speed, prevSpeed = prevSpeed, speed
+	fmt.Println(speed, prevSpeed)
 }
