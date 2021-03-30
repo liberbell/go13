@@ -39,5 +39,6 @@ func main() {
 	var prevName string
 	prevName = name
 	name = "Einstein"
+	fmt.Println("Previous name: ", prevName)
 
 }
