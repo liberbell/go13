@@ -36,4 +36,8 @@ func main() {
 	famous = false
 	fmt.Println(name, age, famous)
 
+	var prevName string
+	prevName = name
+	name = "Einstein"
+
 }
