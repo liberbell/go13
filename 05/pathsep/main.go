@@ -8,6 +8,6 @@ import (
 func main() {
 	var dir, file string
 
-	dir, file = path.Split("main.go")
+	dir, file = path.Split("css/main.css")
 	fmt.Println(dir, file)
 }
