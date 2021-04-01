@@ -7,6 +7,6 @@ func main() {
 	force := 2.5
 
 	// speed = speed * int(force)
-	speed = float64(speed) * force
+	speed = int(float64(speed) * force)
 	fmt.Println(speed)
 }
