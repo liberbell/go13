@@ -18,7 +18,8 @@ func main() {
 	color := string(orange)
 
 	fmt.Println(color)
-	fmt.Println(string(65.0))
+	// fmt.Println(string(65.0))
+	fmt.Println(string([]byte{104, 105}))
 
 	fmt.Println(apple)
 }
