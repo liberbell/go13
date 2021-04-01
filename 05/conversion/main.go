@@ -14,5 +14,10 @@ func main() {
 	var orange int32
 
 	apple = int(orange)
+	orange = 65
+	color := string(orange)
+
+	fmt.Println(color)
+
 	fmt.Println(apple)
 }
