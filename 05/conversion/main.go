@@ -9,4 +9,9 @@ func main() {
 	// speed = speed * int(force)
 	speed = int(float64(speed) * force)
 	fmt.Println(speed)
+
+	var apple int
+	var orange int32
+
+	apple = orange
 }
