@@ -21,5 +21,5 @@ func main() {
 	// fmt.Println(string(65.0))
 	fmt.Println(string([]byte{104, 105}))
 
-	fmt.Println(apple)
+	// fmt.Println(apple)
 }
