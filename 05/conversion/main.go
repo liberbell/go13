@@ -13,5 +13,6 @@ func main() {
 	var apple int
 	var orange int32
 
-	apple = orange
+	apple = int(orange)
+	fmt.Println(apple)
 }
