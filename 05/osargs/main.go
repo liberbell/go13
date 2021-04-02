@@ -6,9 +6,10 @@ import (
 )
 
 func main() {
-	var name string
+	// var name string
 
-	name = os.Args[1]
+	// name = os.Args[1]
+	name := os.Args[1]
 	fmt.Println("Hello great", name, "!")
 
 	name, age := "gandalf", 2019
