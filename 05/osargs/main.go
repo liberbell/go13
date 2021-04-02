@@ -12,4 +12,5 @@ func main() {
 	name, age := "gandalf", 2019
 
 	fmt.Println("Hello great", name, "!")
+	fmt.Println("My name is", name)
 }
