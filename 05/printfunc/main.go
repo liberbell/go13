@@ -3,6 +3,6 @@ package main
 import "fmt"
 
 func main() {
-	var brand string
+	var brand = "Google"
 	fmt.Printf("%q\n", brand)
 }
