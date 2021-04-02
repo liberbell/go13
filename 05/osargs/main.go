@@ -9,10 +9,11 @@ func main() {
 	var name string
 
 	name = os.Args[1]
+	fmt.Println("Hello great", name, "!")
+
 	name, age := "gandalf", 2019
 
-	fmt.Println("Hello great", name, "!")
 	fmt.Println("My name is", name)
 	fmt.Println("My age is", age)
-	fmt.Println("BTW")
+	fmt.Println("BTW, you shall pass!")
 }
