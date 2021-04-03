@@ -8,6 +8,7 @@ func main() {
 
 	ops := 250
 	ok := 543
+	fail := 433
 
-	fmt.Printf("total: %d success: %d \n", ops, ok)
+	fmt.Printf("total: %d success: %d / %d\n", ops, ok, fail)
 }
