@@ -30,4 +30,6 @@ func main() {
 	fmt.Printf("Distance: %v millions kms\n", distance)
 	fmt.Printf("Orbital Period: %v days\n", orbital)
 	fmt.Printf("Does %v has Life?: %v\n", planet, hasLife)
+
+	fmt.Printf("%v is %v away.\n", planet, distance)
 }
