@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func main() {
 	// var brand = "Google"
 	// fmt.Printf("%s\n", brand)
@@ -13,4 +15,6 @@ func main() {
 	var heat float64
 	var off bool
 	var brand string
+
+	fmt.Printf("%T\n", speed)
 }
