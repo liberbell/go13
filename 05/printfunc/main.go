@@ -27,4 +27,7 @@ func main() {
 		hasLife  = false
 	)
 	fmt.Printf("Planet: %v\n", planet)
+	fmt.Printf("Distance: %v million kms\n", distance)
+	fmt.Printf("Orbital Period: %v\n", orbital)
+	fmt.Printf("hasLife: %v\n", hasLife)
 }
