@@ -21,7 +21,10 @@ func main() {
 	// fmt.Printf("%T\n", off)
 	// fmt.Printf("%T\n", brand)
 	var (
-		planet = "venus"
+		planet   = "venus"
+		distance = 261
+		orbital  = 224.611
+		hasLife  = false
 	)
 	fmt.Printf("Planet: %v\n", planet)
 }
