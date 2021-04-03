@@ -26,10 +26,10 @@ func main() {
 		orbital  = 224.611
 		hasLife  = false
 	)
-	fmt.Printf("Planet: %s\n", planet)
-	fmt.Printf("Distance: %d millions kms\n", distance)
-	fmt.Printf("Orbital Period: %f days\n", orbital)
-	fmt.Printf("Does %s has Life?: %t\n", planet, hasLife)
+	fmt.Printf("Planet: %d\n", planet)
+	fmt.Printf("Distance: %f millions kms\n", distance)
+	fmt.Printf("Orbital Period: %s days\n", orbital)
+	fmt.Printf("Does %s has Life?: %d\n", planet, hasLife)
 
 	fmt.Printf("%v is %v away. Think! %[2]v kms! %[1]v OMG!\n", planet, distance)
 }
