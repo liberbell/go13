@@ -23,5 +23,5 @@ func main() {
 	var (
 		planet = "venus"
 	)
-	fmt.Printf("%T\n", planet)
+	fmt.Printf("Planet: %v\n", planet)
 }
