@@ -10,5 +10,7 @@ func main() {
 
 	// fmt.Printf("total: %d success: %d / %d\n", ops, ok, fail)
 	var speed int
-	var heat flo6
+	var heat float64
+	var off bool
+	var brand string
 }
