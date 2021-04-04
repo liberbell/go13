@@ -14,4 +14,5 @@ func main() {
 	// ratio := 1.0 / 10
 	// fmt.Printf("%.60f", ratio)
 	fmt.Println("Sum :", 3+2)
+	fmt.Println("Sum :", 3+2.5)
 }
