@@ -25,5 +25,5 @@ func main() {
 	// fmt.Println("quot:", 8/0)
 
 	fmt.Println("rem :", 8%3)
-	fmt.Println("rem :", 8.0%3)
+	// fmt.Println("rem :", 8.0%3)
 }
