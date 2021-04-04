@@ -11,4 +11,7 @@ func main() {
 
 	result = (2 + 2) * 4 / 2
 	fmt.Println(result)
+
+	n, m := 1, 5
+	fmt.Println(2 + 1*m/n)
 }
