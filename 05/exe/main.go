@@ -17,4 +17,7 @@ func main() {
 	fmt.Println("Sum :", 3+2.5)
 	fmt.Println("dif :", 3-1)
 	fmt.Println("dif :", 3-0.5)
+
+	fmt.Println("prod:", 4*5)
+	fmt.Println("prod:", 5*2.5)
 }
