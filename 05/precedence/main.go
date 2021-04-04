@@ -19,4 +19,8 @@ func main() {
 	fmt.Println(
 		1 + 5 - 3*10/2,
 	)
+
+	fmt.Println(
+		(1 + 5 - 3) * 10 / 2,
+	)
 }
