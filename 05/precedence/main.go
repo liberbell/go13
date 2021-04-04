@@ -23,4 +23,9 @@ func main() {
 	fmt.Println(
 		(1 + 5 - 3) * 10 / 2,
 	)
+
+	celsius := 35.
+	fahranheit := 9 * celsius
+
+	fmt.Println(fahranheit)
 }
