@@ -22,4 +22,5 @@ func main() {
 	fmt.Println("prod:", 5*2.5)
 	fmt.Println("quot:", 8/2)
 	fmt.Println("quot:", 8/1.5)
+	fmt.Println("quot:", 8/0)
 }
