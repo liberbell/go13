@@ -26,4 +26,7 @@ func main() {
 
 	fmt.Println("rem :", 8%3)
 	// fmt.Println("rem :", 8.0%3)
+
+	f := 8.4
+	fmt.Println("rem :", int(f)%3)
 }
