@@ -15,4 +15,6 @@ func main() {
 	// fmt.Printf("%.60f", ratio)
 	fmt.Println("Sum :", 3+2)
 	fmt.Println("Sum :", 3+2.5)
+	fmt.Println("dif :", 3-1)
+	fmt.Println("dif : 3-0.5")
 }
