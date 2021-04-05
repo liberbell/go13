@@ -9,4 +9,7 @@ func main() {
 
 	n += 1
 	fmt.Println(n)
+
+	n++
+	fmt.Println(n)
 }
