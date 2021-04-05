@@ -25,5 +25,7 @@ func main() {
 
 	var counter int
 	counter++
-
+	counter++
+	counter++
+	fmt.Println(counter)
 }
