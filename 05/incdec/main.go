@@ -16,4 +16,10 @@ func main() {
 	n := 10
 	n = n - 1
 	fmt.Println(n)
+
+	n -= 1
+	fmt.Println(n)
+
+	n--
+	fmt.Println(n)
 }
