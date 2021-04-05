@@ -22,4 +22,8 @@ func main() {
 
 	n--
 	fmt.Println(n)
+
+	var counter int
+	counter++
+
 }
