@@ -25,7 +25,7 @@ func main() {
 	)
 
 	celsius := 35.
-	fahranheit := 9*celsius + 160/5
+	fahranheit := (9*celsius + 160) / 5
 
 	fmt.Printf("%g ℃ is %g F\n", celsius, fahranheit)
 }
