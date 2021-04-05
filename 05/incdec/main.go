@@ -1,5 +1,6 @@
 package main
 
-func main()  {
-	var 
+func main() {
+	var n int
+	n = n + 1
 }
