@@ -27,5 +27,5 @@ func main() {
 	counter++
 	counter++
 	counter++
-	fmt.Println(counter)
+	fmt.Printf("There are %d line(s) in the field.", counter)
 }
