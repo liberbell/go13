@@ -8,9 +8,6 @@ func main() {
 	area := width * height
 	fmt.Printf("Area is : %g\n", area)
 
-	area = area - 10
-	fmt.Printf("Area is : %g\n", area)
-
 	area = area + 10
 	fmt.Printf("Area is : %g\n", area)
 
@@ -24,5 +21,8 @@ func main() {
 	area += 10
 	area *= 2
 	area /= 2
+	fmt.Printf("Area is : %g\n", area)
+
+	area = float64(int(area) % 7)
 	fmt.Printf("Area is : %g\n", area)
 }
