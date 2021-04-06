@@ -23,5 +23,6 @@ func main() {
 	area -= 10
 	area += 10
 	area *= 2
+	area /= 2
 	fmt.Printf("Area is : %g\n", area)
 }
