@@ -15,4 +15,6 @@ func main() {
 	<body>"Hello"</body>
 </html>`
 	fmt.Println(s)
+
+	fmt.Println("c:\\my\\dir\\file")
 }
