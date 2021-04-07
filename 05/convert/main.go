@@ -12,5 +12,5 @@ func main() {
 	feet, _ := strconv.ParseFloat(arg, 64)
 	meters := feet * 0.3048
 
-	fmt.Printf("%f feet is %f meters", feet, meters)
+	fmt.Printf("%g feet is %g meters", feet, meters)
 }
