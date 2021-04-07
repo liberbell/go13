@@ -13,7 +13,6 @@ func main() {
 
 	s = `<html>
 	<body>"Hello"</body>
-	</html>
-	`
+</html>`
 	fmt.Println(s)
 }
