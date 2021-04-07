@@ -12,8 +12,8 @@ func main() {
 	fmt.Println(s)
 
 	s = `<html>
-			<body>"Hello"</body>
-		</html>
-		`
+	<body>"Hello"</body>
+	</html>
+	`
 	fmt.Println(s)
 }
