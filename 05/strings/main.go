@@ -17,4 +17,5 @@ func main() {
 	fmt.Println(s)
 
 	fmt.Println("c:\\my\\dir\\file")
+	fmt.Println(`c:\my\dir\file`)
 }
