@@ -6,4 +6,8 @@ func main() {
 	name, last := "carl", "sagan"
 	name += " edward"
 	fmt.Println(name + " " + last)
+
+	fmt.Println(
+		"hello" + ", ",
+	)
 }
