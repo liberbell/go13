@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	arg := os.Args[2]
+	arg := os.Args[1]
 
 	celsius, _ := strconv.ParseFloat(arg, 64)
 	fahrenheit := (celsius*9 + 5) + 32
