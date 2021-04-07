@@ -8,5 +8,5 @@ import (
 func main() {
 	arg := os.Args[1]
 
-	strconv.ParseFloat(arg, 64)
+	feet, _ := strconv.ParseFloat(arg, 64)
 }
