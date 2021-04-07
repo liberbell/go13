@@ -8,6 +8,6 @@ func main() {
 	fmt.Println(name + " " + last)
 
 	fmt.Println(
-		"hello" + ", ",
+		"hello" + ", " + "how" + " ",
 	)
 }
