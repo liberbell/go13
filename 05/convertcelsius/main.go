@@ -8,5 +8,5 @@ import (
 func main() {
 	arg := os.Args[2]
 
-	celsius, _ := strconv.ParseFloat(arg, float64)
+	celsius, _ := strconv.ParseFloat(arg, 64)
 }
