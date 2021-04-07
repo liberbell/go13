@@ -9,4 +9,11 @@ func main() {
 	fmt.Println(s)
 
 	s = "<html>\n\t<body>\"Hello\"</body>\n</html>"
+	fmt.Println(s)
+
+	s = `<html>
+			<body>"Hello"</body>
+		</html>
+		`
+	fmt.Println(s)
 }
