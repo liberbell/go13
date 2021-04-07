@@ -7,4 +7,5 @@ func main() {
 	s = "How are you."
 	t = 'How are you.'
 	fmt.Println(s)
+	fmt.Println(t)
 }
