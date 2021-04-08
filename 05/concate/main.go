@@ -11,4 +11,9 @@ func main() {
 		"hello" + ", " + "how" + " " + "are you" + " " +
 			"today?",
 	)
+
+	fmt.Println(
+		`hello` + `, ` + `how` + ` ` + `are you` + ` ` +
+			`today?`,
+	)
 }
