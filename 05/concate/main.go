@@ -19,5 +19,5 @@ func main() {
 
 	eq := "1 + 2 = "
 	sum := 1 + 2
-	fmt.Println(eq, sum)
+	fmt.Println(eq + sum)
 }
