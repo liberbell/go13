@@ -24,5 +24,7 @@ func main() {
 	sum := 1 + 2
 	fmt.Println(eq + strconv.Itoa(sum))
 
-	eq := true + " " + false
+	// eq := true + " " + false
+	eq = strconv.FormatBool(true) + " " + strconv.FormatBool(false)
+	fmt.Println(eq)
 }
