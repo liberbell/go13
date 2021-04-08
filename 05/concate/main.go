@@ -23,4 +23,6 @@ func main() {
 	eq := "1 + 2 = "
 	sum := 1 + 2
 	fmt.Println(eq + strconv.Itoa(sum))
+
+	eq := true + " " + false
 }
