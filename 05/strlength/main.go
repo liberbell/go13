@@ -1,8 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"unicode/utf8"
+)
 
 func main() {
-	name := "秀exee"
-	fmt.Println(len(name))
+	name := "漢字"
+	fmt.Println(utf8.DecodeRuneInString(name))
 }
