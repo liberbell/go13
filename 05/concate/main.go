@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strconv"
+)
 
 func main() {
 	name, last := "carl", "sagan"
@@ -19,5 +22,5 @@ func main() {
 
 	eq := "1 + 2 = "
 	sum := 1 + 2
-	fmt.Println(eq + sum)
+	fmt.Println(eq + strconv.Itoa(sum))
 }
