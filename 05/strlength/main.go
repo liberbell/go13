@@ -7,5 +7,5 @@ import (
 
 func main() {
 	name := "漢字"
-	fmt.Println(utf8.DecodeRuneInString(name))
+	fmt.Println(utf8.RuneCountInString(name))
 }
