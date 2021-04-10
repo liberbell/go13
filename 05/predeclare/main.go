@@ -19,5 +19,6 @@ func main() {
 	// fmt.Printf("width: %d, height: %d\n", width, height)
 	// int8(math.MaxInt8 + 1)
 	var n int8 = math.MaxInt8
-	fmt.Println("max int8 :", n)
+	fmt.Println("max int8    :", n)
+	fmt.Println("max int8 + 1:", n+1)
 }
