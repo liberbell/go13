@@ -10,5 +10,5 @@ func main() {
 	var o ounce
 
 	o = g * 0.035274
-	fmt.Println(o)
+	fmt.Printf("%g grams is %.2f ounces.\n", g, o)
 }
