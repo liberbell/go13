@@ -30,4 +30,8 @@ func main() {
 	fmt.Println("min uint8    :", un)
 	fmt.Println("min uint8 +1 :", un+1)
 	fmt.Println("min uint8 -1 :", un-1)
+
+	f := float32(math.MaxFloat32)
+	fmt.Println("max float32  :", f*1.2)
+
 }
