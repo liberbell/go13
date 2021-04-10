@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func main() {
 	var (
 		width  uint8 = 255
@@ -7,5 +9,7 @@ func main() {
 	)
 
 	width++
-	if width < height
+	if int(width) < height {
+		fmt.Println("height is greater.")
+	}
 }
