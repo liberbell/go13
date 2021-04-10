@@ -10,7 +10,8 @@ func main() {
 
 	width++
 	if int(width) < height {
-		fmt.Println(width)
+		// fmt.Println(width)
 		fmt.Println("height is greater.")
 	}
+	fmt.Printf("width: %d, height: %d\n", width, height)
 }
