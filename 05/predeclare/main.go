@@ -6,4 +6,6 @@ func main() {
 		height       = 255
 	)
 
+	width++
+	if width < height
 }
