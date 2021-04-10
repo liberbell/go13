@@ -25,4 +25,8 @@ func main() {
 	n = math.MinInt8
 	fmt.Println("min int8    :", n)
 	fmt.Println("min int8 -1 :", n-1)
+
+	var un uint8
+	fmt.Println("min uint8    :", un)
+	fmt.Println("min uint8 +1 :", un+1)
 }
