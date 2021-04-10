@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"math"
 )
 
@@ -16,5 +17,7 @@ func main() {
 	// 	fmt.Println("height is greater.")
 	// }
 	// fmt.Printf("width: %d, height: %d\n", width, height)
-	int8(math.MaxInt8 + 1)
+	// int8(math.MaxInt8 + 1)
+	var n int8 = math.MaxInt8
+	fmt.Println("max int8 :", n)
 }
