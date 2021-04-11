@@ -1,5 +1,5 @@
 module main.go
 
-go 1.16.3
+go 1.16
 
 replace local.packages/weights => ./weights
