@@ -1,6 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"./weights"
+)
 
 func main() {
 	type (
@@ -21,6 +25,6 @@ func main() {
 	apple = Kilogram(truck)
 	truck = Ton(Gram(int(apple)))
 
-	salt = Gram(weight.Gram(100))
-	fmt.Printf("Type of weight.Gram: %T\n", weight.Gram(1))
+	salt = Gram(weights.Gram(100))
+	fmt.Printf("Type of weights.Gram: %T\n", weights.Gram(1))
 }
