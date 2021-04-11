@@ -1,4 +1,4 @@
-package weights
+package weight
 
 type (
 	Gram     int
