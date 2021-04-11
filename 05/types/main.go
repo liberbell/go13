@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"./weights"
+	"/weights/"
 )
 
 func main() {
