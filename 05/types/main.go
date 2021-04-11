@@ -19,5 +19,5 @@ func main() {
 
 	salt = Gram(apple)
 	apple = Kilogram(truck)
-	truck = Ton(apple)
+	truck = Ton(Gram(int(apple)))
 }
