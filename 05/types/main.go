@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"/weights/"
+	"github.com/inancgumus/learngo/09-go-type-system/05-defined-types/03-underlying-types/weights"
 )
 
 func main() {
