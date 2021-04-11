@@ -21,6 +21,6 @@ func main() {
 	apple = Kilogram(truck)
 	truck = Ton(Gram(int(apple)))
 
-	salt = weight.Gram(100)
+	salt = Gram(weight.Gram(100))
 	fmt.Printf("Type of weight.Gram: %T\n", weight.Gram(1))
 }
