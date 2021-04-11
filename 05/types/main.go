@@ -20,4 +20,6 @@ func main() {
 	salt = Gram(apple)
 	apple = Kilogram(truck)
 	truck = Ton(Gram(int(apple)))
+
+	salt = weight.Gram(1)
 }
