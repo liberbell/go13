@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func main() {
 	type (
 		Gram     int
@@ -12,4 +14,6 @@ func main() {
 		apple = Kilogram = 5
 		truck Ton = 10
 	)
+
+	fmt.Printf("salt: %d, apple: %d, truck: %d\n", salt, apple, truck)
 }
