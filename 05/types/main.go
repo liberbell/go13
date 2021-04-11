@@ -16,4 +16,7 @@ func main() {
 	)
 
 	fmt.Printf("salt: %d, apple: %d, truck: %d\n", salt, apple, truck)
+
+	salt = Gram(apple)
+	apple = truck
 }
