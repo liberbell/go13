@@ -3,6 +3,8 @@ package main
 func main() {
 	var (
 		byteVal  byte
-		uint8Val uin8
+		uint8Val uint8
+		intVal   int
 	)
+	uint8Val = byteVal
 }
