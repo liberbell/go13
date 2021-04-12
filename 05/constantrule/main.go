@@ -1,7 +1,6 @@
 package main
 
-import "math"
-
 func main() {
-	const max int = math.Pow10(2)
+	n := 2
+	const max int = 2
 }
