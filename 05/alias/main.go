@@ -12,4 +12,5 @@ func main() {
 		runeVal  rune
 		int32Val int32
 	)
+	runeVal = int32Val
 }
