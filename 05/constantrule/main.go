@@ -1,6 +1,6 @@
 package main
 
 func main() {
-	n := 2
-	const max int = n
+	// n := 2
+	const max int = len("hello")
 }
