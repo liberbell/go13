@@ -11,6 +11,7 @@ func main() {
 	// cm = 200
 	// m = cm / meters
 	// fmt.Printf("%dcm is %dm.\n", cm, m)
-	total, numberOf := 5, 0
+	const total int = 5
+	const numberOf int = 0
 	fmt.Printf(total / numberOf)
 }
