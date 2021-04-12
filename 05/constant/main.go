@@ -7,4 +7,8 @@ func main() {
 	m := cm / 100
 
 	fmt.Printf("%dcm is %dm\n", cm, m)
+
+	cm = 200
+	m = cm / 100
+	fmt.Printf("%dcm is %dm.\n", cm, m)
 }
