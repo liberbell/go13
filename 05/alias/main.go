@@ -7,4 +7,9 @@ func main() {
 		intVal   int
 	)
 	uint8Val = byteVal
+
+	var (
+		runeVal  rune
+		int32Val int32
+	)
 }
