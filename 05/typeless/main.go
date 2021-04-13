@@ -10,7 +10,8 @@ func main() {
 
 	const min int = 42
 	var i int
-	i = min
+	var f float64
+	f = min
 
 	fmt.Println(i)
 }
