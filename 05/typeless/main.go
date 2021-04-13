@@ -21,4 +21,5 @@ func main() {
 	var j int32 = min
 
 	fmt.Println(min, i, f, b, j)
+	fmt.Printf("Type of i: %T, Type of f: %T, Type of b: %T, Type of j: %T", i, f, b, j)
 }
