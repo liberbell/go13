@@ -15,7 +15,7 @@ func main() {
 	// fmt.Println(min, pi, version, debug)
 	const (
 		max int = 1000
-		min
+		min int = 1
 	)
 	fmt.Println(max, min)
 }
