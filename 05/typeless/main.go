@@ -8,10 +8,10 @@ func main() {
 
 	// fmt.Printf("min is %d, pi is %g\n", min, pi)
 
-	const min int = 42
-	var i int
+	const min = 42
+	// var i int
 	var f float64
 	f = min
 
-	fmt.Println(i)
+	fmt.Println(f)
 }
