@@ -9,8 +9,8 @@ func main() {
 
 	const min = 1 + 1
 	const pi = 3.14 * min
-	const version = "2.0.1" + "1.1.2"
-	const debug = false
+	const version = "2.0.1" + "-beta"
+	const debug = !false
 
 	fmt.Println(min, pi, version, debug)
 }
