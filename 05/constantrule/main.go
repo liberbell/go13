@@ -7,10 +7,10 @@ func main() {
 	const max int = len("hello")
 	fmt.Println(max)
 
-	const min int = 1
-	const pi float64 = 3.14
-	const version string = "2.0.1"
-	const debug bool = false
+	const min = 1
+	const pi = 3.14
+	const version = "2.0.1"
+	const debug = false
 
 	fmt.Println(min, pi, version, debug)
 }
