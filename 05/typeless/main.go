@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func main() {
 	// const min = 1 + 1
 	// const pi = 3.14 * min
@@ -16,4 +18,7 @@ func main() {
 	var i int = min
 	var f float64 = min
 	var b byte = min
+	var j int32 = min
+
+	fmt.Println(min, i, f, b, j)
 }
