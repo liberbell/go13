@@ -19,7 +19,8 @@ func main() {
 	var f float64 = min
 	var b byte = min
 	var j int32 = min
+	var r rune = min
 
-	fmt.Println(min, i, f, b, j)
-	fmt.Printf("Type of i: %T, Type of f: %T, Type of b: %T, Type of j: %T", i, f, b, j)
+	fmt.Println(min, i, f, b, j, r)
+	fmt.Printf("Type of i: %T, Type of f: %T, Type of b: %T, Type of j: %T, Type of r: %T\n", i, f, b, j, r)
 }
