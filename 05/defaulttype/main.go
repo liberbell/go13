@@ -10,7 +10,7 @@ func main() {
 
 	i := 42 + 3.14
 	f := 3.14
-	b := true
+	b := true + "Hello"
 	s := "hello"
 	r := `A`
 
