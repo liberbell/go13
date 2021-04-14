@@ -8,7 +8,7 @@ func main() {
 
 	fmt.Printf("Min: %d and Type is %T, Max: %d Type is %T\n", min, min, max, max)
 
-	i := 42
+	i := 42 + 3.14
 	f := 3.14
 	b := true
 	s := "hello"
