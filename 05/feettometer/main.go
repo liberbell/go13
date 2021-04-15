@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"math"
 	"os"
 	"strconv"
 )
@@ -9,7 +10,7 @@ import (
 func main() {
 	const (
 		feetInMeters = 0.3048
-		feetInYards  = feetInMeters / 0.9144
+		feetInYards  = math.Round(feetInMeters) / 0.9144
 	)
 	fmt.Printf("%T\n", feetInYards)
 
