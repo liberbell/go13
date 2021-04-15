@@ -8,8 +8,8 @@ import (
 
 func main() {
 	const (
-		feetInMeters float64 = 0.3048
-		feetInYards          = feetInMeters / 0.9144
+		feetInMeters = 0.3048
+		feetInYards  = feetInMeters / 0.9144
 	)
 	fmt.Printf("%T\n", feetInYards)
 
