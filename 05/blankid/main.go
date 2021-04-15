@@ -5,6 +5,7 @@ import "fmt"
 func main() {
 	const (
 		EST = -(5 + iota)
+
 		MST
 		PST
 	)
