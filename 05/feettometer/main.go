@@ -9,7 +9,7 @@ import (
 func main() {
 	const (
 		feetInMeters float64 = 0.3048
-		feetInYards  float64 = feetInMeters / 0.9144
+		feetInYards          = feetInMeters / 0.9144
 	)
 
 	arg := os.Args[1]
