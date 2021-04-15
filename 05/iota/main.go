@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 	const (
-		monday    = iota
+		monday    = iota + 1
 		tuesday   = iota
 		wednesday = iota
 		thursday  = iota
