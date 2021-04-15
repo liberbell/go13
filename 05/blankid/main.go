@@ -4,9 +4,9 @@ import "fmt"
 
 func main() {
 	const (
-		EST = -5
-		MST = -7
-		PST = -8
+		EST = -(5 + iota)
+		MST
+		PST
 	)
 	fmt.Println(EST, MST, PST)
 }
