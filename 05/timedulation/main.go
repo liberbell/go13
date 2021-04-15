@@ -22,7 +22,7 @@ func main() {
 	// t = time.Second * time.Duration(i)
 	// fmt.Println(t)
 	const c = 10
-	t = time.Second * c
+	t := time.Second * c
 	fmt.Println(t)
 
 }
