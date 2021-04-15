@@ -19,7 +19,7 @@ func main() {
 	fmt.Println(t)
 
 	i := 10
-	t = time.Second * i
+	t = time.Second * time.Duration(i)
 	fmt.Println(t)
 
 }
