@@ -11,6 +11,7 @@ func main() {
 		feetInMeters float64 = 0.3048
 		feetInYards          = feetInMeters / 0.9144
 	)
+	fmt.Printf("%T\n", feetInYards)
 
 	arg := os.Args[1]
 
