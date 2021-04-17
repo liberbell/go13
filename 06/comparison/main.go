@@ -12,4 +12,5 @@ func main() {
 	fmt.Printf("going slow? %t\n", slow)
 
 	fmt.Printf("is it 100 mph? %t\n", speed == 100)
+	fmt.Printf("is it not 100 mph? %t\n", speed != 100)
 }
