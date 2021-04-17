@@ -7,4 +7,5 @@ func main() {
 	fast := speed >= 80
 
 	fmt.Printf("fast`s type is %T\n", fast)
+	fmt.Printf("going fast? %t\n", fast)
 }
