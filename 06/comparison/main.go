@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func main() {
 	speed := 10
@@ -13,4 +16,6 @@ func main() {
 
 	fmt.Printf("is it 100 mph? %t\n", speed == 100)
 	fmt.Printf("is it not 100 mph? %t\n", speed != 100)
+
+	fmt.Println(strings.Repeat("-", 25))
 }
