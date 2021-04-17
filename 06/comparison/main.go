@@ -23,4 +23,6 @@ func main() {
 	faster := speedB > 100
 
 	fmt.Println("is the other car going faster?", faster)
+
+	faster = speedB > float64(speed)
 }
