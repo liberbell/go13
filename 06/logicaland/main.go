@@ -2,9 +2,11 @@ package main
 
 import "fmt"
 
-func main()  {
-	myAge := 25
-	yourAge:= 20
+func main() {
+	// myAge := 25
+	// yourAge := 20
 
-	fmt.Println(myAge or yourAge)
+	// fmt.Println(myAge && yourAge)
+	speed := 100
+	fmt.Println("within limits?", speed >= 40 && speed <= 55)
 }
