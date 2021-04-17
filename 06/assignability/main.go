@@ -6,4 +6,7 @@ func main() {
 
 	var runnning bool
 	runnning = true
+
+	var force float64
+	speed = int(forceß)
 }
