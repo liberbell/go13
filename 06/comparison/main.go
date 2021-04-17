@@ -10,4 +10,6 @@ func main() {
 	fmt.Printf("fast`s type is %T\n", fast)
 	fmt.Printf("going fast? %t\n", fast)
 	fmt.Printf("going slow? %t\n", slow)
+
+	fmt.Printf("is it 100 mph? %t\n", speed == 100)
 }
