@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	speed := 100
+	speed := 10
 	fast := speed >= 80
 	slow := speed < 20
 
