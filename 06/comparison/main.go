@@ -9,5 +9,5 @@ func main() {
 
 	fmt.Printf("fast`s type is %T\n", fast)
 	fmt.Printf("going fast? %t\n", fast)
-	fmt.Printf("going slow? %t\n", fast)
+	fmt.Printf("going slow? %t\n", slow)
 }
