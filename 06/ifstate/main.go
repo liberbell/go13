@@ -13,7 +13,7 @@ func main() {
 
 	if score > 3 {
 		fmt.Println("good")
-	} if score == 3 {
+	} else if score == 3 {
 		fmt.Println("")
 	}
 }
