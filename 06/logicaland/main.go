@@ -12,4 +12,7 @@ func main() {
 
 	speed = 20
 	fmt.Println("within limits?", speed >= 40 && speed <= 55)
+
+	speed = 50
+	fmt.Println("within limits?", speed >= 40 && speed <= 55)
 }
