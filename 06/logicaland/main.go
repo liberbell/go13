@@ -7,9 +7,9 @@ func main() {
 	// yourAge := 20
 
 	// fmt.Println(myAge && yourAge)
-	speed := 50
+	speed := 100
 	fmt.Println("within limits?", speed >= 40 && speed <= 55)
 
-	speed := 20
+	speed = 20
 	fmt.Println("within limits?", speed >= 40 && speed <= 55)
 }
