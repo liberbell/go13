@@ -3,8 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	score := 5
-	valid := false
+	score, valid := 5, true
 	if score > 3 && valid {
 		fmt.Println("good")
 		// else {
