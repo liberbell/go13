@@ -4,8 +4,10 @@ import "fmt"
 
 func main() {
 	var on bool
-	on = !!on
+	on = !on
+	fmt.Println(on)
 
+	on = !!on
 	fmt.Println(on)
 
 }
