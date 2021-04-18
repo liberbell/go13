@@ -4,8 +4,11 @@ import "fmt"
 
 func main() {
 	score := 5
-	valid := true
+	valid := false
 	if score > 3 && valid == true {
 		fmt.Println("good")
+	else {
+		fmt.Println("not good")
+	}
 	}
 }
