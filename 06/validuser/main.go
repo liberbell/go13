@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"os"
+	"strings"
 )
 
 const usage = `
@@ -10,7 +11,7 @@ usage [username] [password]`
 
 func main() {
 	if len(os.Args) < 2 {
-		fmt.Println(usage)
+		fmt.Println(strings.TrimSpace(usage))
 		return
 	}
 }
