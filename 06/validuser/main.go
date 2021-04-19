@@ -23,6 +23,6 @@ func main() {
 	} else if pass == "p@ss" {
 		fmt.Println("Access granted.")
 	} else {
-		fmt.Println("Invalid password.")
+		fmt.Printf("Invalid password for %q.\n", user)
 	}
 }
