@@ -6,8 +6,9 @@ import (
 	"strings"
 )
 
-const usage = `
-usage: [username] [password]`
+const (
+	usage = "usage: [username] [password]"
+	errUser = "Access Denied for %q\n"
 
 func main() {
 	arg := os.Args
@@ -19,7 +20,7 @@ func main() {
 
 	user, pass := os.Args[1], os.Args[2]
 	if user != "jack" {
-		fmt.Printf("Access Denied for %q\n", user)
+		fmt.Printf(errUser, user)
 	} else if pass == "p@ss" {
 		fmt.Println("Access granted.")
 	} else {
