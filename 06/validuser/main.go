@@ -9,6 +9,7 @@ import (
 const (
 	usage   = "usage: [username] [password]"
 	errUser = "Access Denied for %q\n"
+	errPass = "Invalid password for %q.\n"
 )
 
 func main() {
@@ -25,6 +26,6 @@ func main() {
 	} else if pass == "p@ss" {
 		fmt.Println("Access granted.")
 	} else {
-		fmt.Printf("Invalid password for %q.\n", user)
+		fmt.Printf(errPass, user)
 	}
 }
