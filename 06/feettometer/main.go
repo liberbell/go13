@@ -6,9 +6,17 @@ import (
 	"strconv"
 )
 
+const usage = `
+Feet to meters
+--------------
+This program converts feet into meters.
+usage:
+feet[feetsToConverts]`
+
 func main() {
 	if len(os.Args) < 2 {
 		fmt.Println("please tell me a value in feet")
+		fmt.Println(usage)
 		return
 	}
 	arg := os.Args[1]
