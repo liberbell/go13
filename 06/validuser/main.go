@@ -21,4 +21,9 @@ func main() {
 	if user != "jack" {
 		fmt.Printf("Access Denied for %q\n", user)
 	}
+
+	pass := os.Args[2]
+	if pass != "p@ss" {
+		fmt.Println("Invalid password.")
+	}
 }
