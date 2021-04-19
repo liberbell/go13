@@ -14,5 +14,4 @@ func main() {
 		fmt.Println(strings.TrimSpace(usage))
 		return
 	}
-	userdct = {"jack": 0123, "mike": 2233}
 }
