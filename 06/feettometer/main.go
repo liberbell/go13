@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"os"
 	"strconv"
+	"strings"
 )
 
 const usage = `
@@ -15,8 +16,8 @@ feet[feetsToConverts]`
 
 func main() {
 	if len(os.Args) < 2 {
-		fmt.Println("please tell me a value in feet")
-		fmt.Println(usage)
+		// fmt.Println("please tell me a value in feet")
+		fmt.Println(strings.TrimSpace(usage))
 		return
 	}
 	arg := os.Args[1]
