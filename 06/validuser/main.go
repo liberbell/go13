@@ -16,4 +16,9 @@ func main() {
 		fmt.Println(strings.TrimSpace(usage))
 		return
 	}
+
+	user := os.Args[1]
+	if user != "jack" {
+		fmt.Printf("Access Denied for %q\n", user)
+	}
 }
