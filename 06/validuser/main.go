@@ -10,7 +10,9 @@ const usage = `
 usage: [username] [password]`
 
 func main() {
-	if len(os.Args) < 2 {
+	arg := os.Args
+
+	if arg < 3 {
 		fmt.Println(strings.TrimSpace(usage))
 		return
 	}
