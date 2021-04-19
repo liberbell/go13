@@ -17,13 +17,10 @@ func main() {
 		return
 	}
 
-	user := os.Args[1]
+	user, pass := os.Args[1], os.Args[2]
 	if user != "jack" {
 		fmt.Printf("Access Denied for %q\n", user)
-	}
-
-	pass := os.Args[2]
-	if pass != "p@ss" {
+	} else if pass != "p@ss" {
 		fmt.Println("Invalid password.")
 	}
 }
