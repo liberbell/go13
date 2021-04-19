@@ -7,8 +7,9 @@ import (
 )
 
 const (
-	usage = "usage: [username] [password]"
+	usage   = "usage: [username] [password]"
 	errUser = "Access Denied for %q\n"
+)
 
 func main() {
 	arg := os.Args
