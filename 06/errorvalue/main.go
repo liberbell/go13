@@ -19,6 +19,6 @@ func main() {
 		fmt.Println("Error: ", err)
 		return
 	} else {
-		fmt.Printf("Success: Converted %q", n)
+		fmt.Printf("Success: Converted %q to %d\n", age, n)
 	}
 }
