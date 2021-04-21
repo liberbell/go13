@@ -1,7 +1,12 @@
 package main
 
-import "strconv"
+import (
+	"fmt"
+	"strconv"
+)
 
 func main() {
 	s := strconv.Itoa(42)
+	fmt.Println(s)
+	fmt.Printf("%T", s)
 }
