@@ -53,5 +53,7 @@ func main() {
 		fmt.Printf(errUser, user)
 	} else if user == username1 && pass != password1 || user == username2 && pass != password2 {
 		fmt.Printf(errPass, user)
+	} else {
+		fmt.Println(usage)
 	}
 }
