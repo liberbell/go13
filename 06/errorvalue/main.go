@@ -8,5 +8,5 @@ import (
 func main() {
 	s := strconv.Itoa(42)
 	fmt.Println(s)
-	fmt.Printf("%T", s)
+	fmt.Printf("%T\n", s)
 }
