@@ -11,6 +11,6 @@ func main() {
 	// fmt.Println(s)
 	// fmt.Printf("%T\n", s)
 	n, err := strconv.Atoi(os.Args[1])
-	fmt.Println("Convert numbe: " n)
+	fmt.Println("Convert number: ", n)
 	fmt.Println("Returned Err:  ", err)
 }
