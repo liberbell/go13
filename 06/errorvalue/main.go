@@ -17,5 +17,8 @@ func main() {
 	n, err := strconv.Atoi(age)
 	if err != nil {
 		fmt.Println("Error: ", err)
+		return
+	} else {
+		fmt.Printf("Success: Converted %q", n)
 	}
 }
