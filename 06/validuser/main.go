@@ -47,7 +47,7 @@ func main() {
 	// 	fmt.Println(usage)
 	// }
 
-	if (user == username1 && pass == password1) || (user == username2 && pass == password2) {
+	if user == username1 && pass == password1 || user == username2 && pass == password2 {
 		fmt.Println(accGrant, user)
 	}
 }
