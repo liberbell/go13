@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"os"
+	"strconv"
 	"strings"
 )
 
@@ -20,7 +21,8 @@ func main() {
 	}
 
 	arg := os.Args[1]
-	feet, _ := feet * 0.3048
+	feet, _ := strconv.ParseFloat(arg, 64)
+	meters := feet * 0.3048
 
-	fmt.Printf("%g feet is %g meters.\n", arg, feet)
+	fmt.Printf("%g feet is %g meters.\n", feet, meters)
 }
