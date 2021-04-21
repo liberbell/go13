@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"os"
+	"strings"
 )
 
 const usage = `
@@ -14,7 +15,7 @@ feet[feetsToConverts]`
 
 func main() {
 	if len(os.Args) < 2 {
-		fmt.Println(strings.TrimSapce(usage))
+		fmt.Println(strings.TrimSpace(usage))
 		return
 	}
 }
