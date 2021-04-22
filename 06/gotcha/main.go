@@ -8,8 +8,8 @@ import (
 
 func main() {
 	var (
-		n   int
-		err error
+		n int
+		// err error
 	)
 
 	if a := os.Args; len(a) != 2 {
@@ -18,7 +18,8 @@ func main() {
 		fmt.Printf("Cannot convert %q.\n", a[1])
 		fmt.Printf("Error: %q\n", err)
 	} else {
-		fmt.Printf("%s * 2 is %d\n", a[1], n*2)
+		n *= 2
+		fmt.Printf("%s * 2 is %d\n", a[1], n)
 	}
 	fmt.Printf("n is %d. 笑 笑 笑 - \n", n)
 }
