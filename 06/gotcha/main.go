@@ -12,5 +12,6 @@ func main() {
 		fmt.Println("Input a number.")
 	} else if n, err := strconv.Atoi(a[1]); err != nil {
 		fmt.Printf("Cannot convert %q.\n", n)
+		fmt.Printf("Error: %q\n", err)
 	}
 }
