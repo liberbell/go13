@@ -7,7 +7,11 @@ import (
 )
 
 func main() {
-	var n int
+	var (
+		n   int
+		err error
+	)
+
 	if a := os.Args; len(a) != 2 {
 		fmt.Println("Input a number.")
 	} else if n, err := strconv.Atoi(a[1]); err != nil {
