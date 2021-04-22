@@ -8,8 +8,8 @@ import (
 
 func main() {
 	var (
-		n int
-		// err error
+		n   int
+		err error
 	)
 
 	if a := os.Args; len(a) != 2 {
