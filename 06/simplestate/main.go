@@ -21,7 +21,10 @@ func main() {
 
 	if arg := os.Args; len(arg) != 2 {
 		fmt.Println("Error: Input a number.")
-	} else if _, err := strconv.Atoi(arg[1]); err != nil {
+	} else if num, err := strconv.Atoi(arg[1]); err != nil {
 		fmt.Printf("Cannot convert: %q\n", arg[1])
+	} else {
+		fmt.Printf("%s * 2 %d\n", arg[1], num*2)
 	}
+
 }
