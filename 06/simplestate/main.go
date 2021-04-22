@@ -23,7 +23,7 @@ func main() {
 	} else if num, err := strconv.Atoi(arg[1]); err != nil {
 		fmt.Printf("Cannot convert: %q\n", arg[1])
 	} else {
-		fmt.Printf("%s * 2 %d\n", arg[1], num*2)
+		fmt.Printf("%s * 2 is %d\n", arg[1], num*2)
 	}
 
 }
