@@ -16,5 +16,5 @@ func main() {
 	} else {
 		fmt.Printf("%s * 2 is %d\n", a[1], n*2)
 	}
-	fmt.Printf("n is %d. 笑 笑 笑 - ", n)
+	fmt.Printf("n is %d. 笑 笑 笑 - \n", n)
 }
