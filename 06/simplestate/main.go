@@ -9,7 +9,6 @@ import (
 func main() {
 	// if len(os.Args) != 2 {
 	// 	fmt.Println("Usage: [number]")
-	// 	return
 	// }
 	// arg := os.Args[1]
 	// number, err := strconv.ParseFloat(arg, 64)
