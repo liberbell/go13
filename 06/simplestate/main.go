@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"os"
+	"strconv"
 )
 
 func main() {
@@ -20,5 +21,7 @@ func main() {
 
 	if arg := os.Args; len(arg) != 2 {
 		fmt.Println("Error: Input a number.")
+	} else if _, err := strconv.Atoi(arg[1]); err != nil {
+		fmt.Printf("Cannot convert: %q\n", arg[1])
 	}
 }
