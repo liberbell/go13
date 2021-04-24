@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	city := "paris"
+	city := "tokyo"
 
 	switch city {
 	case "tokyo":
