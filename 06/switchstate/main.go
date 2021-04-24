@@ -1,9 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"os"
+)
 
 func main() {
-	city := "tokyo"
+	city := os.Args[1]
 
 	switch city {
 	case "tokyo":
