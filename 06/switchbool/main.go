@@ -1,9 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"os"
+)
 
 func main() {
-	i := 0
+	i := os.Args[1]
 
 	switch {
 	case i > 0:
