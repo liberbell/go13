@@ -6,9 +6,10 @@ import (
 )
 
 func main() {
+	input := os.Args[1]
+	i := int(input)
 
 	switch {
-		i := os.Args[1]
 	case i > 0:
 		fmt.Println("positive")
 	case i < 0:
