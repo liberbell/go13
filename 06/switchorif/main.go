@@ -12,5 +12,7 @@ func main() {
 	}
 	m := os.Args[1]
 
-	if m == "Dec" || m == "Jan" || m == "Feb"
+	if m == "Dec" || m == "Jan" || m == "Feb" {
+		fmt.Println("Winter")
+	}
 }
