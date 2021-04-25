@@ -25,7 +25,15 @@ func main() {
 	// }
 
 	switch m := os.Args[1]; m {
-	case m == "Dec" || m == "Jan" || m == "Feb":
+	case "Dec", "Jan", "Feb":
 		fmt.Println("winter")
+	case "Mar", "Apr", "May":
+		fmt.Println("Spring")
+	case "Jun", "Jly", "Aug":
+		fmt.Println("Summer")
+	case "Sep", "Oct", "Nov":
+		fmt.Println("Autumn")
+	default:
+		fmt.Printf("%q is wrong month.\n", m)
 	}
 }
