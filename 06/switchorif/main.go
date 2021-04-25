@@ -24,7 +24,7 @@ func main() {
 	// 	fmt.Printf("%q is wrong month.\n", m)
 	// }
 
-	switch m := os.Args[1] {
+	switch m := os.Args[1]; m {
 	case m == "Dec" || m == "Jan" || m == "Feb":
 		fmt.Println("winter")
 	}
