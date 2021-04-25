@@ -1,9 +1,15 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"os"
+	"strconv"
+)
 
 func main() {
-	i := -10
+	// i := -10
+	input := os.Args[1]
+	i, _ := strconv.Atoi(input)
 
 	switch {
 	case i > 100:
