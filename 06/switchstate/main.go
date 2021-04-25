@@ -9,9 +9,9 @@ func main() {
 	city := os.Args[1]
 
 	switch city {
-	case "tokyo":
+	case "Tokyo", "Osaka":
 		fmt.Println("Japan")
-	case "paris":
+	case "Paris", "Lyon":
 		fmt.Println("France")
 	default:
 		fmt.Println("Other country.")
