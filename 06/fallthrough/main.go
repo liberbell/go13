@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	i := 101
+	i := -10
 
 	switch {
 	case i > 100:
