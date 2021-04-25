@@ -13,5 +13,7 @@ func main() {
 		fmt.Println("Japan")
 	case "paris":
 		fmt.Println("France")
+	default:
+		fmt.Println("Other country.")
 	}
 }
