@@ -16,5 +16,9 @@ func main() {
 		fmt.Println("Winter")
 	} else if m == "Mar" || m == "Apr" || m == "May" {
 		fmt.Println("Spring")
+	} else if m == "Jun" || m = "Jly" || m == "Aug" {
+		fmt.Println("Summer")
+	} else {
+		fmt.Println("Autum")
 	}
 }
