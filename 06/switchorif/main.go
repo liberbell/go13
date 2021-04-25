@@ -20,5 +20,7 @@ func main() {
 		fmt.Println("Summer")
 	} else if m == "Sep" || m == "Oct" || m == "Nov" {
 		fmt.Println("Autumn")
+	} else {
+		fmt.Printf("%q is wrong month.", m)
 	}
 }
