@@ -8,7 +8,7 @@ import (
 func main() {
 	if len(os.Args) != 2 {
 		fmt.Println("Give a month name.")
-		// return
+		return
 	}
 	m := os.Args[1]
 
