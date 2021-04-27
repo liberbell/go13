@@ -15,6 +15,7 @@ func main() {
 
 		if i%2 != 0 {
 			fmt.Println(i)
+			i++
 			continue
 		}
 
