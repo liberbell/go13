@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func main() {
 	var (
 		sum int
@@ -13,4 +15,5 @@ func main() {
 		sum += i
 		i++
 	}
+	fmt.Println(sum)
 }
