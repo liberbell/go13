@@ -13,6 +13,7 @@ func main() {
 			break
 		}
 		sum += i
+		fmt.Println(i, "-->", sum)
 		i++
 	}
 	fmt.Println(sum)
