@@ -6,9 +6,11 @@ func main() {
 		i   = 1
 	)
 
-	for i > 5 {
-		break
+	for {
+		if i > 5 {
+			break
+		}
+		sum += i
+		i++
 	}
-	sum += i
-	i++
 }
