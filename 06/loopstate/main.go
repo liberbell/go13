@@ -13,8 +13,8 @@ func main() {
 
 	// fmt.Println(sum)
 
-	for i := 1; i <= 1000; i++ {
+	for i := 1; i <= 5; i++ {
 		sum += i
 	}
-	fmt.Println(i)
+	fmt.Println(sum)
 }
