@@ -13,5 +13,6 @@ func main() {
 
 	for i := 0; i <= max; i++ {
 		fmt.Printf("%5d", i)
+		fmt.Println()
 	}
 }
