@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-const max = 5
+const max = 10
 
 func main() {
 	fmt.Printf("%5s", "X")
