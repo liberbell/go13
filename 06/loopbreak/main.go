@@ -5,4 +5,10 @@ func main() {
 		sum int
 		i   = 1
 	)
+
+	for i > 5 {
+		break
+	}
+	sum += i
+	i++
 }
