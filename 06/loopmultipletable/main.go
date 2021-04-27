@@ -10,4 +10,8 @@ func main() {
 		fmt.Printf("%5d", i)
 	}
 	fmt.Println()
+
+	for i := 0; i <= max; i++ {
+		fmt.Printf("%5d", i)
+	}
 }
