@@ -16,7 +16,7 @@ func main() {
 	// 	fmt.Printf("#%-2d: %q\n", j+1, words[j])
 	// }
 
-	for j := 0; j < len(words); j++ {
-		fmt.Printf("#%-2d: %q\n", j+1, words[j])
+	for i, j := range words {
+		fmt.Printf("#%-2d: %q\n", i+1, j)
 	}
 }
