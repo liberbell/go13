@@ -21,8 +21,8 @@ func main() {
 	// 	fmt.Printf("#%-2d: %q\n", j+1, words[j])
 	// }
 
-	for i, j := range words {
-		fmt.Printf("#%-2d: %q\n", i+1, j)
+	for i, v = range words {
+		fmt.Printf("#%-2d: %q\n", i+1, v)
 	}
 	fmt.Printf("Last value of i and v %d %q\n", i, v)
 }
