@@ -17,5 +17,5 @@ func main() {
 		n = rand.Intn(guess + 1)
 		fmt.Printf("%d ", n)
 	}
-
+	fmt.Println()
 }
