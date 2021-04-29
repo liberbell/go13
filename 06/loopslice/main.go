@@ -12,6 +12,11 @@ func main() {
 
 	words := strings.Fields("lazy cat jumps again and again and again")
 
+	var (
+		i var
+		v string
+	)
+
 	// for j := 0; j < len(words); j++ {
 	// 	fmt.Printf("#%-2d: %q\n", j+1, words[j])
 	// }
@@ -19,4 +24,5 @@ func main() {
 	for i, j := range words {
 		fmt.Printf("#%-2d: %q\n", i+1, j)
 	}
+	fmt.Printf("Last value of i and v %d %q\n", i, v)
 }
