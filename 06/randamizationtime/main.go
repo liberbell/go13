@@ -1,14 +1,19 @@
 package main
 
 import (
-	"fmt"
+	"math/rand"
 	"time"
 )
 
 func main() {
 	unixt := time.Now()
-	fmt.Println(unixt)
+	// fmt.Println(unixt)
 
-	unixsecond := unixt.Nanosecond()
-	fmt.Println(unixsecond)
+	rand.Seed(unixt.UnixNano())
+
+	guess := 10
+	for n := 0; n != guess; {
+		n = rand.Intn(guess + 1)
+	}
+
 }
