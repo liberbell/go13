@@ -13,7 +13,7 @@ func main() {
 	words := strings.Fields("lazy cat jumps again and again and again")
 
 	var (
-		i var
+		i int
 		v string
 	)
 
