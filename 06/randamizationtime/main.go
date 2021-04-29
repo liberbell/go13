@@ -7,10 +7,10 @@ import (
 )
 
 func main() {
-	unixt := time.Now()
+	// unixt := time.Now()
 	// fmt.Println(unixt)
 
-	rand.Seed(unixt.UnixNano())
+	rand.Seed(time.Now().UnixNano())
 
 	guess := 10
 	for n := 0; n != guess; {
