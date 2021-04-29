@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	rand.Seed(10)
+	rand.Seed(100)
 
 	guess := 10
 
