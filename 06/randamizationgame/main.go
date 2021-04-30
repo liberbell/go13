@@ -24,7 +24,7 @@ func main() {
 
 	args := os.Args[1:]
 	if len(os.Args) != 2 {
-		fmt.Println("Usage: [number]")
+		fmt.Println(Usage, maxTurns)
 		return
 	}
 	guess, err := strconv.Atoi(args[0])
