@@ -3,14 +3,17 @@ package main
 import (
 	"fmt"
 	"math/rand"
+	"os"
 	"time"
 )
 
-const maxTurns = 3
+const maxTurns = 10
 
 func main() {
 	rand.Seed(time.Now().UnixNano())
-	guess := 10
+
+	args := os.Args[1:]
+	guess := args[0]
 
 	for turn := 0; turn < maxTurns; turn++ {
 		n := rand.Intn(guess + 1)
