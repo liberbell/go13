@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"math/rand"
 	"os"
+	"strconv"
 	"time"
 )
 
@@ -13,7 +14,7 @@ func main() {
 	rand.Seed(time.Now().UnixNano())
 
 	args := os.Args[1:]
-	guess := args[0]
+	guess, _ := strconv.Atoi(args[0])
 
 	for turn := 0; turn < maxTurns; turn++ {
 		n := rand.Intn(guess + 1)
