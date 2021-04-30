@@ -14,10 +14,14 @@ func main() {
 	rand.Seed(time.Now().UnixNano())
 
 	args := os.Args[1:]
+	if len(os.Args) != 2 {
+		fmt.Println("Input a number.")
+		return
+	}
 	guess, err := strconv.Atoi(args[0])
 
 	if err != nil {
-		fmt.Println("input one number.")
+		fmt.Println("input a number.")
 		return
 	}
 
