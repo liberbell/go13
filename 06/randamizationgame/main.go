@@ -15,6 +15,7 @@ func main() {
 
 		if n == guess {
 			fmt.Println("You win!")
+			break
 		}
 	}
 	fmt.Println("You lose.")
