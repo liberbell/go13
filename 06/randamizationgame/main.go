@@ -8,7 +8,16 @@ import (
 	"time"
 )
 
-const maxTurns = 10
+const (
+	maxTurns = 10
+	Usage    = `Welcome to the Luck Number game.
+	The Program will pick %d random numbers.
+	Your mission is to guess one these numbers.
+	
+	The greater your number is, harder it gets.
+	
+	Wanna plya?`
+)
 
 func main() {
 	rand.Seed(time.Now().UnixNano())
