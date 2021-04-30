@@ -15,7 +15,7 @@ func main() {
 
 	args := os.Args[1:]
 	if len(os.Args) != 2 {
-		fmt.Println("Input a number.")
+		fmt.Println("Usage: [number]")
 		return
 	}
 	guess, err := strconv.Atoi(args[0])
