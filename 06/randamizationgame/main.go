@@ -14,7 +14,12 @@ func main() {
 	rand.Seed(time.Now().UnixNano())
 
 	args := os.Args[1:]
-	guess, _ := strconv.Atoi(args[0])
+	guess, err := strconv.Atoi(args[0])
+
+	if err != nil {
+		fmt.Println("input one number.")
+		return
+	}
 
 	for turn := 0; turn < maxTurns; turn++ {
 		n := rand.Intn(guess + 1)
