@@ -16,7 +16,8 @@ Your mission is to guess one these numbers.
 
 The greater your number is, harder it gets.
 
-Wanna plya?`
+Wanna play?
+`
 )
 
 func main() {
