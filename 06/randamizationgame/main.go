@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"math/rand"
 	"time"
 )
@@ -13,7 +14,7 @@ func main() {
 		n := rand.Intn(guess + 1)
 
 		if n == guess {
-			fml.Println("You win!")
+			fmt.Println("You win!")
 		}
 	}
 }
