@@ -11,5 +11,9 @@ func main() {
 
 	for turn := 0; turn < 5; turn++ {
 		n := rand.Intn(guess + 1)
+
+		if n == guess {
+			fml.Println("You win!")
+		}
 	}
 }
