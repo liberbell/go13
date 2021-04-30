@@ -10,13 +10,13 @@ import (
 
 const (
 	maxTurns = 10
-	Usage    = `Welcome to the Luck Number game.
-	The Program will pick %d random numbers.
-	Your mission is to guess one these numbers.
-	
-	The greater your number is, harder it gets.
-	
-	Wanna plya?`
+	usage    = `Welcome to the Luck Number game.
+The Program will pick %d random numbers.
+Your mission is to guess one these numbers.
+
+The greater your number is, harder it gets.
+
+Wanna plya?`
 )
 
 func main() {
@@ -24,7 +24,7 @@ func main() {
 
 	args := os.Args[1:]
 	if len(os.Args) != 2 {
-		fmt.Println(Usage, maxTurns)
+		fmt.Printf(usage, maxTurns)
 		return
 	}
 	guess, err := strconv.Atoi(args[0])
