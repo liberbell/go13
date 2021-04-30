@@ -21,6 +21,11 @@ func main() {
 		return
 	}
 
+	if guess < 0 {
+		fmt.Println("Please pickup a positive number.")
+		return
+	}
+
 	for turn := 0; turn < maxTurns; turn++ {
 		n := rand.Intn(guess + 1)
 
