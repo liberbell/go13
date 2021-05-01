@@ -6,5 +6,6 @@ func main() {
 loop:
 	if i < 3 {
 		i++
+		goto loop
 	}
 }
