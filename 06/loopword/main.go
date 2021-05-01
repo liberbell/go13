@@ -13,6 +13,11 @@ func main() {
 	query := os.Args[1:]
 
 	for _, q := range query {
-		fmt.Println(q)
+		// fmt.Println(q)
+		for i, w := range words {
+			if q == w {
+				fmt.Printf("#%-2d: %qzx\n", i+1, w)
+			}
+		}
 	}
 }
