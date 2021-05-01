@@ -1,9 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"strings"
+)
 
-const corpus = "lazy cat jumps again and again and again"
+const corpus = "" + "lazy cat jumps again and again and again"
 
-func main()  {
-	if
+func main() {
+	words := strings.Fields(corpus)
 }
