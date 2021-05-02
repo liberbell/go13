@@ -23,7 +23,10 @@ func main() {
 
 	var (
 		wBooks [winter]string
+		sBooks [summer]string
 	)
+
 	wBooks[0] = books[0]
+	sBooks[0] = books[1]
 	fmt.Printf("\nwinter : %#v\n", wBooks)
 }
