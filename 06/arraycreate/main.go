@@ -34,6 +34,11 @@ func main() {
 		sBooks[i] = books[i+1]
 	}
 
+	for _, v := range sBooks {
+		// sBooks[i] = books[i+1]
+		fmt.Println(v)
+	}
+
 	fmt.Printf("\nwinter : %#v\n", wBooks)
 	fmt.Printf("\nsummer : %#v\n", sBooks)
 }
