@@ -1,5 +1,5 @@
 package main
 
 func main() {
-	var books [4]stringß
+	var books [4]string
 }
