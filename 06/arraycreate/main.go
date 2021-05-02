@@ -20,4 +20,10 @@ func main() {
 	// fmt.Println("books: ", books)
 	// fmt.Printf("books: %q\n", books)
 	fmt.Printf("books: %#v\n", books)
+
+	var (
+		wBooks [winter]string
+	)
+	wBooks[0] = books[0]
+	fmt.Printf("\nwinter : %#v\n", wBooks)
 }
