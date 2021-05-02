@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	var books [4]string
+	var books [1 + 3]string
 
 	fmt.Printf("books: %T\n", books)
 	fmt.Println("books: ", books)
