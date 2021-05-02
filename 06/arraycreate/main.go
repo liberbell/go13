@@ -32,4 +32,5 @@ func main() {
 	sBooks[2] = books[3]
 
 	fmt.Printf("\nwinter : %#v\n", wBooks)
+	fmt.Printf("\nsummer : %#v\n", sBooks)
 }
