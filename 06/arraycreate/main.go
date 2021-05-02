@@ -7,4 +7,5 @@ func main() {
 
 	fmt.Printf("books: %T\n", books)
 	fmt.Println("books: ", books)
+	fmt.Printf("books: %q\n", books)
 }
