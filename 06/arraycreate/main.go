@@ -6,4 +6,5 @@ func main() {
 	var books [4]string
 
 	fmt.Printf("books: %T\n", books)
+	fmt.Println("books: ", books)
 }
