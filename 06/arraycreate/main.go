@@ -2,8 +2,14 @@ package main
 
 import "fmt"
 
+const (
+	winter = 1
+	summer = 3
+	yearly = winter + summer
+)
+
 func main() {
-	var books [1 + 3]string
+	var books [yearly]string
 
 	fmt.Printf("books: %T\n", books)
 	fmt.Println("books: ", books)
