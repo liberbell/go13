@@ -28,5 +28,8 @@ func main() {
 
 	wBooks[0] = books[0]
 	sBooks[0] = books[1]
+	sBooks[1] = books[2]
+	sBooks[2] = books[3]
+
 	fmt.Printf("\nwinter : %#v\n", wBooks)
 }
