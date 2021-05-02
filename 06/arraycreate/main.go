@@ -30,7 +30,7 @@ func main() {
 	// sBooks[0] = books[1]
 	// sBooks[1] = books[2]
 	// sBooks[2] = books[3]
-	for i := 0; i < len(sBooks); i++ {
+	for i := range sBooks {
 		sBooks[i] = books[i+1]
 	}
 
