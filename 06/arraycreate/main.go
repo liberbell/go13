@@ -27,9 +27,12 @@ func main() {
 	)
 
 	wBooks[0] = books[0]
-	sBooks[0] = books[1]
-	sBooks[1] = books[2]
-	sBooks[2] = books[3]
+	// sBooks[0] = books[1]
+	// sBooks[1] = books[2]
+	// sBooks[2] = books[3]
+	for i := 0; i < len(sBooks); i++ {
+		sBooks[i] = books[i+1]
+	}
 
 	fmt.Printf("\nwinter : %#v\n", wBooks)
 	fmt.Printf("\nsummer : %#v\n", sBooks)
