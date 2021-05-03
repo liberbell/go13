@@ -42,4 +42,6 @@ func main() {
 
 	fmt.Printf("\nwinter : %#v\n", wBooks)
 	fmt.Printf("\nsummer : %#v\n", sBooks)
+
+	var published [len(books)]bool
 }
