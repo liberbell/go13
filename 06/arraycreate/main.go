@@ -44,4 +44,6 @@ func main() {
 	fmt.Printf("\nsummer : %#v\n", sBooks)
 
 	var published [len(books)]bool
+	published[0] = true
+	published[len(books)-1] = true
 }
