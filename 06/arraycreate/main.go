@@ -46,4 +46,11 @@ func main() {
 	var published [len(books)]bool
 	published[0] = true
 	published[len(books)-1] = true
+
+	fmt.Println("\nPublished books:")
+	for i, ok := range published {
+		if ok {
+			fmt.Printf("+ %s\n", books[i])
+		}
+	}
 }
