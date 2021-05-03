@@ -22,5 +22,5 @@ func main() {
 	rand.Seed(time.Now().UnixNano())
 	n := rand.Intn(len(moods))
 
-	fmt.Printf("%s feels%s\n", name, moods)
+	fmt.Printf("%s feels%s\n", name, moods[n])
 }
