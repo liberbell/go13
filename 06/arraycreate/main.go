@@ -36,7 +36,8 @@ func main() {
 
 	for _, v := range sBooks {
 		// sBooks[i] = books[i+1]
-		fmt.Println(v)
+		v += "won`t effect"
+		// fmt.Println(v)
 	}
 
 	fmt.Printf("\nwinter : %#v\n", wBooks)
