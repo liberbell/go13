@@ -13,7 +13,7 @@ func main() {
 		"Kafka's Revenge",
 		"Stay Golden",
 		"Everythingship",
-		"Kafka's Revenge 2nd Edition",
+		// "Kafka's Revenge 2nd Edition",
 	}
 
 	// books[0] = "Kafka's Revenge"
