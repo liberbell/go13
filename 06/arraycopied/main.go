@@ -16,5 +16,9 @@ func main() {
 	// fmt.Println(blue)
 	// fmt.Println(red)
 	prev := [3]string{"Kafka's Revenge", "Stay Golden", "Everythingship"}
+
+	for i := range prev {
+		prev[i] += " 2nd Edition."
+	}
 	fmt.Printf("last year: \n%#v\n", prev)
 }
