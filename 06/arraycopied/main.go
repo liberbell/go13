@@ -24,6 +24,9 @@ func main() {
 	for i, b := range prev {
 		books[i] += b + " 2nd Edition."
 	}
+
+	books[3] = "Awesomeness"
+
 	fmt.Printf("last year: \n%#v\n", prev)
 	fmt.Printf("\nthis year:\n%#v\n", books)
 }
