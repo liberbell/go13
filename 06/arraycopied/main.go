@@ -17,10 +17,12 @@ func main() {
 	// fmt.Println(red)
 	prev := [3]string{"Kafka's Revenge", "Stay Golden", "Everythingship"}
 
-	books := prev
+	var books [4]string
 
-	for i := range prev {
-		books[i] += " 2nd Edition."
+	// books := prev
+
+	for i, b := range prev {
+		books[i] += b + " 2nd Edition."
 	}
 	fmt.Printf("last year: \n%#v\n", prev)
 	fmt.Printf("\nthis year:\n%#v\n", books)
