@@ -11,4 +11,7 @@ func main() {
 
 	fmt.Println(blue)
 	fmt.Println(red)
+
+	red[1] = 10
+	fmt.Println(blue)
 }
