@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	// positives := [3]string{"good!", "awesome!", "happy!"}
+	positives := [3]string{"good!", "awesome!", "happy!"}
 	// negatives := [3]string{"bad.", "happy.", "terrible."}
 
 	if len(os.Args) != 3 {
@@ -22,5 +22,7 @@ func main() {
 
 	if feeling == "positive" {
 		fmt.Printf("%s %s\n", name, feeling)
+		i := rand.Intn(len(positives))
+		fmt.Printf("%s have a %s feelings.\n", name, positives[i])
 	}
 }
