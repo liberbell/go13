@@ -17,6 +17,11 @@ func main() {
 		{9, 8, 4},
 	}
 	var sum float64
+	for _, grade := range students {
+		for _, grade := range grade {
+			sum += grade
+		}
+	}
 	sum += students[0][0] + students[0][1] + students[0][2]
 	sum += students[1][0] + students[1][1] + students[1][2]
 
