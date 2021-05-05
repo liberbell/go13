@@ -16,4 +16,7 @@ func main() {
 		[3]float64{5, 6, 1}
 		[3]float64{9, 8, 1}
 	}
+	var sum float64
+	sum += student[0][0] + student[0][1] + student[0][2]
+	sum += student[1][0] + student[1][1] + student[1][2]
 }
