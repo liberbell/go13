@@ -12,7 +12,7 @@ func main() {
 
 	// const N = float64(len(students1) * 2)
 	// fmt.Printf("Avg Grade: %g\n", sum/N)
-	students := [][3]float64{
+	students := [...][3]float64{
 		{5, 6, 1},
 		{9, 8, 4},
 	}
