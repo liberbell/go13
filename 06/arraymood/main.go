@@ -2,7 +2,9 @@ package main
 
 import (
 	"fmt"
+	"math/rand"
 	"os"
+	"time"
 )
 
 func main() {
@@ -15,6 +17,8 @@ func main() {
 	}
 	name := os.Args[1]
 	feeling := os.Args[2]
+
+	rand.Seed(time.Now().UnixNano())
 
 	if feeling == "positive" {
 		fmt.Printf("%s %s\n", name, feeling)
