@@ -6,4 +6,5 @@ func main() {
 
 	var sum float64
 	sum += students1[0] + students1[1] + students1[2]
+	sum += students2[0] + students2[1] + students2[2]
 }
