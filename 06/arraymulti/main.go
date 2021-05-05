@@ -20,6 +20,6 @@ func main() {
 	sum += students[0][0] + students[0][1] + students[0][2]
 	sum += students[1][0] + students[1][1] + students[1][2]
 
-	const N float64(len(students) * len(students[0]))
+	const N = float64(len(students) * len(students[0]))
 	fmt.Printf("Avg Grade: %g\n", sum/N)
 }
