@@ -21,7 +21,7 @@ func main() {
 	rand.Seed(time.Now().UnixNano())
 
 	if feeling == "positive" {
-		fmt.Printf("%s %s\n", name, feeling)
+		// fmt.Printf("%s %s\n", name, feeling)
 		i := rand.Intn(len(positives))
 		fmt.Printf("%s have a %s feelings.\n", name, positives[i])
 	}
