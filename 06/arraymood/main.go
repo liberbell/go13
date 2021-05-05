@@ -13,4 +13,10 @@ func main() {
 		fmt.Println("Usage: [name][positive|negative]")
 		return
 	}
+	name := os.Args[1]
+	feeling := os.Args[2]
+
+	if feeling == "positive" {
+		fmt.Printf("%s %s\n", name, feeling)
+	}
 }
