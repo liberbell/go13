@@ -25,8 +25,9 @@ func main() {
 		fmt.Println("Input positive/negative.")
 	} else if feeling == "positive" {
 		p := rand.Intn(len(positives))
-		fmt.Printf("%s have a %s feelings.\n", name, positives[p])
+		fmt.Printf("%s has a %s feelings.\n", name, positives[p])
 	} else if feeling == "negative" {
 		n := rand.Intn(len(negatives))
+		fmt.Printf("%s has a %s feelings.\n", name, negatives[n])
 	}
 }
