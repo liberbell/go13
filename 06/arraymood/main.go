@@ -9,7 +9,7 @@ import (
 
 func main() {
 	positives := [3]string{"good!", "awesome!", "happy!"}
-	negatives := [3]string{"bad.", "happy.", "terrible."}
+	negatives := [3]string{"bad.", "sad.", "terrible."}
 
 	if len(os.Args) != 3 {
 		fmt.Println("Usage: [name][positive|negative]")
