@@ -8,4 +8,5 @@ func main() {
 		120.5,
 	}
 	fmt.Printf("1 BTS is %g ETH\n", rates[0])
+	fmt.Printf("1 BTS is %g WAN\n", rates[1])
 }
