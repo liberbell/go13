@@ -11,6 +11,11 @@ func main() {
 	positives := [3]string{"good!", "awesome!", "happy!"}
 	negatives := [3]string{"bad.", "sad.", "terrible."}
 
+	moods := [...][3]string{
+		{"happy", "good", "awesome"},
+		{"bad", "sad", "terrible"},
+	}
+
 	if len(os.Args) != 3 {
 		fmt.Println("Usage: [your name] [positive|negative]")
 		return
