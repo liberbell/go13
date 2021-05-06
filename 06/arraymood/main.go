@@ -9,7 +9,7 @@ import (
 
 func main() {
 	positives := [3]string{"good!", "awesome!", "happy!"}
-	// negatives := [3]string{"bad.", "happy.", "terrible."}
+	negatives := [3]string{"bad.", "happy.", "terrible."}
 
 	if len(os.Args) != 3 {
 		fmt.Println("Usage: [name][positive|negative]")
@@ -20,9 +20,13 @@ func main() {
 
 	rand.Seed(time.Now().UnixNano())
 
-	if feeling == "positive" {
+	if feeling != "positive" && feeling != "negative" {
 		// fmt.Printf("%s %s\n", name, feeling)
-		i := rand.Intn(len(positives))
-		fmt.Printf("%s have a %s feelings.\n", name, positives[i])
+		fmt.Println("Input positive/negative.")
+	} else if feeling == "positive" {
+		p := rand.Intn(len(positives))
+		fmt.Printf("%s have a %s feelings.\n", name, positives[p])
+	} else if feeling == "negative" {
+		n := rand.Intn(len(negatives))
 	}
 }
