@@ -12,11 +12,11 @@ func main() {
 	negatives := [3]string{"bad.", "sad.", "terrible."}
 
 	if len(os.Args) != 3 {
-		fmt.Println("Usage: [name][positive|negative]")
+		fmt.Println("Usage: [your name] [positive|negative]")
 		return
 	}
-	name := os.Args[1]
-	feeling := os.Args[2]
+	name, feeling := os.Args[1], os.Args[2]
+	// feeling := os.Args[2]
 
 	rand.Seed(time.Now().UnixNano())
 
