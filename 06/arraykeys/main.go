@@ -1,5 +1,7 @@
 package main
 
-func main()  {
-	rates := [...]float64
+func main() {
+	rates := [...]float64{
+		25.5,
+	}
 }
