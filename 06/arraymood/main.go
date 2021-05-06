@@ -43,5 +43,5 @@ func main() {
 		fmt.Printf("%s has a %s feelings.\n", name, negatives[n])
 	}
 
-	fmt.Printf("%s feels %s\n", name, moods[n])
+	fmt.Printf("%s feels %s\n", name, moods[mi][n])
 }
