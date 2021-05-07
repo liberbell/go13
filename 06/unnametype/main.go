@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 	blue :=
-		[5]int{6, 9, 3, 2, 1}
+		[5]int{6, 9, 3, 2, 4}
 	red :=
 		[5]int{6, 9, 3, 2, 1}
 
@@ -14,4 +14,7 @@ func main() {
 	} else {
 		fmt.Println("Not.")
 	}
+
+	fmt.Printf("blue: %#v\n", blue)
+	fmt.Printf("red:  %#v\n", red)
 }
