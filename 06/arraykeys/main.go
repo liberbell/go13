@@ -14,4 +14,6 @@ func main() {
 	}
 	fmt.Printf("1 BTS is %g ETH\n", rates[ETH])
 	fmt.Printf("1 BTS is %g WAN\n", rates[WAN])
+
+	fmt.Printf("%#v\n", rates)
 }
