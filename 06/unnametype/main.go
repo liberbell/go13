@@ -3,8 +3,11 @@ package main
 import "fmt"
 
 func main() {
+	type bookcase [5]int
+
 	blue :=
-		[5]int{6, 9, 3, 2, 4}
+		// [5]int{6, 9, 3, 2, 4}
+		bookcase{6, 9, 3, 2, 4}
 	red :=
 		[5]int{6, 9, 3, 2, 1}
 
