@@ -12,6 +12,6 @@ func main() {
 		ETH: 25.5,
 		WAN: 120.5,
 	}
-	fmt.Printf("1 BTS is %g ETH\n", rates[0])
-	fmt.Printf("1 BTS is %g WAN\n", rates[1])
+	fmt.Printf("1 BTS is %g ETH\n", rates[ETH])
+	fmt.Printf("1 BTS is %g WAN\n", rates[WAN])
 }
