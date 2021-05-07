@@ -16,7 +16,7 @@ func main() {
 		cabinet{6, 9, 3, 2, 1}
 
 	fmt.Print("Are they equal?\n")
-	if blue == red {
+	if cabinet(blue) == red {
 		fmt.Println("They are equal.")
 	} else {
 		fmt.Println("Not.")
