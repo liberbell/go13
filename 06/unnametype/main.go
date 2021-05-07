@@ -11,5 +11,7 @@ func main() {
 	fmt.Print("Are they equal?\n")
 	if blue == red {
 		fmt.Println("They are equal.")
+	} else {
+		fmt.Println("Not.")
 	}
 }
