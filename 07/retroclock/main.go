@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func main() {
 	type placeholder [5]string
 
@@ -82,4 +84,6 @@ func main() {
 		"  ■",
 		"■■■",
 	}
+
+	fmt.Println(zero, one, two, three, four, five, six, seven, eight, nine)
 }
