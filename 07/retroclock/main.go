@@ -1,5 +1,21 @@
 package main
 
 func main() {
-	abc
+	type placeholder [5]string
+
+	zero := placeholder{
+		"■■■",
+		"■ ■",
+		"■ ■",
+		"■ ■",
+		"■■■",
+	}
+
+	one := placeholder{
+		"■■ ",
+		" ■ ",
+		" ■ ",
+		" ■ ",
+		"■■■",
+	}
 }
