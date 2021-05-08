@@ -46,19 +46,19 @@ func main() {
 	}
 
 	five := placeholder{
-		"■■■",
-		"■  ",
-		"■■■",
-		"  ■",
-		"■■■",
+		"▉▉▉",
+		"▉  ",
+		"▉▉▉",
+		"  ▉",
+		"▉▉▉",
 	}
 
 	six := placeholder{
-		"■■■",
-		"■ ",
-		"■■■",
-		"■ ■",
-		"■■■",
+		"▉▉▉",
+		"▉  ",
+		"▉▉▉",
+		"▉ ▉",
+		"▉▉▉",
 	}
 
 	seven := placeholder{
@@ -78,11 +78,11 @@ func main() {
 	}
 
 	nine := placeholder{
-		"■■■",
-		"■ ■",
-		"■■■",
-		"  ■",
-		"■■■",
+		"▉▉▉",
+		"▉ ▉",
+		"▉▉▉",
+		"  ▉",
+		"▉▉▉",
 	}
 
 	// fmt.Println(zero, one, two, three, four, five, six, seven, eight, nine)
