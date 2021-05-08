@@ -92,4 +92,7 @@ func main() {
 	}
 
 	fmt.Println(digits[0])
+	for _, line := range digits[0] {
+		fmt.Println(line)
+	}
 }
