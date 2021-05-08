@@ -4,8 +4,9 @@ import "fmt"
 
 func main() {
 	type (
+		integer  int
 		bookcase [5]int
-		cabinet  [5]int
+		cabinet  [5]integer
 	)
 
 	blue :=
