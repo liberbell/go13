@@ -112,7 +112,7 @@ func main() {
 	for {
 		now := time.Now()
 		hour, min, sec := now.Hour(), now.Minute(), now.Second()
-		fmt.Printf("hour: %d minute: %d second: %d.\n", hour, min, sec)
+		// fmt.Printf("hour: %d minute: %d second: %d.\n", hour, min, sec)
 
 		clock := [...]placeholder{
 			digits[hour/10], digits[hour%10],
@@ -128,5 +128,7 @@ func main() {
 			}
 			fmt.Println()
 		}
+		fmt.Println()
+		time.Sleep(1)
 	}
 }
