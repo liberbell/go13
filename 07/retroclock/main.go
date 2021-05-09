@@ -111,8 +111,8 @@ func main() {
 		digits[4], digits[5],
 	}
 
-	for line := range digits[0] {
-		for digit := range digits {
+	for line := range clock[0] {
+		for digit := range clock {
 			fmt.Print(digits[digit][line], "  ")
 		}
 		fmt.Println()
