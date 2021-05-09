@@ -106,7 +106,7 @@ func main() {
 	fmt.Printf("hour: %d minute: %d second: %d.\n", hour, min, sec)
 
 	clock := [...]placeholder{
-		digits[hour/10], digits[hour%0],
+		digits[hour/10], digits[hour%10],
 		digits[2], digits[3],
 		digits[4], digits[5],
 	}
