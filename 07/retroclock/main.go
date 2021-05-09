@@ -131,7 +131,7 @@ func main() {
 		for line := range clock[0] {
 			for index, digit := range clock {
 				next := clock[index][line]
-				if digit == colon {
+				if digit == colon && sec%2 == 0 {
 					next = "   "
 				}
 				fmt.Print(next, "  ")
