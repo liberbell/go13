@@ -105,6 +105,12 @@ func main() {
 	hour, min, sec := now.Hour(), now.Minute(), now.Second()
 	fmt.Printf("hour: %d minute: %d second: %d.\n", hour, min, sec)
 
+	clock := [...]placeholder{
+		digits[0], digits[1],
+		digits[2], digits[3],
+		digits[4], digits[5],
+	}
+
 	for line := range digits[0] {
 		for digit := range digits {
 			fmt.Print(digits[digit][line], "  ")
