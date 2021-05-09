@@ -88,6 +88,14 @@ func main() {
 		"▉▉▉",
 	}
 
+	colon := placeholder{
+		"   ",
+		" ▉ ",
+		"   ",
+		" ▉ ",
+		"   ",
+	}
+
 	// fmt.Println(zero, one, two, three, four, five, six, seven, eight, nine)
 
 	digits := [...]placeholder{
