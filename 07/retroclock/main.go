@@ -3,6 +3,8 @@ package main
 import (
 	"fmt"
 	"time"
+
+	"github.com/inancgumus/screen"
 )
 
 func main() {
@@ -101,6 +103,8 @@ func main() {
 	digits := [...]placeholder{
 		zero, one, two, three, four, five, six, seven, eight, nine,
 	}
+
+	screen.Clear()
 
 	// fmt.Println(digits[0])
 	// for _, digit := range digits {
