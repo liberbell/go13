@@ -108,7 +108,7 @@ func main() {
 	clock := [...]placeholder{
 		digits[hour/10], digits[hour%10],
 		digits[min/10], digits[min%10],
-		digits[4], digits[5],
+		digits[sec/10], digits[sec%10],
 	}
 
 	for line := range clock[0] {
