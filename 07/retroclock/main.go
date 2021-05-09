@@ -107,7 +107,7 @@ func main() {
 
 	clock := [...]placeholder{
 		digits[hour/10], digits[hour%10],
-		digits[2], digits[3],
+		digits[min/10], digits[min%10],
 		digits[4], digits[5],
 	}
 
