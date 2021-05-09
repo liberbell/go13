@@ -114,6 +114,8 @@ func main() {
 	// }
 
 	for {
+		fmt.Printf("\f")
+
 		now := time.Now()
 		hour, min, sec := now.Hour(), now.Minute(), now.Second()
 		// fmt.Printf("hour: %d minute: %d second: %d.\n", hour, min, sec)
