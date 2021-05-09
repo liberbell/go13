@@ -113,7 +113,7 @@ func main() {
 
 	for line := range clock[0] {
 		for digit := range clock {
-			fmt.Print(digits[digit][line], "  ")
+			fmt.Print(clock[digit][line], "  ")
 		}
 		fmt.Println()
 	}
