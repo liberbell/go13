@@ -114,7 +114,7 @@ func main() {
 	// }
 
 	for {
-		fmt.Printf("\f")
+		screen.MoveTopLeft()
 
 		now := time.Now()
 		hour, min, sec := now.Hour(), now.Minute(), now.Second()
