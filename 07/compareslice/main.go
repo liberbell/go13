@@ -12,4 +12,6 @@ func main() {
 
 	fmt.Printf("books     : %#v\n", book)
 	fmt.Printf("game      : %#v\n", game)
+	fmt.Printf("game      : %T\n", game)
+	fmt.Printf("game len  : %d\n", len(game))
 }
