@@ -9,7 +9,7 @@ func main() {
 	book[2] = "island"
 
 	// var game []string
-	var game []string{"pokemon", "sims"}
+	game := []string{"pokemon", "sims"}
 	// game[0] = "pokemon"
 	// game[1] = "sims"
 
