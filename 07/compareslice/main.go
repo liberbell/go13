@@ -8,7 +8,6 @@ func main() {
 	book[1] = "1984"
 	book[2] = "island"
 
-	// var game []string
 	games := []string{"pokemon", "sims"}
 	// game[0] = "pokemon"
 	// game[1] = "sims"
