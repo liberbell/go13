@@ -13,6 +13,11 @@ func main() {
 	// game[0] = "pokemon"
 	// game[1] = "sims"
 
+	newBooks := [...]string{"ulysses", "fire"}
+	if book == newBooks {
+		fmt
+	}
+
 	fmt.Printf("books     : %#v\n", book)
 	fmt.Printf("game      : %#v\n", game)
 	fmt.Printf("game      : %T\n", game)
