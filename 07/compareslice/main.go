@@ -16,7 +16,7 @@ func main() {
 
 	var ok string
 	for i, game := range games {
-		if game := newGame[i] {
+		if game != newGame[i] {
 			ok = "not"
 			break
 		}
