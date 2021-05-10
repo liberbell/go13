@@ -14,6 +14,8 @@ func main() {
 	newGame := []string{"pacman", "doom", "pong"}
 	newGame = games
 
+	games = nil
+
 	var ok string
 	for i, game := range games {
 		if game != newGame[i] {
