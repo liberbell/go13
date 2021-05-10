@@ -8,9 +8,10 @@ func main() {
 	book[1] = "1984"
 	book[2] = "island"
 
-	var game []string
-	game[0] = "pokemon"
-	game[1] = "sims"
+	// var game []string
+	var game []string{"pokemon", "sims"}
+	// game[0] = "pokemon"
+	// game[1] = "sims"
 
 	fmt.Printf("books     : %#v\n", book)
 	fmt.Printf("game      : %#v\n", game)
