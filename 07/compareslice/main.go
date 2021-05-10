@@ -13,14 +13,14 @@ func main() {
 	// game[0] = "pokemon"
 	// game[1] = "sims"
 
-	newBooks := [...]string{"ulysses", "fire"}
-	if book == newBooks {
-		fmt
-	}
+	newBooks := [5]string{"ulysses", "fire"}
+	book = newBooks
 
 	fmt.Printf("books     : %#v\n", book)
+	fmt.Printf("newBooks  : %#v\n", newBooks)
 	fmt.Printf("game      : %#v\n", game)
 	fmt.Printf("game      : %T\n", game)
+
 	fmt.Printf("game len  : %d\n", len(game))
 	fmt.Printf("nil?      : %t\n", game == nil)
 }
