@@ -14,4 +14,5 @@ func main() {
 	fmt.Printf("game      : %#v\n", game)
 	fmt.Printf("game      : %T\n", game)
 	fmt.Printf("game len  : %d\n", len(game))
+	fmt.Printf("nil?      : %t\n", game == nil)
 }
