@@ -9,18 +9,28 @@ func main() {
 	book[2] = "island"
 
 	// var game []string
-	game := []string{"pokemon", "sims"}
+	games := []string{"pokemon", "sims"}
 	// game[0] = "pokemon"
 	// game[1] = "sims"
+	newGame := []string{"pacman", "doom", "pong"}
+
+	var ok string
+	for i, game := range games {
+		if game := newGame[i] {
+			ok = "not"
+			break
+		}
+	}
+	fmt.Printf("games and newGame are %sequal\ñ\n", ok)
 
 	newBooks := [5]string{"ulysses", "fire"}
 	book = newBooks
 
 	fmt.Printf("books     : %#v\n", book)
 	fmt.Printf("newBooks  : %#v\n", newBooks)
-	fmt.Printf("game      : %#v\n", game)
-	fmt.Printf("game      : %T\n", game)
+	fmt.Printf("game      : %#v\n", games)
+	fmt.Printf("game      : %T\n", games)
 
-	fmt.Printf("game len  : %d\n", len(game))
-	fmt.Printf("nil?      : %t\n", game == nil)
+	fmt.Printf("game len  : %d\n", len(games))
+	fmt.Printf("nil?      : %t\n", games == nil)
 }
