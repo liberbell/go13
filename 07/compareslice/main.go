@@ -12,6 +12,7 @@ func main() {
 	// game[0] = "pokemon"
 	// game[1] = "sims"
 	newGame := []string{"pacman", "doom", "pong"}
+	newGame = games
 
 	var ok string
 	for i, game := range games {
