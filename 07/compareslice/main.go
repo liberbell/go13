@@ -8,7 +8,7 @@ func main() {
 	book[1] = "1984"
 	book[2] = "island"
 
-	var game [5]string
+	var game []string
 
 	fmt.Printf("books     : %#v\n", book)
 	fmt.Printf("game      : %#v\n", game)
