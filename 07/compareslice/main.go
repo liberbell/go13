@@ -21,7 +21,7 @@ func main() {
 			break
 		}
 	}
-	fmt.Printf("games and newGame are %sequal\ñ\n", ok)
+	fmt.Printf("games and newGame are %sequal\n\n", ok)
 
 	newBooks := [5]string{"ulysses", "fire"}
 	book = newBooks
