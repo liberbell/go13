@@ -34,4 +34,8 @@ loop:
 
 	sort.Ints(uniques)
 	fmt.Println("\nsorted uniques: ", uniques)
+
+	nums := [5]int{5, 4, 3, 2, 1}
+	sort.Ints(nums)
+	fmt.Println("\nnums: ", nums)
 }
