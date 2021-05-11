@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"math/rand"
 	"time"
 )
@@ -12,5 +13,7 @@ func main() {
 
 	for found := 0; found < max; found++ {
 		n := rand.Intn(max)
+
+		fmt.Print(n, " ")
 	}
 }
