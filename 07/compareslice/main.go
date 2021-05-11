@@ -19,9 +19,14 @@ func main() {
 	var ok string
 	for i, game := range games {
 		if game != newGame[i] {
-			ok = "not"
+			ok = "not "
 			break
 		}
+	}
+
+	if games == nil {
+		ok = "not "
+
 	}
 	fmt.Printf("games and newGame are %sequal\n\n", ok)
 
