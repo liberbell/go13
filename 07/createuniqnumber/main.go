@@ -24,5 +24,6 @@ loop:
 			}
 		}
 		uniques[found] = n
+		found++
 	}
 }
