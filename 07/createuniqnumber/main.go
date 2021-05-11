@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"math/rand"
 	"os"
+	"sort"
 	"strconv"
 	"time"
 )
@@ -30,4 +31,7 @@ loop:
 		uniques = append(uniques, n)
 	}
 	fmt.Println("\n\nuniques: ", uniques)
+
+	sort.Ints(uniques)
+	fmt.Println("\nsorted uniques: ", uniques)
 }
