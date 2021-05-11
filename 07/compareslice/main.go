@@ -15,6 +15,7 @@ func main() {
 	newGame = games
 
 	games = nil
+	games := []string{}
 
 	var ok string
 	for i, game := range games {
