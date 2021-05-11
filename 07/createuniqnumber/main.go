@@ -26,4 +26,5 @@ loop:
 		uniques[found] = n
 		found++
 	}
+	fmt.Println("\n\nuniques: ", uniques)
 }
