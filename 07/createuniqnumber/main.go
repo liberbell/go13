@@ -10,18 +10,19 @@ func main() {
 	rand.Seed(time.Now().UnixNano())
 
 	const max = 5
-	var uniqes [max]int
+	var uniques [max]int
 
 loop:
-	for found := 0; found < max; found++ {
-		n := rand.Intn(max)
+	for found := 0; found < max; {
+		n := rand.Intn(max) + 1
 
 		fmt.Print(n, " ")
 
-		for _, u := range uniqes {
+		for _, u := range uniques {
 			if u == n {
 				continue loop
 			}
 		}
+		uniques[found] = n
 	}
 }
