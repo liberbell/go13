@@ -3,14 +3,17 @@ package main
 import (
 	"fmt"
 	"math/rand"
+	"os"
+	"strconv"
 	"time"
 )
 
 func main() {
 	rand.Seed(time.Now().UnixNano())
+	max, _ := strconv.Atoi(os.Args[1])
 
-	const max = 5
-	var uniques [max]int
+	// const max = 5
+	var uniques [10]int
 
 loop:
 	for found := 0; found < max; {
