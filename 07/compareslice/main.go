@@ -15,7 +15,7 @@ func main() {
 	newGame = games
 
 	games = nil
-	games := []string{}
+	games = []string{}
 
 	var ok string
 	for i, game := range games {
@@ -25,7 +25,7 @@ func main() {
 		}
 	}
 
-	if games == nil {
+	if len(games) != len(newGame) {
 		ok = "not "
 
 	}
