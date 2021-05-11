@@ -13,7 +13,7 @@ func main() {
 	max, _ := strconv.Atoi(os.Args[1])
 
 	// const max = 5
-	var uniques [10]int
+	var uniques []int
 
 loop:
 	for found := 0; found < max; {
@@ -26,7 +26,8 @@ loop:
 				continue loop
 			}
 		}
-		uniques[found] = n
+		// uniques[found] = n
+		uniques = append(uniques, n)
 		found++
 	}
 	fmt.Println("\n\nuniques: ", uniques)
