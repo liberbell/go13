@@ -6,6 +6,9 @@ func main() {
 	var todo []string
 
 	todo = append(todo, "sing")
+	todo = append(todo, "run")
+	todo = append(todo, "code")
+	todo = append(todo, "play")
 
 	s.Show("todo:", todo)
 }
