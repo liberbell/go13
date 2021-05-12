@@ -10,5 +10,8 @@ func main() {
 	todo = append(todo, "code")
 	todo = append(todo, "play")
 
+	tomorrow := []string{"see mom", "learn go"}
+	todo = append(todo, tomorrow...)
+
 	s.Show("todo:", todo)
 }
