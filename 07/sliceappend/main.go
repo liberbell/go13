@@ -5,5 +5,5 @@ import s "github.com/inancgumus/prettyslice"
 func main() {
 	var todo []string
 
-	s.Show()
+	s.Show("todo:", todo)
 }
