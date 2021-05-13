@@ -12,7 +12,10 @@ func main() {
 	items := []string{
 		"pacman", "mario", "tetris", "doom",
 		"galaga", "frogger", "asteroids", "simcity",
+		"meroid", "defender", "rayman", "tempest",
+		"ultima",
 	}
 
 	s.MaxPerLine = 4
+	s.Show("items", items)
 }
