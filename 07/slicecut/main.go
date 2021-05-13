@@ -1,7 +1,5 @@
 package main
 
-import s "github.com/inancgumus/prettyslice"
-
 func main() {
 	// msg := []string{"h", "e", "l", "l", "o"}
 	// fmt.Println(msg)
@@ -16,15 +14,25 @@ func main() {
 		"ultima",
 	}
 
-	s.MaxPerLine = 4
-	s.Show("items", items)
+	// s.MaxPerLine = 4
+	// s.Show("items", items)
 
-	top3 := items[:3]
-	s.Show("top 3 items: ", top3)
+	// top3 := items[:3]
+	// s.Show("top 3 items: ", top3)
 
-	last4 := items[9:]
-	s.Show("last 4 items: ", last4)
+	// last4 := items[9:]
+	// s.Show("last 4 items: ", last4)
 
-	mid := last4[1:3]
-	s.Show("mid items: ", mid)
+	// mid := last4[1:3]
+	// s.Show("mid items: ", mid)
+
+	const pageSize = 4
+	l := len(items)
+
+	for from := 0; from < l; from += pageSize {
+		to := from + pageSize
+		currentPage := items[from:to]
+
+		s.Show("", currentPage)
+	}
 }
