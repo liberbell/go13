@@ -1,6 +1,10 @@
 package main
 
-import s "github.com/inancgumus/prettyslice"
+import (
+	"fmt"
+
+	s "github.com/inancgumus/prettyslice"
+)
 
 func main() {
 	// msg := []string{"h", "e", "l", "l", "o"}
@@ -33,6 +37,11 @@ func main() {
 
 	for from := 0; from < l; from += pageSize {
 		to := from + pageSize
+		if to > l {
+			to = l
+		}
+
+		fmt.Printf("%d:%d\n", from, to)
 		currentPage := items[from:to]
 
 		s.Show("", currentPage)
