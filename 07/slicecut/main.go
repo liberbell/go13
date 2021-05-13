@@ -24,4 +24,7 @@ func main() {
 
 	last4 := items[9:]
 	s.Show("last 4 items: ", last4)
+
+	mid := last4[1:3]
+	s.Show("mid items: ", mid)
 }
