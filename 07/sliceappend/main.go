@@ -4,7 +4,6 @@ import s "github.com/inancgumus/prettyslice"
 
 func main() {
 	var todo []string
-
 	todo = append(todo, "sing")
 	todo = append(todo, "run", "code", "play")
 	todo = append(todo, "code")
