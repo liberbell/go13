@@ -1,5 +1,7 @@
 package main
 
+import s "github.com/inancgumus/prettyslice"
+
 func main() {
 	// msg := []string{"h", "e", "l", "l", "o"}
 	// fmt.Println(msg)
@@ -11,4 +13,6 @@ func main() {
 		"pacman", "mario", "tetris", "doom",
 		"galaga", "frogger", "asteroids", "simcity",
 	}
+
+	s.MaxPerLine = 4
 }
