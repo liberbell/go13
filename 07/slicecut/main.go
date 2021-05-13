@@ -21,4 +21,7 @@ func main() {
 
 	top3 := items[:3]
 	s.Show("top 3 items: ", top3)
+
+	last4 := items[9:]
+	s.Show("last 4 items: ", last4)
 }
