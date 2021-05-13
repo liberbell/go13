@@ -18,4 +18,7 @@ func main() {
 
 	s.MaxPerLine = 4
 	s.Show("items", items)
+
+	top3 := items[:3]
+	s.Show(("top 3 items: ", top3))
 }
