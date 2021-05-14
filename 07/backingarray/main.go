@@ -16,7 +16,7 @@ func main() {
 	grades := [...]float64{40, 10, 20, 50, 60, 70}
 
 	s.PrintBacking = true
-	s.MaxElements = 7
+	s.MaxPerLine = 7
 
 	s.Show("grade", grades[:])
 
