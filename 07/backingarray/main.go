@@ -13,6 +13,10 @@ func main() {
 	// fmt.Println(agesArray)
 	// fmt.Println(age)
 
-	s.Show(agesArray)
+	grades := [...]float64{40, 10, 20, 50, 60, 70}
+
+	s.PrintBacking = true
+
+	s.Show("grade", grades)
 
 }
