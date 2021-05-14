@@ -8,4 +8,9 @@ func main() {
 
 	fmt.Println(agesArray)
 	fmt.Println(age)
+
+	age[0] = 100
+	fmt.Println(agesArray)
+	fmt.Println(age)
+
 }
