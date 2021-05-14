@@ -3,7 +3,7 @@ package main
 import s "github.com/inancgumus/prettyslice"
 
 func main() {
-	agesArray := [3]int{35, 15, 25}
+	// agesArray := [3]int{35, 15, 25}
 	// age := agesArray[0:3]
 
 	// fmt.Println(agesArray)
@@ -16,7 +16,8 @@ func main() {
 	grades := [...]float64{40, 10, 20, 50, 60, 70}
 
 	s.PrintBacking = true
+	s.MaxElements = 7
 
-	s.Show("grade", grades)
+	s.Show("grade", grades[:])
 
 }
