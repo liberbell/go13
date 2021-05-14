@@ -19,7 +19,10 @@ func main() {
 
 	// grades := [...]float64{40, 10, 20, 50, 60, 70}
 	grades := []float64{40, 10, 20, 50, 60, 70}
-	front := grades[:3]
+
+	var newGrades []float64
+	newGrades = append(newGrades, grades...)
+	front := newGrades[:3]
 
 	sort.Float64s(front)
 
