@@ -30,6 +30,7 @@ func main() {
 	s.MaxPerLine = 7
 
 	s.Show("grade", grades[:])
+	s.Show("newGrade", newGrades)
 	s.Show("front", front)
 
 }
