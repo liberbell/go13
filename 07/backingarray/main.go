@@ -23,6 +23,8 @@ func main() {
 	var newGrades []float64
 	newGrades = append(newGrades, grades...)
 	front := newGrades[:3]
+	front2 := front[:3]
+	front3 := front
 
 	sort.Float64s(front)
 
@@ -32,5 +34,7 @@ func main() {
 	s.Show("grade", grades[:])
 	s.Show("newGrade", newGrades)
 	s.Show("front", front)
+	s.Show("front2", front2)
+	s.Show("front3", front3)
 
 }
