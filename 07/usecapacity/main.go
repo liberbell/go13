@@ -7,4 +7,7 @@ func main() {
 
 	var games []string
 	s.Show("games", games)
+
+	games = []string{}
+	s.Show("games", games)
 }
