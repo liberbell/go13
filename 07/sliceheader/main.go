@@ -13,6 +13,7 @@ func main() {
 	s.PrintElementAddr = true
 
 	data := collection{"slices", "are", "awesome", "period"}
+	fmt.Printf("slice`s size: %d bytes\n", unsafe.Sizeof(data))
 	change(data)
 	s.Show("main`s data ", data)
 	fmt.Printf("main`s data slice address: %p\n", &data)
