@@ -6,4 +6,7 @@ type collection [4]string
 
 func main() {
 	s.PrintElementAddr = true
+
+	data := collection{"slices", "are", "awesome", "period"}
+	change(data)
 }
