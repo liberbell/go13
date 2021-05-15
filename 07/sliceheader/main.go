@@ -9,6 +9,7 @@ func main() {
 
 	data := collection{"slices", "are", "awesome", "period"}
 	change(data)
+	s.Show("main`s data ", data)
 }
 
 func change(data, collection) {
