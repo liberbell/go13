@@ -10,4 +10,7 @@ func main() {
 
 	games = []string{}
 	s.Show("games", games)
+
+	games = []string{"pacman", "mario", "tetoris", "doom"}
+	s.Show("games", games)
 }
