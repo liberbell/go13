@@ -13,4 +13,5 @@ func main() {
 
 	games = []string{"pacman", "mario", "tetoris", "doom"}
 	s.Show("games", games)
+	s.Show("games", []string{"one", "two"})
 }
