@@ -19,6 +19,7 @@ func main() {
 
 	array := [...]string{"slices", "are", "awesome", "period"}
 	fmt.Printf("array`s size: %d bytes\n", unsafe.Sizeof(array))
+	fmt.Printf("slice`s size: %d bytes\n", unsafe.Sizeof(data))
 }
 
 func change(data collection) {
