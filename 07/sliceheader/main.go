@@ -1,6 +1,10 @@
 package main
 
-import s "github.com/inancgumus/prettyslice"
+import (
+	"fmt"
+
+	s "github.com/inancgumus/prettyslice"
+)
 
 type collection [4]string
 
@@ -10,6 +14,7 @@ func main() {
 	data := collection{"slices", "are", "awesome", "period"}
 	change(data)
 	s.Show("main`s data ", data)
+	fmt.Printf("main`s data slice address: %p\n", &data)
 }
 
 func change(data collection) {
