@@ -10,3 +10,7 @@ func main() {
 	data := collection{"slices", "are", "awesome", "period"}
 	change(data)
 }
+
+func change(data, collection) {
+	var data collection
+}
