@@ -17,4 +17,7 @@ func main() {
 
 	part := games
 	s.Show("Part", part)
+
+	part = games[:0]
+	s.Show("Part[:0]", part)
 }
