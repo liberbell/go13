@@ -12,7 +12,7 @@ func main() {
 	s.Show("main`s data ", data)
 }
 
-func change(data, collection) {
+func change(data collection) {
 	// var data collection
 	// local data =
 	data[2] = "brilliant"
