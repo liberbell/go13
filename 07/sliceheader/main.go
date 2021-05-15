@@ -12,5 +12,9 @@ func main() {
 }
 
 func change(data, collection) {
-	var data collection
+	// var data collection
+	// local data =
+	data[2] = "brilliant"
+
+	s.Show("change`s data: ", data)
 }
