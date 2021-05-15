@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"unsafe"
 
 	s "github.com/inancgumus/prettyslice"
 )
@@ -15,6 +16,9 @@ func main() {
 	change(data)
 	s.Show("main`s data ", data)
 	fmt.Printf("main`s data slice address: %p\n", &data)
+
+	array := [...]string{"slices", "are", "awesome", "period"}
+	fmt.Printf("array`s size: %d bytes\n", unsafe.Sizeof(array))
 }
 
 func change(data collection) {
