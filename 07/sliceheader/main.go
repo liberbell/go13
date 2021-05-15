@@ -23,4 +23,5 @@ func change(data collection) {
 	data[2] = "brilliant"
 
 	s.Show("change`s data: ", data)
+	fmt.Printf("change`s data slice address: %p\n", &data)
 }
