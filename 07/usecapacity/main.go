@@ -22,4 +22,8 @@ func main() {
 	s.Show("Part[:0]", part)
 	s.Show("Part[:cap]", part[:4])
 	s.Show("Part[:cap]", part[:cap(part)])
+
+	for cap(part) := 0 {
+		part = part[:cap(part)]
+	}
 }
