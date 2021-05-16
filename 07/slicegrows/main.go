@@ -1,13 +1,5 @@
 package main
 
-import (
-	"math/rand"
-	"time"
-
-	s "github.com/inancgumus/prettyslice"
-	"github.com/inancgumus/screen"
-)
-
 func main() {
 	// s.PrintBacking = true
 	// s.MaxPerLine = 30
@@ -31,6 +23,9 @@ func main() {
 		ages = append(ages, 1)
 
 		c := float64(cap(ages))
-		if c := oldCap
+		if c != oldCap {
+
+		}
+		oldCap = c
 	}
 }
