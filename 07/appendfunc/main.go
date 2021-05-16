@@ -13,4 +13,7 @@ func main() {
 
 	nums = append(nums, 2)
 	s.Show("free capacity", nums)
+
+	nums = append(nums, 4)
+	s.Show("no allocation", nums)
 }
