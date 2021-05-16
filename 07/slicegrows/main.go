@@ -9,21 +9,21 @@ import (
 )
 
 func main() {
-	s.PrintBacking = true
-	s.MaxPerLine = 30
-	s.Width = 150
+	// s.PrintBacking = true
+	// s.MaxPerLine = 30
+	// s.Width = 150
 
-	var nums []int
+	// var nums []int
 
-	screen.Clear()
-	for cap(nums) <= 128 {
-		screen.MoveTopLeft()
+	// screen.Clear()
+	// for cap(nums) <= 128 {
+	// 	screen.MoveTopLeft()
 
-		s.Show("nums", nums)
-		nums = append(nums, rand.Intn(9)+1)
+	// 	s.Show("nums", nums)
+	// 	nums = append(nums, rand.Intn(9)+1)
 
-		time.Sleep(time.Second / 4)
-	}
+	// 	time.Sleep(time.Second / 4)
+	// }
 
 	ages, oldCap := []int{1}, 1.
 
