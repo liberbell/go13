@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func main() {
 	// s.PrintBacking = true
 	// s.MaxPerLine = 30
@@ -24,7 +26,7 @@ func main() {
 
 		c := float64(cap(ages))
 		if c != oldCap {
-
+			fmt.Printf("len: %-10d cap: %-10g growth: %.2f\n", len(ages), c, c/oldCap)
 		}
 		oldCap = c
 	}
