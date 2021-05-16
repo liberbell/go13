@@ -25,5 +25,6 @@ func main() {
 
 	for cap(part) != 0 {
 		part = part[:cap(part)]
+		s.Show("part", part)
 	}
 }
