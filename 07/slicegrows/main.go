@@ -2,6 +2,7 @@ package main
 
 import (
 	"math/rand"
+	"time"
 
 	s "github.com/inancgumus/prettyslice"
 	"github.com/inancgumus/screen"
@@ -20,5 +21,7 @@ func main() {
 
 		s.Show("nums", nums)
 		nums = append(nums, rand.Intn(9)+1)
+
+		time.Sleep(time.Second / 4)
 	}
 }
