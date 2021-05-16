@@ -1,6 +1,8 @@
 package main
 
 import (
+	"math/rand"
+
 	s "github.com/inancgumus/prettyslice"
 	"github.com/inancgumus/screen"
 )
@@ -17,5 +19,6 @@ func main() {
 		screen.MoveTopLeft()
 
 		s.Show("nums", nums)
+		nums = append(nums, rand.Intn(9)+1)
 	}
 }
