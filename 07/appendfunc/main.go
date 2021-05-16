@@ -7,4 +7,7 @@ func main() {
 
 	var nums []int
 	s.Show("no backing array", nums)
+
+	nums = append(nums, 1, 3)
+	s.Show("allocate", nums)
 }
