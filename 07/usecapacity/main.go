@@ -20,4 +20,6 @@ func main() {
 
 	part = games[:0]
 	s.Show("Part[:0]", part)
+	s.Show("Part[:cap]", part[:4])
+	s.Show("Part[:cap]", part[:cap(part)])
 }
