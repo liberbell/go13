@@ -22,4 +22,7 @@ func main() {
 
 	nums = append(nums[:2], 7, 9)
 	s.Show("nums[:2] <- 7, 9", nums)
+
+	nums = nums[:6]
+	s.Show("extend", nums)
 }
