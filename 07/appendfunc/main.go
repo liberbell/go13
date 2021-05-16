@@ -10,4 +10,7 @@ func main() {
 
 	nums = append(nums, 1, 3)
 	s.Show("allocate", nums)
+
+	nums = append(nums, 2)
+	s.Show("free capacity", nums)
 }
