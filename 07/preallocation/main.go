@@ -19,6 +19,7 @@ func main() {
 	// var upTasks []string
 
 	upTasks := make([]string, 0, len(tasks))
+	upTasks = upTasks[:cap(upTasks)]
 	prettyslice.Show("upTasks", upTasks)
 
 	for i, task := range tasks {
