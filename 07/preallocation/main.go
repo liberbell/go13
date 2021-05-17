@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"strings"
 
 	"github.com/inancgumus/prettyslice"
 )
@@ -17,4 +18,10 @@ func main() {
 
 	tasks := []string{"jump", "run", "read"}
 	var upTasks []string
+	prettyslice.Show("upTasks", upTasks)
+
+	for _, task := range tasks {
+		upTasks = append(upTasks, strings.ToUpper(task))
+		prettyslice.Show("upTasks", upTasks)
+	}
 }
