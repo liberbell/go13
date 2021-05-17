@@ -6,9 +6,11 @@ func main() {
 	s.PrintBacking = true
 
 	nums := []int{1, 3, 2, 4}
-	odds := nums[:2:2]
-	odds = append(odds, 5, 7)
+	// odds := nums[:2:2]
+	odds := append(nums[:2:2], 5, 7)
+	evens := append(nums[2:4], 6, 8)
 
 	s.Show("nums", nums)
 	s.Show("odds", odds)
+	s.Show("envns", evens)
 }
