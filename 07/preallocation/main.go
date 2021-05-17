@@ -1,23 +1,24 @@
 package main
 
 import (
-	"fmt"
 	"strings"
 
 	"github.com/inancgumus/prettyslice"
 )
 
 func main() {
-	s := make([]int, 0, 5)
-	fmt.Println(s)
-	s = append(s, 42)
-	fmt.Println(s)
+	// s := make([]int, 0, 5)
+	// fmt.Println(s)
+	// s = append(s, 42)
+	// fmt.Println(s)
 
 	prettyslice.PrintBacking = true
 	prettyslice.MaxPerLine = 10
 
 	tasks := []string{"jump", "run", "read"}
-	var upTasks []string
+	// var upTasks []string
+
+	upTasks := make([]string, len(tasks))
 	prettyslice.Show("upTasks", upTasks)
 
 	for _, task := range tasks {
