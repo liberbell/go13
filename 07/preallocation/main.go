@@ -18,7 +18,7 @@ func main() {
 	tasks := []string{"jump", "run", "read"}
 	// var upTasks []string
 
-	upTasks := make([]string, len(tasks))
+	upTasks := make([]string, 0, len(tasks))
 	prettyslice.Show("upTasks", upTasks)
 
 	for i, task := range tasks {
