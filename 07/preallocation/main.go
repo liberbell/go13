@@ -15,6 +15,6 @@ func main() {
 	prettyslice.PrintBacking = true
 	prettyslice.MaxPerLine = 10
 
-	tasks := []string("jump")
-
+	tasks := []string{"jump", "run", "read"}
+	var upTasks []string
 }
