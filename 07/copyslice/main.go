@@ -1,7 +1,6 @@
 package main
 
 import (
-	"github.com/inancgumus/prettyslice"
 	s "github.com/inancgumus/prettyslice"
 )
 
@@ -15,5 +14,5 @@ func main() {
 
 	numbers := copy(evens, odds)
 
-	prettyslice.Show("numbers", numbers)
+	s.Show("numbers", numbers)
 }
