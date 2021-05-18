@@ -15,4 +15,6 @@ func main() {
 	numbers := copy(evens, odds)
 
 	s.Show("numbers", numbers)
+
+	data := []int{10, 25, 30, 50}
 }
