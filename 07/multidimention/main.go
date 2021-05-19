@@ -16,6 +16,6 @@ func main() {
 			total += spendings
 		}
 
-		fmt.Printf("Day %d: %d\n", i, total)
+		fmt.Printf("Day %d: %d\n", i+1, total)
 	}
 }
