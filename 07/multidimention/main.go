@@ -32,7 +32,7 @@ func main() {
 }
 
 func fetch() [][]int {
-	contents = `
+	contents := `
 	200 100
 	35 15 45 60
 	5 15 40
