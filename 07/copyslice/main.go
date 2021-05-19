@@ -17,4 +17,5 @@ func main() {
 	s.Show("numbers", numbers)
 
 	data := []int{10, 25, 30, 50}
+	s.Show("Probabilies", data)
 }
