@@ -31,6 +31,7 @@ func main() {
 	saved := make([]float64, len(data))
 	copy(saved, data)
 
-	s.Show("Probabilies", data)
+	s.Show("Probabilies (saved)", saved)
+	s.Show("Probabilies (data)", data)
 	fmt.Printf("It is gonna rain? %.f%% chance.\n", (data[0]+data[1]+data[2]+data[3])/float64(len(data)))
 }
