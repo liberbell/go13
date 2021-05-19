@@ -39,6 +39,9 @@ func fetch() [][]int {
 50 25`
 
 	lines := strings.Split(contents, "\n")
+	spendings := make([][]int, len(lines))
+	fmt.Printf("%#v\n", spendings)
+
 	for i, line := range lines {
 		fmt.Printf("%d: %#v\n", i+1, line)
 
