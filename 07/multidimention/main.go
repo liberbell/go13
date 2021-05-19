@@ -13,6 +13,7 @@ func main() {
 	spendings = append(spendings, []int{35, 15, 45, 60})
 	spendings = append(spendings, []int{5, 15, 40})
 	spendings = append(spendings, []int{95, 10}, []int{50, 25})
+	spendings = append(spendings, []int{20, 130})
 
 	for i, daily := range spendings {
 		// fmt.Println(i+1, daily)
