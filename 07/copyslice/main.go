@@ -19,10 +19,11 @@ func main() {
 	// s.Show("numbers", numbers)
 
 	data := []float64{10, 25, 30, 50}
-	newData := []float64{99, 100}
+	// newData := []float64{99, 100}
 	// for i := range newData {
 	// 	data[i] = newData[i]
 	// }
+	copy(data, []float64{99, 100})
 
 	s.Show("Probabilies", data)
 	fmt.Printf("It is gonna rain? %.f%% chance.\n", (data[0]+data[1]+data[2]+data[3])/float64(len(data)))
