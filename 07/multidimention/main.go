@@ -46,7 +46,7 @@ func fetch() [][]int {
 		// fields := strings.Fields(line)
 		// for j, field := range fields {
 		// 	fmt.Printf("\t%d: %#v\n", j+1, field)
-		}
+		// }
 	}
 
 	return nil
