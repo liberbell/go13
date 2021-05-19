@@ -20,5 +20,5 @@ func main() {
 
 	data := []int{10, 25, 30, 50}
 	s.Show("Probabilies", data)
-	fmt.Printf("It is gonna rain? %.f%% chance.\n", (data[0]+data[1]+data[2]+data[3])/4)
+	fmt.Printf("It is gonna rain? %.f%% chance.\n", (data[0]+data[1]+data[2]+data[3])/float64(len(data)))
 }
