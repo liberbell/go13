@@ -41,11 +41,11 @@ func fetch() [][]int {
 
 	lines := strings.Split(contents, "\n")
 	for i, line := range lines {
-		fmt.Printf("%d: %#v \n", i+1, line)
+		fmt.Printf("%d: %#v\n", i+1, line)
 
-		fields := strings.Fields(line)
-		for j, field := range fields {
-			fmt.Printf("\t%d: %#v\n", j+1, field)
+		// fields := strings.Fields(line)
+		// for j, field := range fields {
+		// 	fmt.Printf("\t%d: %#v\n", j+1, field)
 		}
 	}
 
