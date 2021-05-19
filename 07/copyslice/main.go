@@ -24,7 +24,8 @@ func main() {
 	// 	data[i] = newData[i]
 	// }
 	copy(data, []float64{99, 100})
-	copy(data, []float64{10, 5, 15, 0, 20})
+	n := copy(data, []float64{10, 5, 15, 0, 20})
+	fmt.Printf("%d probabilies copied.\n", n)
 
 	s.Show("Probabilies", data)
 	fmt.Printf("It is gonna rain? %.f%% chance.\n", (data[0]+data[1]+data[2]+data[3])/float64(len(data)))
