@@ -25,3 +25,7 @@ func main() {
 		fmt.Printf("Day %d: %d\n", i+1, total)
 	}
 }
+
+func fetch() [][]int {
+	return nil
+}
