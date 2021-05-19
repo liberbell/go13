@@ -3,11 +3,13 @@ package main
 import "fmt"
 
 func main() {
-	spendings := [][]int{
-		{200, 100},
-		{500},
-		{50, 25, 75},
-	}
+	// spendings := [][]int{
+	// 	{200, 100},
+	// 	{500},
+	// 	{50, 25, 75},
+	// }
+	spendings := make([][]int, 0, 5)
+	spendings = append(spendings, []int{200, 100})
 
 	for i, daily := range spendings {
 		// fmt.Println(i+1, daily)
