@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func main() {
 	// spendings := [][]int{
@@ -29,5 +32,14 @@ func main() {
 }
 
 func fetch() [][]int {
+	contents = `
+	200 100
+	35 15 45 60
+	5 15 40
+	95 10
+	50 25`
+
+	lines := strings.Split(contents, "\n")
+	
 	return nil
 }
