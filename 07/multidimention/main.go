@@ -10,6 +10,12 @@ func main() {
 	}
 
 	for i, daily := range spendings {
-		fmt.Println(i+1, daily)
+		// fmt.Println(i+1, daily)
+		var total int
+		for _, spendings := range daily {
+			total += spendings
+		}
+
+		fmt.Printf("Day %d: %d\n", i, total)
 	}
 }
