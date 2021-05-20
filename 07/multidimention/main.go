@@ -53,9 +53,10 @@ func fetch() [][]int {
 		for j, field := range fields {
 			fmt.Printf("\t%d: %#v\n", j+1, field)
 
-			spendings, _ := strconv.Atoi(field)
+			spending, _ := strconv.Atoi(field)
+			spendings[i][j] = spending
 		}
 	}
 
-	return nil
+	return spendings
 }
