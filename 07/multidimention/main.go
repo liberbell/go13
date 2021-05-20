@@ -44,14 +44,14 @@ func fetch() [][]int {
 	// fmt.Printf("%#v\n", spendings)
 
 	for i, line := range lines {
-		fmt.Printf("%d: %#v\n", i+1, line)
+		// fmt.Printf("%d: %#v\n", i+1, line)
 
 		fields := strings.Fields(line)
 
 		spendings[i] = make([]int, len(fields))
 
 		for j, field := range fields {
-			fmt.Printf("\t%d: %#v\n", j+1, field)
+			// fmt.Printf("\t%d: %#v\n", j+1, field)
 
 			spending, _ := strconv.Atoi(field)
 			spendings[i][j] = spending
