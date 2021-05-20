@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"strconv"
 	"strings"
 )
 
@@ -40,14 +41,19 @@ func fetch() [][]int {
 
 	lines := strings.Split(contents, "\n")
 	spendings := make([][]int, len(lines))
-	fmt.Printf("%#v\n", spendings)
+	// fmt.Printf("%#v\n", spendings)
 
 	for i, line := range lines {
 		fmt.Printf("%d: %#v\n", i+1, line)
 
 		fields := strings.Fields(line)
+
+		spendings[i] = make([]int, len(fields))
+
 		for j, field := range fields {
 			fmt.Printf("\t%d: %#v\n", j+1, field)
+
+			spendings, _ := strconv.Atoi(field)
 		}
 	}
 
