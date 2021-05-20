@@ -26,5 +26,6 @@ func main() {
 			names := append(names, name...)
 		}
 	}
+	fmt.Printf("%s\n", names)
 
 }
