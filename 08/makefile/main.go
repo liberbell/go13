@@ -17,4 +17,7 @@ func main() {
 		fmt.Println(err)
 		return
 	}
+	for _, file := range files {
+		fmt.Println(file)
+	}
 }
