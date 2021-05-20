@@ -18,6 +18,6 @@ func main() {
 		return
 	}
 	for _, file := range files {
-		fmt.Println(file.Name())
+		fmt.Println(file.Name(), file.Size())
 	}
 }
