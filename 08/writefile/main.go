@@ -27,6 +27,11 @@ func main() {
 			names = append(names, '\n')
 		}
 	}
+
+	err = ioutil.WriteFile("out.txt", names, 0644)
+	if err != nil {
+		fmt.Println(err)
+	}
 	fmt.Printf("%s", names)
 
 }
