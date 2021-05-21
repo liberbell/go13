@@ -31,7 +31,9 @@ func main() {
 	err = ioutil.WriteFile("out.txt", names, 0644)
 	if err != nil {
 		fmt.Println(err)
+		return
 	}
+
 	fmt.Printf("%s", names)
 
 }
