@@ -23,7 +23,7 @@ func main() {
 	for _, file := range files {
 		if file.Size() == 0 {
 			name := file.Name()
-			names := append(names, name...)
+			names = append(names, name...)
 		}
 	}
 	fmt.Printf("%s\n", names)
