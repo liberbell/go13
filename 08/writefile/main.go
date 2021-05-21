@@ -24,8 +24,9 @@ func main() {
 		if file.Size() == 0 {
 			name := file.Name()
 			names = append(names, name...)
+			names = append(names, '\n')
 		}
 	}
-	fmt.Printf("%s\n", names)
+	fmt.Printf("%s", names)
 
 }
