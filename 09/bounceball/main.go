@@ -10,6 +10,8 @@ func main() {
 		height = 15
 	)
 
+	var cell rune
+
 	board := make([][]bool, width)
 	for row := range board {
 		board[row] = make([]bool, height)
@@ -19,10 +21,11 @@ func main() {
 	// draw board
 	for y := range board[0] {
 		for x := range board {
+			cell = ' '
 			if board[x][y] {
 				fmt.Print("⚾️")
 			}
-			fmt.Print("X")
+			// fmt.Print("X")
 			fmt.Print(" ")
 		}
 		fmt.Println()
