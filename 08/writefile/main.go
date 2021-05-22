@@ -18,6 +18,8 @@ func main() {
 		return
 	}
 
+	total := len(files) * 255
+
 	var names []byte
 
 	for _, file := range files {
