@@ -18,6 +18,7 @@ func main() {
 	for range board[0] {
 		for range board {
 			fmt.Print("X")
+			fmt.Print(" ")
 		}
 		fmt.Println()
 	}
