@@ -18,9 +18,9 @@ func main() {
 		return
 	}
 
-	total := len(files) * 255
+	total := len(files) * 256
 
-	names := make([]byte, total)
+	names := make([]byte, 0, total)
 
 	for _, file := range files {
 		if file.Size() == 0 {
