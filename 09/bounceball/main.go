@@ -1,8 +1,13 @@
 package main
 
 func main() {
-	board := make([][]bool, 50)
+	const (
+		width  = 50
+		height = 10
+	)
+
+	board := make([][]bool, width)
 	for row := range board {
-		board[row] = make([]bool, 10)
+		board[row] = make([]bool, height)
 	}
 }
