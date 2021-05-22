@@ -23,9 +23,11 @@ func main() {
 		for x := range board {
 			cell = ' '
 			if board[x][y] {
-				fmt.Print("⚾️")
+				// fmt.Print("⚾️")
+				cell = '⚾️'
 			}
 			// fmt.Print("X")
+			fmt.Print(cell)
 			fmt.Print(" ")
 		}
 		fmt.Println()
