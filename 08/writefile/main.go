@@ -20,7 +20,7 @@ func main() {
 
 	total := len(files) * 255
 
-	var names []byte
+	names := make([]byte, total)
 
 	for _, file := range files {
 		if file.Size() == 0 {
