@@ -19,5 +19,6 @@ func main() {
 		for range board {
 			fmt.Print("X")
 		}
+		fmt.Println()
 	}
 }
