@@ -19,6 +19,11 @@ func main() {
 	}
 
 	total := len(files) * 256
+	for _, file := range files {
+		if file.Size() == 0 {
+			total += len(file.Name()) + 1
+		}
+	}
 	fmt.Printf("Total required space: %d bytes.\n", total)
 
 	names := make([]byte, 0, total)
