@@ -19,6 +19,9 @@ func main() {
 	// draw board
 	for y := range board[0] {
 		for x := range board {
+			if board[x][y] {
+				fmt.Print("⚾️")
+			}
 			fmt.Print("X")
 			fmt.Print(" ")
 		}
