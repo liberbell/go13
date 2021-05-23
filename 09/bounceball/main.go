@@ -16,6 +16,7 @@ func main() {
 	for row := range board {
 		board[row] = make([]bool, height)
 	}
+
 	board[0][0] = true
 
 	// draw board
@@ -24,7 +25,7 @@ func main() {
 			cell = ' '
 			if board[x][y] {
 				// fmt.Print("⚾️")
-				cell = '⚾️'
+				cell = `⚾️`
 			}
 			// fmt.Print("X")
 			fmt.Print(cell)
