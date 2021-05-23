@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"screen"
 	"time"
 )
 
@@ -76,6 +77,7 @@ func main() {
 			buf = append(buf, '\n')
 			// fmt.Println()
 		}
+		screen.MoveTopLeft()
 		fmt.Print(string(buf))
 
 		time.Sleep(speed)
