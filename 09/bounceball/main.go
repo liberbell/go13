@@ -26,14 +26,16 @@ func main() {
 	// board[0][0] = true
 	buf := make([]rune, 0, width*height)
 
-	board[12][2] = true
-	board[16][2] = true
-	board[14][4] = true
-	board[10][6] = true
-	board[18][6] = true
-	board[12][7] = true
-	board[14][7] = true
-	board[16][7] = true
+	board[px][py] = true
+
+	// board[12][2] = true
+	// board[16][2] = true
+	// board[14][4] = true
+	// board[10][6] = true
+	// board[18][6] = true
+	// board[12][7] = true
+	// board[14][7] = true
+	// board[16][7] = true
 
 	// draw board
 	for i := 0; i < 1000; i++ {
