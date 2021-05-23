@@ -28,7 +28,7 @@ func main() {
 				cell = '⚾'
 			}
 			// fmt.Print("X")
-			fmt.Print(cell)
+			fmt.Print(string(cell))
 			fmt.Print(" ")
 		}
 		fmt.Println()
