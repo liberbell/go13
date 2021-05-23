@@ -29,6 +29,8 @@ func main() {
 		board[row] = make([]bool, height)
 	}
 
+	screen.Clear()
+
 	// board[0][0] = true
 	buf := make([]rune, 0, width*height)
 
