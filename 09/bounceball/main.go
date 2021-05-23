@@ -8,6 +8,9 @@ func main() {
 	const (
 		width  = 50
 		height = 15
+
+		cellempty = ' '
+		cellBall  = '⚾'
 	)
 
 	var cell rune
@@ -22,10 +25,10 @@ func main() {
 	// draw board
 	for y := range board[0] {
 		for x := range board {
-			cell = ' '
+			cell = cellempty
 			if board[x][y] {
 				// fmt.Print("⚾️")
-				cell = '⚾'
+				cell = cellBall
 			}
 			// fmt.Print("X")
 			fmt.Print(string(cell))
