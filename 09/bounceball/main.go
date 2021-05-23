@@ -26,6 +26,9 @@ func main() {
 	// board[0][0] = true
 	buf := make([]rune, 0, width*height)
 
+	px++
+	py++
+
 	board[px][py] = true
 
 	// board[12][2] = true
