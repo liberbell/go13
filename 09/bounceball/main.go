@@ -51,6 +51,7 @@ func main() {
 		}
 
 		board[px][py] = true
+		buf = buf[:0]
 
 		// board[12][2] = true
 		// board[16][2] = true
