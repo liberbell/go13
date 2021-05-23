@@ -39,6 +39,12 @@ func main() {
 			vy *= -1
 		}
 
+		for y := range board[0] {
+			for x := range board {
+				board[x][y] = false
+			}
+		}
+
 		board[px][py] = true
 
 		// board[12][2] = true
