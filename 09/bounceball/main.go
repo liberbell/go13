@@ -25,7 +25,7 @@ func main() {
 			cell = ' '
 			if board[x][y] {
 				// fmt.Print("⚾️")
-				cell = `⚾️`
+				cell = '⚾️'
 			}
 			// fmt.Print("X")
 			fmt.Print(cell)
