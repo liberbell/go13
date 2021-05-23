@@ -13,6 +13,8 @@ func main() {
 		cellempty = ' '
 		cellBall  = '⚾'
 		maxFrames = 1200
+
+		speed = time.Second / 20
 	)
 
 	var (
@@ -76,6 +78,6 @@ func main() {
 		}
 		fmt.Print(string(buf))
 
-		time.Sleep(time.Second / 20)
+		time.Sleep(speed)
 	}
 }
