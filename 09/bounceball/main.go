@@ -32,6 +32,13 @@ func main() {
 		px += vx
 		py += vy
 
+		if px <= 0 || px >= width-1 {
+			vx *= -1
+		}
+		if py <= 0 || py >= width-1 {
+			vy *= -1
+		}
+
 		board[px][py] = true
 
 		// board[12][2] = true
