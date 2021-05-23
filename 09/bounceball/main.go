@@ -41,9 +41,13 @@ func main() {
 				cell = cellBall
 			}
 			// fmt.Print("X")
-			fmt.Print(string(cell))
-			fmt.Print(" ")
+			// fmt.Print(string(cell))
+
+			buf = append(buf, cell, ' ')
+			// fmt.Print(" ")
 		}
-		fmt.Println()
+		buf = append(buf, '\n')
+		// fmt.Println()
 	}
+	fmt.Print(buf)
 }
