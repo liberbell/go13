@@ -35,7 +35,7 @@ func main() {
 		if px <= 0 || px >= width-1 {
 			vx *= -1
 		}
-		if py <= 0 || py >= width-1 {
+		if py <= 0 || py >= height-1 {
 			vy *= -1
 		}
 
