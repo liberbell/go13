@@ -11,6 +11,7 @@ func main() {
 
 		cellempty = ' '
 		cellBall  = '⚾'
+		maxFrames = 1200
 	)
 
 	var (
@@ -26,36 +27,38 @@ func main() {
 	// board[0][0] = true
 	buf := make([]rune, 0, width*height)
 
-	px++
-	py++
+	for i = 0; i < maxFrames; i++ {
+		px++
+		py++
 
-	board[px][py] = true
+		board[px][py] = true
 
-	// board[12][2] = true
-	// board[16][2] = true
-	// board[14][4] = true
-	// board[10][6] = true
-	// board[18][6] = true
-	// board[12][7] = true
-	// board[14][7] = true
-	// board[16][7] = true
+		// board[12][2] = true
+		// board[16][2] = true
+		// board[14][4] = true
+		// board[10][6] = true
+		// board[18][6] = true
+		// board[12][7] = true
+		// board[14][7] = true
+		// board[16][7] = true
 
-	// draw board
-	for y := range board[0] {
-		for x := range board {
-			cell = cellempty
-			if board[x][y] {
-				// fmt.Print("⚾️")
-				cell = cellBall
+		// draw board
+		for y := range board[0] {
+			for x := range board {
+				cell = cellempty
+				if board[x][y] {
+					// fmt.Print("⚾️")
+					cell = cellBall
+				}
+				// fmt.Print("X")
+				// fmt.Print(string(cell))
+
+				buf = append(buf, cell, ' ')
+				// fmt.Print(" ")
 			}
-			// fmt.Print("X")
-			// fmt.Print(string(cell))
-
-			buf = append(buf, cell, ' ')
-			// fmt.Print(" ")
+			buf = append(buf, '\n')
+			// fmt.Println()
 		}
-		buf = append(buf, '\n')
-		// fmt.Println()
+		fmt.Print(string(buf))
 	}
-	fmt.Print(string(buf))
 }
