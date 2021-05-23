@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"time"
 )
 
 func main() {
@@ -74,5 +75,7 @@ func main() {
 			// fmt.Println()
 		}
 		fmt.Print(string(buf))
+
+		time.Sleep(time.Second / 20)
 	}
 }
