@@ -11,7 +11,7 @@ func main() {
 		width  = 50
 		height = 15
 
-		cellempty = ' '
+		cellEmpty = ' '
 		cellBall  = '⚾'
 		maxFrames = 1200
 
@@ -64,7 +64,7 @@ func main() {
 		// draw board
 		for y := range board[0] {
 			for x := range board {
-				cell = cellempty
+				cell = cellEmpty
 				if board[x][y] {
 					// fmt.Print("⚾️")
 					cell = cellBall
