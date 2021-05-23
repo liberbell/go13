@@ -34,6 +34,8 @@ func main() {
 
 	// draw board
 	for i := 0; i < 1000; i++ {
+		buf = buf[:0]
+
 		for y := range board[0] {
 			for x := range board {
 				cell = cellempty
