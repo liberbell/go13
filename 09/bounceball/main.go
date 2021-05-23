@@ -20,7 +20,8 @@ func main() {
 		board[row] = make([]bool, height)
 	}
 
-	board[0][0] = true
+	// board[0][0] = true
+	buf := make([]rune, 0, width*height)
 
 	board[12][2] = true
 	board[16][2] = true
