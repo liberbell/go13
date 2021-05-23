@@ -49,5 +49,5 @@ func main() {
 		buf = append(buf, '\n')
 		// fmt.Println()
 	}
-	fmt.Print(buf)
+	fmt.Print(string(buf))
 }
