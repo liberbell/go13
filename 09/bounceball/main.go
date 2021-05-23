@@ -13,7 +13,10 @@ func main() {
 		cellBall  = '⚾'
 	)
 
-	var cell rune
+	var (
+		px, py int
+		cell   rune
+	)
 
 	board := make([][]bool, width)
 	for row := range board {
