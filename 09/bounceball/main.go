@@ -38,25 +38,21 @@ func main() {
 	// board[16][7] = true
 
 	// draw board
-	for i := 0; i < 1000; i++ {
-		buf = buf[:0]
-
-		for y := range board[0] {
-			for x := range board {
-				cell = cellempty
-				if board[x][y] {
-					// fmt.Print("⚾️")
-					cell = cellBall
-				}
-				// fmt.Print("X")
-				// fmt.Print(string(cell))
-
-				buf = append(buf, cell, ' ')
-				// fmt.Print(" ")
+	for y := range board[0] {
+		for x := range board {
+			cell = cellempty
+			if board[x][y] {
+				// fmt.Print("⚾️")
+				cell = cellBall
 			}
-			buf = append(buf, '\n')
-			// fmt.Println()
+			// fmt.Print("X")
+			// fmt.Print(string(cell))
+
+			buf = append(buf, cell, ' ')
+			// fmt.Print(" ")
 		}
-		fmt.Print(string(buf))
+		buf = append(buf, '\n')
+		// fmt.Println()
 	}
+	fmt.Print(string(buf))
 }
