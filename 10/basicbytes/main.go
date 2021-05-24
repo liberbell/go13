@@ -12,6 +12,6 @@ func main() {
 	fmt.Printf("%-10s %-10s\n%s\n", "literal", "dec", strings.Repeat("-", 10))
 
 	for n := start; n <= stop; n++ {
-		fmt.Printf("%c -> %[1]d\n", n)
+		fmt.Printf("%-10c -> %-10[1]d\n", n)
 	}
 }
