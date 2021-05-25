@@ -32,4 +32,5 @@ func main() {
 	fmt.Printf("1st byte   : %c\n", str[0])
 	fmt.Printf("1st rune   : %s\n", str[0:3])
 	fmt.Printf("2nd byte   : %c\n", str[1])
+	fmt.Printf("last rune  : %s\n", str[len(str)-4:])
 }
