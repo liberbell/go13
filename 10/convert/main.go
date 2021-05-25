@@ -30,5 +30,6 @@ func main() {
 
 	fmt.Println()
 	fmt.Printf("1st byte   : %c\n", str[0])
+	fmt.Printf("1st rune   : %s\n", str[0:2])
 	fmt.Printf("2nd byte   : %c\n", str[1])
 }
