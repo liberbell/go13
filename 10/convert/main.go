@@ -39,4 +39,5 @@ func main() {
 	fmt.Println()
 	fmt.Printf("%s\n", string(runes))
 	fmt.Printf("\t%d runes\n", len(runes))
+	fmt.Printf("1st rune   : %c\n", runes[0])
 }
