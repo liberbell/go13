@@ -16,6 +16,10 @@ func main() {
 		stop, _ = strconv.Atoi(args[1])
 	}
 
+	if start == 0 || stop == 0 {
+		start, stop = 'A', 'Z'
+	}
+
 	fmt.Println(start, stop)
 
 	fmt.Printf("%-10s %-10s %-10s %-12s\n%s\n", "literal", "dec", "hex", "encoded", strings.Repeat("-", 45))
