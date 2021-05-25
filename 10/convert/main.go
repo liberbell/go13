@@ -9,5 +9,7 @@ func main() {
 	bytes[0] = 'N'
 	bytes[1] = 'O'
 
+	str = string(bytes)
+
 	fmt.Printf("%s\n", str)
 }
