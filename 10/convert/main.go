@@ -27,4 +27,8 @@ func main() {
 	for i, r := range str {
 		fmt.Printf("str[%2d] = % -12x = %q\n", i, string(r), r)
 	}
+
+	fmt.Println()
+	fmt.Printf("1st byte   : %c\n", str[0])
+	fmt.Printf("2nd byte   : %c\n", str[1])
 }
