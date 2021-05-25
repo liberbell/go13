@@ -21,4 +21,5 @@ func main() {
 
 	fmt.Printf("% x\n", bytes)
 	fmt.Printf("\t%d bytes\n", len(bytes))
+	fmt.Printf("\t%d Runes \n", utf8.RuneCount(bytes))
 }
