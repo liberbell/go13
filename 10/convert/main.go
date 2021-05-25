@@ -36,5 +36,7 @@ func main() {
 
 	runes := []rune(str)
 
+	fmt.Println()
 	fmt.Printf("%s\n", string(runes))
+	fmt.Printf("\t%d runes\n", len(runes))
 }
