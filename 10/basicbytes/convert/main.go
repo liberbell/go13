@@ -4,6 +4,6 @@ func main() {
 	str := "あいうえお 🙊"
 
 	bytes := []byte(str)
-	str[0] = 'N'
-	str[1] = 'O'
+	bytes[0] = 'N'
+	bytes[1] = 'O'
 }
