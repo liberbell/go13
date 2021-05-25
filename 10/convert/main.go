@@ -24,7 +24,7 @@ func main() {
 	fmt.Printf("\t%d Runes \n", utf8.RuneCount(bytes))
 
 	fmt.Println()
-	for i := range str {
-		fmt.Printf("str[%2d] = %-2x\n", i, str[i])
+	for i, r := range str {
+		fmt.Printf("str[%2d] = % -12x = %q\n", i, string(r), r)
 	}
 }
