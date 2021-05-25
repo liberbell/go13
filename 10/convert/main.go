@@ -13,6 +13,8 @@ func main() {
 	str = string(bytes)
 
 	fmt.Printf("%s\n", str)
+	fmt.Printf("\t%d bytes\n", len(str))
+
 	fmt.Printf("% x\n", bytes)
 	fmt.Printf("\t%d bytes\n", len(bytes))
 }
