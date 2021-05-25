@@ -13,4 +13,5 @@ func main() {
 	str = string(bytes)
 
 	fmt.Printf("%s\n", str)
+	fmt.Printf("% x\n", str)
 }
