@@ -8,7 +8,7 @@ func main() {
 	`
 
 	for i := 0; i < len(text); i++ {
-		fmt.Printf("%c\n", text[i])
+		fmt.Printf("%c", text[i])
 	}
 
 }
