@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	empty = ""
+	empty := ""
 	dump(empty)
 
 }
