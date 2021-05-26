@@ -16,5 +16,6 @@ func main() {
 			break
 		}
 	}
-	bytes(word[:size], bytes.ToUpper(word[:size]))
+	copy(word[:size], bytes.ToUpper(word[:size]))
+	fmt.Printf("%s = % [1]x\n", word)
 }
