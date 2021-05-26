@@ -10,7 +10,7 @@ func main() {
 I’m 出力は5V/3A、9V/3A、15V/3A、20V/2.25A、PPS出力が3.3～16V=3A、3.3～21V=2.25Aなどとなっている。`
 
 	for i := 0; i < len(text); {
-		r, size := utf8.DecodeRuneInString(text)
+		r, size := utf8.DecodeRuneInString(text[i:])
 		fmt.Printf("%c", r)
 
 		i += size
