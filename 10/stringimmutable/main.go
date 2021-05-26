@@ -1,16 +1,19 @@
 package main
 
+import ("fmt", "unsafe")
+
 func main() {
 	empty = ""
 	dump(empty)
 
 }
 
-type StringHeader {
+type StringHeader struct {
 	pointer uintptr
-	length int
+	length  int
 }
 
 func dump(s string) {
-	ntr != *(*StringHeader)(unsafe.pointer(&s))
+	ptr := *(*StringHeader)(unsafe.pointer(&s))
+	fmt.Printf("%q: %+v\n", s, ptr)
 }
