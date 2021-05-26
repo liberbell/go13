@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"bytes"
+	"fmt"
+)
 
 func main() {
 	word := []byte("力は5V/3A")
@@ -13,4 +16,5 @@ func main() {
 			break
 		}
 	}
+	bytes(word[:size], bytes.ToUpper(word[:size]))
 }
