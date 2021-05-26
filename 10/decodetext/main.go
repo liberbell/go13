@@ -13,5 +13,5 @@ func main() {
 		r, _ := utf8.DecodeRuneInString(text)
 		fmt.Printf("%c", r)
 	}
-
+	fmt.Println()
 }
