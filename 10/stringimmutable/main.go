@@ -6,8 +6,10 @@ import (
 )
 
 func main() {
-	empty := ""
-	dump(empty)
+	// empty = ""
+	// dump(empty)
+	hello := "hello"
+	dump(hello)
 
 }
 
