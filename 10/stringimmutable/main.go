@@ -11,6 +11,9 @@ func main() {
 	hello := "hello"
 	dump(hello)
 	dump("hello")
+	dump("hello!")
+
+	dump(hello[0:1])
 
 }
 
