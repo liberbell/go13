@@ -13,7 +13,9 @@ func main() {
 	dump("hello")
 	dump("hello!")
 
-	dump(hello[0:1])
+	for i := range hello {
+		dump(hello[0:i])
+	}
 
 }
 
