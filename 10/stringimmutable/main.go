@@ -17,6 +17,10 @@ func main() {
 		dump(hello[i : i+1])
 	}
 
+	dump(string([]byte(hello)))
+	dump(string([]byte(hello)))
+	dump(string([]byte(hello)))
+
 }
 
 type StringHeader struct {
