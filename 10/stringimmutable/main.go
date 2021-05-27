@@ -10,6 +10,7 @@ func main() {
 	// dump(empty)
 	hello := "hello"
 	dump(hello)
+	dump("hello")
 
 }
 
