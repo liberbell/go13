@@ -20,4 +20,9 @@ func main() {
 		size = len(text)
 		buf  = make([]byte, 0, size)
 	)
+
+	for i := 0; i < size; i++ {
+		buf = append(buf, text[1])
+		fmt.Println(string(buf))
+	}
 }
