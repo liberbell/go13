@@ -7,6 +7,7 @@ import (
 
 // Get and check the input
 // Create a byte buffer and use it as the output
+// Write input to the buffer as it is and print it
 
 func main() {
 	args := os.Args[1:]
