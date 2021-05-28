@@ -35,4 +35,5 @@ func main() {
 
 		fmt.Println(text[i : i+nlink])
 	}
+	fmt.Println(string(buf))
 }
