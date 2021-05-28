@@ -26,7 +26,7 @@ func main() {
 		buf  = make([]byte, 0, size)
 	)
 
-	fmt.Println("text size: ", size)
+	// fmt.Println("text size: ", size)
 
 	for i := 0; i < size; i++ {
 		buf = append(buf, text[i])
