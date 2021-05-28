@@ -15,14 +15,22 @@ func main() {
 		return
 	}
 
+	const (
+		link  = "http://"
+		nlink = len(link)
+	)
+
 	var (
 		text = args[0]
 		size = len(text)
 		buf  = make([]byte, 0, size)
 	)
 
+	fmt.Println("text size: ", size)
+
 	for i := 0; i < size; i++ {
-		buf = append(buf, text[i])
-		fmt.Println(string(buf))
+		// buf = append(buf, text[i])
+
+		fmt.Println(text[i : i+nlink])
 	}
 }
