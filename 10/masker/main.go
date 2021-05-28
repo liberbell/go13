@@ -22,7 +22,7 @@ func main() {
 	)
 
 	for i := 0; i < size; i++ {
-		buf = append(buf, text[1])
+		buf = append(buf, text[i])
 		fmt.Println(string(buf))
 	}
 }
