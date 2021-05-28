@@ -29,7 +29,9 @@ func main() {
 	fmt.Println("text size: ", size)
 
 	for i := 0; i < size; i++ {
-		// buf = append(buf, text[i])
+		buf = append(buf, text[i])
+
+		fmt.Printf(`text[%d : %[1]d+%d] = `, i, nlink)
 
 		fmt.Println(text[i : i+nlink])
 	}
