@@ -12,13 +12,20 @@ func main() {
 	for _, r := range text {
 		fmt.Printf("%c", r)
 
-		if lw++; lw > maxWidth {
-			fmt.Printf(" <[%d]", lw)
-			lw = 0
+		// if lw++; lw > maxWidth {
+		// 	// fmt.Printf(" <[%d]", lw)
+		// 	lw = 0
+		// 	fmt.Println()
+		// } else if r == '\n' {
+		// 	lw = 0
+		// 	// fmt.Println()
+		// }
+		switch lw++; {
+		case lw > maxWidth:
 			fmt.Println()
-		} else if r == '\n' {
+			fallthrough
+		case r == '\n':
 			lw = 0
-			// fmt.Println()
 		}
 	}
 }
