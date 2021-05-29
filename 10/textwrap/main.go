@@ -13,6 +13,10 @@ func main() {
 		fmt.Printf("%c", r)
 
 		if lw++; lw > maxWidth {
+			fmt.Printf(" <[%d]", lw)
+			lw = 0
+			fmt.Println()
+		} else if r == '\n' {
 			fmt.Println()
 		}
 	}
