@@ -8,6 +8,7 @@ import (
 // Get and check the input
 // Create a byte buffer and use it as the output
 // Write input to the buffer as it is and print it
+// Mask the link
 
 func main() {
 	args := os.Args[1:]
@@ -40,6 +41,12 @@ func main() {
 		}
 
 		c := text[i]
+
+		switch c {
+		case ' ', '\t', '\n':
+			in = false
+		}
+
 		if in {
 			c = mask
 		}
