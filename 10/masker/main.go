@@ -45,6 +45,8 @@ func main() {
 		switch c {
 		case ' ', '\t', '\n':
 			in = false
+
+			buf = append(buf, link...)
 		}
 
 		if in {
