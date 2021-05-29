@@ -32,13 +32,13 @@ func main() {
 	// fmt.Println("text size: ", size)
 
 	for i := 0; i < size; i++ {
-		buf = append(buf, text[i])
-
 		if len(text[i:]) >= nlink && text[i:i+nlink] == link {
 			// fmt.Printf(`text[%d : %[1]d+%d] = `, i, nlink)
 			// fmt.Println(text[i : i+nlink])
 			in = true
 		}
+
+		buf = append(buf, text[i])
 	}
 	fmt.Println(string(buf))
 }
