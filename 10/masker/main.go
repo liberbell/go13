@@ -19,6 +19,7 @@ func main() {
 	const (
 		link  = "http://"
 		nlink = len(link)
+		mask  = '*'
 	)
 
 	var (
@@ -39,6 +40,9 @@ func main() {
 		}
 
 		c := text[i]
+		if in {
+			c = mask
+		}
 
 		buf = append(buf, c)
 	}
