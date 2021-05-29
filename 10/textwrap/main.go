@@ -17,7 +17,8 @@ func main() {
 			lw = 0
 			fmt.Println()
 		} else if r == '\n' {
-			fmt.Println()
+			lw = 0
+			// fmt.Println()
 		}
 	}
 }
