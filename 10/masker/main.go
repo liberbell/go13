@@ -38,6 +38,8 @@ func main() {
 			// fmt.Printf(`text[%d : %[1]d+%d] = `, i, nlink)
 			// fmt.Println(text[i : i+nlink])
 			in = true
+
+			buf = append(buf, link...)
 		}
 
 		c := text[i]
@@ -45,8 +47,6 @@ func main() {
 		switch c {
 		case ' ', '\t', '\n':
 			in = false
-
-			buf = append(buf, link...)
 		}
 
 		if in {
