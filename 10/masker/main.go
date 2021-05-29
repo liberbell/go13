@@ -27,10 +27,12 @@ func main() {
 		text = args[0]
 		size = len(text)
 		// buf  = make([]byte, 0, size)
-		buf = []byte(text)[:0]
+		buf = []byte(text)
 
 		in bool
 	)
+	fmt.Println(string(buf))
+	return
 
 	// fmt.Println("text size: ", size)
 
