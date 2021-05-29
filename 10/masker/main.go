@@ -26,7 +26,8 @@ func main() {
 	var (
 		text = args[0]
 		size = len(text)
-		buf  = make([]byte, 0, size)
+		// buf  = make([]byte, 0, size)
+		buf = []byte(text)[:0]
 
 		in bool
 	)
