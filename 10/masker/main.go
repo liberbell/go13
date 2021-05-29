@@ -25,6 +25,8 @@ func main() {
 		text = args[0]
 		size = len(text)
 		buf  = make([]byte, 0, size)
+
+		in bool
 	)
 
 	// fmt.Println("text size: ", size)
@@ -33,8 +35,9 @@ func main() {
 		buf = append(buf, text[i])
 
 		if len(text[i:]) >= nlink && text[i:i+nlink] == link {
-			fmt.Printf(`text[%d : %[1]d+%d] = `, i, nlink)
-			fmt.Println(text[i : i+nlink])
+			// fmt.Printf(`text[%d : %[1]d+%d] = `, i, nlink)
+			// fmt.Println(text[i : i+nlink])
+			in = true
 		}
 	}
 	fmt.Println(string(buf))
