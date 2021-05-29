@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"unicode"
+)
 
 func main() {
 	const text = `チャットへようこそ！ご自身のプライバシーを守るとともに、YouTube のコミュニティ ガイドラインを遵守することを忘れないでください。Microsoft本社主催のMicrosoft Build 2021 が米国時間5月25日～27日にかけて開催されます。本イベントではBuildアップデートを含めた各サービスの最新アップデートをJAZUGの枠を超えて様々なコミュニティの方にお話ししていただきます！`
@@ -21,7 +24,7 @@ func main() {
 		// 	// fmt.Println()
 		// }
 		switch lw++; {
-		case lw > maxWidth:
+		case lw > maxWidth && unicode.IsSpace(r):
 			fmt.Println()
 			fallthrough
 		case r == '\n':
