@@ -38,7 +38,9 @@ func main() {
 			in = true
 		}
 
-		buf = append(buf, text[i])
+		c := text[i]
+
+		buf = append(buf, c)
 	}
 	fmt.Println(string(buf))
 }
