@@ -40,6 +40,7 @@ func main() {
 			in = true
 
 			buf = append(buf, link...)
+			i += nlink
 		}
 
 		c := text[i]
