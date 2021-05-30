@@ -16,10 +16,10 @@ func main() {
 
 	key := "good"
 	value := dict[key]
-	fmt.Printf("%q means %v\n", key, value)
+	fmt.Printf("%q means %#v\n", key, value)
 
-	fmt.Printf("Zero value: %v\n", dict)
-	// fmt.Printf("# of keys : %d\n, var)
+	// fmt.Printf("Zero value: %v\n", dict)
+	fmt.Printf("# of keys : %d\n", len(dict))
 
 	// english := []string{"good", "great", "perfect"}
 	// japanese := []string{"よい", "すげえ", "完璧"}
