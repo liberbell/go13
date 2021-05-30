@@ -14,6 +14,8 @@ func main() {
 	// query := args[0]
 	var dict map[string]string
 
+	fmt.Printf("Zero value: %v\n", dict)
+
 	english := []string{"good", "great", "perfect"}
 	japanese := []string{"よい", "すげえ", "完璧"}
 
