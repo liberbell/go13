@@ -16,7 +16,7 @@ func main() {
 
 	key := "good"
 	value := dict[key]
-	fmt.Printf("%q means %v\n, var)
+	fmt.Printf("%q means %v\n", key, value)
 
 	fmt.Printf("Zero value: %v\n", dict)
 	// fmt.Printf("# of keys : %d\n, var)
