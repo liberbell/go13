@@ -24,7 +24,7 @@ func main() {
 		// 	// fmt.Println()
 		// }
 		switch lw++; {
-		case lw > maxWidth && unicode.IsSpace(r):
+		case lw > maxWidth && r != '\n' && unicode.IsSpace(r):
 			fmt.Println()
 			fallthrough
 		case r == '\n':
