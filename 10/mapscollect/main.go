@@ -2,17 +2,17 @@ package main
 
 import (
 	"fmt"
-	"os"
 )
 
 func main() {
-	args := os.Args[1:]
-	if len(args) != 1 {
-		fmt.Println("[english word] -> [japanese word]")
-		return
-	}
+	// args := os.Args[1:]
+	// if len(args) != 1 {
+	// 	fmt.Println("[english word] -> [japanese word]")
+	// 	return
+	// }
 
-	query := args[0]
+	// query := args[0]
+	var dict map[string]string
 
 	english := []string{"good", "great", "perfect"}
 	japanese := []string{"よい", "すげえ", "完璧"}
@@ -23,4 +23,5 @@ func main() {
 			return
 		}
 	}
+	fmt.Printf("%q not found\n", query)
 }
