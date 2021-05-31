@@ -15,8 +15,10 @@ func main() {
 	var dict map[string]string
 
 	key := "good"
-	value := dict[key]
-	fmt.Printf("%q means %#v\n", key, value)
+	if dict != nil {
+		value := dict[key]
+		fmt.Printf("%q means %#v\n", key, value)
+	}
 
 	// fmt.Printf("Zero value: %v\n", dict)
 	fmt.Printf("# of keys : %d\n", len(dict))
