@@ -25,9 +25,10 @@ func main() {
 	dict["down"] = "した"
 	dict["mistake"] = ""
 
-	for k, v := range dict {
-		fmt.Printf("%q means %#v\n", k, v)
-	}
+	// for k, v := range dict {
+	// 	fmt.Printf("%q means %#v\n", k, v)
+	// }
+	copied := map[string]string("down": "した", "up": "うえ", "good": "グッド", )
 
 	// key := "good"
 
