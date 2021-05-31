@@ -33,6 +33,10 @@ func main() {
 	first := fmt.Sprintf("%s", dict)
 	second := fmt.Sprintf("%s", copied)
 
+	if first == second {
+		fmt.Println("Maps are equal.")
+	}
+
 	// key := "good"
 
 	// value, ok := dict[query]
