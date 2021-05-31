@@ -19,6 +19,8 @@ func main() {
 		"perfect": "かんぺき",
 	}
 
+	dict["good"] = "グッド"
+
 	dict["up"] = "うえ"
 	dict["down"] = "した"
 
