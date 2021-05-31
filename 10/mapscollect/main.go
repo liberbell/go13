@@ -30,6 +30,9 @@ func main() {
 	// }
 	copied := map[string]string{"down": "した", "up": "うえ", "good": "グッド", "great": "すばらしい", "mistake": "", "perfect": "かんぺき"}
 
+	first := fmt.Sprintf("%s", dict)
+	second := fmt.Sprintf("%s", copied)
+
 	// key := "good"
 
 	// value, ok := dict[query]
