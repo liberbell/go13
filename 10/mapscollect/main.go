@@ -12,7 +12,8 @@ func main() {
 	// }
 
 	// query := args[0]
-	var dict map[string]string
+	dict := map[string]string{}
+
 	dict["up"] = "うえ"
 	dict["down"] = "した"
 
