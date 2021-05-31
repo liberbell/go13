@@ -2,25 +2,26 @@ package main
 
 import (
 	"fmt"
+	"os"
 )
 
 func main() {
-	// args := os.Args[1:]
-	// if len(args) != 1 {
-	// 	fmt.Println("[english word] -> [japanese word]")
-	// 	return
-	// }
+	args := os.Args[1:]
+	if len(args) != 1 {
+		fmt.Println("[english word] -> [japanese word]")
+		return
+	}
 
-	// query := args[0]
+	query := args[0]
 	dict := map[string]string{}
 
 	dict["up"] = "うえ"
 	dict["down"] = "した"
 
-	key := "good"
+	// key := "good"
 
-	value := dict[key]
-	fmt.Printf("%q means %#v\n", key, value)
+	value := dict[query]
+	fmt.Printf("%q means %#v\n", query, value)
 
 	// fmt.Printf("Zero value: %v\n", dict)
 	fmt.Printf("# of keys : %d\n", len(dict))
