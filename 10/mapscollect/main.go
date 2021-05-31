@@ -23,6 +23,7 @@ func main() {
 
 	dict["up"] = "うえ"
 	dict["down"] = "した"
+	dict["mistake"] = ""
 
 	// key := "good"
 
