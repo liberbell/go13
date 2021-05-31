@@ -13,7 +13,11 @@ func main() {
 	}
 
 	query := args[0]
-	dict := map[string]string{}
+	dict := map[string]string{
+		"good":    "よい",
+		"great":   "すばらしい",
+		"perfect": "かんぺき",
+	}
 
 	dict["up"] = "うえ"
 	dict["down"] = "した"
