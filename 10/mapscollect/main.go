@@ -27,8 +27,8 @@ func main() {
 
 	// key := "good"
 
-	value := dict[query]
-	if value == "" {
+	value, ok := dict[query]
+	if !ok {
 		fmt.Printf("%q not found\n", query)
 		return
 	}
