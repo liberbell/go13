@@ -45,6 +45,9 @@ func main() {
 	// 	return
 	// }
 
+	japanese := dict
+	fmt.Printf("english: %q\njapanese: %q\n", dict, japanese)
+
 	if value, ok := dict[query]; ok {
 		fmt.Printf("%q means %v\n", query, value)
 		return
@@ -60,7 +63,7 @@ func main() {
 
 	// for i, w := range english {
 	// 	if query == w {
-	// 		fmt.Printf("%q means %q\n", w, japanese[i])
+	// 	fmt.Printf("%q means %q\n", w, japanese[i])
 	// 		return
 	// 	}
 	// }
