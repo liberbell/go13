@@ -25,6 +25,10 @@ func main() {
 	dict["down"] = "した"
 	dict["mistake"] = ""
 
+	for k, v := range dict {
+		fmt.Printf("%q means %#v\n", k, v)
+	}
+
 	// key := "good"
 
 	// value, ok := dict[query]
