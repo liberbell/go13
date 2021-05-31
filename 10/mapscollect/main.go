@@ -27,6 +27,10 @@ func main() {
 	// key := "good"
 
 	value := dict[query]
+	if value == "" {
+		fmt.Printf("%q not found\n", query)
+		return
+	}
 	fmt.Printf("%q means %#v\n", query, value)
 
 	// fmt.Printf("Zero value: %v\n", dict)
