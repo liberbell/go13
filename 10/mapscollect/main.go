@@ -46,6 +46,7 @@ func main() {
 	// }
 
 	japanese := dict
+	japanese["good"] = "わるくない"
 	fmt.Printf("english: %q\njapanese: %q\n", dict, japanese)
 
 	if value, ok := dict[query]; ok {
