@@ -28,14 +28,14 @@ func main() {
 	// for k, v := range dict {
 	// 	fmt.Printf("%q means %#v\n", k, v)
 	// }
-	copied := map[string]string{"down": "した", "up": "うえ", "good": "グッド", "great": "すばらしい", "mistake": "", "perfect": "かんぺき"}
+	// copied := map[string]string{"down": "した", "up": "うえ", "good": "グッド", "great": "すばらしい", "mistake": "", "perfect": "かんぺき"}
 
-	first := fmt.Sprintf("%s", dict)
-	second := fmt.Sprintf("%s", copied)
+	// first := fmt.Sprintf("%s", dict)
+	// second := fmt.Sprintf("%s", copied)
 
-	if first == second {
-		fmt.Println("Maps are equal.")
-	}
+	// if first == second {
+	// 	fmt.Println("Maps are equal.")
+	// }
 
 	// key := "good"
 
@@ -64,5 +64,5 @@ func main() {
 	// 		return
 	// 	}
 	// }
-	// fmt.Printf("%q not found\n", query)
+	fmt.Printf("%q not found\n", query)
 }
