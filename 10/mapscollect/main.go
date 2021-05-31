@@ -13,12 +13,13 @@ func main() {
 
 	// query := args[0]
 	var dict map[string]string
+	dict["up"] = "うえ"
+	dict["down"] = "した"
 
 	key := "good"
-	if dict != nil {
-		value := dict[key]
-		fmt.Printf("%q means %#v\n", key, value)
-	}
+
+	value := dict[key]
+	fmt.Printf("%q means %#v\n", key, value)
 
 	// fmt.Printf("Zero value: %v\n", dict)
 	fmt.Printf("# of keys : %d\n", len(dict))
