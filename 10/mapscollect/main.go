@@ -48,9 +48,9 @@ func main() {
 	japanese := make(map[string]string, len(dict))
 
 	for k, v := range dict {
-		japanese[v] := k
+		japanese[v] = k
 	}
-	
+
 	japanese["good"] = "わるくない"
 	dict["great"] = "さいこう"
 	fmt.Printf("english: %q\njapanese: %q\n", dict, japanese)
