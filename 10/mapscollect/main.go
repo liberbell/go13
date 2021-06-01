@@ -51,6 +51,11 @@ func main() {
 		japanese[v] = k
 	}
 
+	if value, ok := japanese[query]; ok {
+		fmt.Printf("%q means %#v\n", query, value)
+		return
+	}
+
 	japanese["good"] = "わるくない"
 	dict["great"] = "さいこう"
 	fmt.Printf("english: %q\njapanese: %q\n", dict, japanese)
