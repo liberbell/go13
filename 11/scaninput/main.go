@@ -21,4 +21,8 @@ func main() {
 		lines++
 	}
 	fmt.Printf("There are %d line(s)\n", lines)
+
+	if err := in.Err(); err != nil {
+		fmt.Println("Error")
+	}
 }
