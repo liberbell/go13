@@ -7,6 +7,7 @@ import (
 )
 
 func main() {
+	os.Stdin.Close()
 	in := bufio.NewScanner(os.Stdin)
 
 	// for in.Scan() {
@@ -23,6 +24,6 @@ func main() {
 	fmt.Printf("There are %d line(s)\n", lines)
 
 	if err := in.Err(); err != nil {
-		fmt.Println("Error")
+		fmt.Println("Error: ", err)
 	}
 }
