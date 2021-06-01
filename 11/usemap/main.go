@@ -1,7 +1,11 @@
 package main
 
-import "bufio"
+import (
+	"bufio"
+	"os"
+)
 
 func main() {
-	in := bufio.NewScanner(os.stdin)
+	in := bufio.NewScanner(os.Stdin)
+	in.Split(bufio.ScanWords)
 }
