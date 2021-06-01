@@ -19,6 +19,7 @@ func main() {
 		"perfect": "かんぺき",
 		"awesome": "かんぺき",
 	}
+	delete(dict, "awesome")
 
 	dict["good"] = "グッド"
 
