@@ -45,7 +45,7 @@ func main() {
 	// 	return
 	// }
 
-	japanese := dict
+	japanese := make(map[string]string, len(dict))
 	japanese["good"] = "わるくない"
 	dict["great"] = "さいこう"
 	fmt.Printf("english: %q\njapanese: %q\n", dict, japanese)
