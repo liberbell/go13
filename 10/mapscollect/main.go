@@ -17,6 +17,7 @@ func main() {
 		"good":    "よい",
 		"great":   "すばらしい",
 		"perfect": "かんぺき",
+		"awesome": "かんぺき",
 	}
 
 	dict["good"] = "グッド"
