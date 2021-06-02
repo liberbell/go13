@@ -13,6 +13,7 @@ func main() {
 		fmt.Println("Please type one search word.")
 		return
 	}
+	query := args[0]
 
 	in := bufio.NewScanner(os.Stdin)
 	in.Split(bufio.ScanWords)
