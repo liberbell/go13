@@ -8,6 +8,12 @@ import (
 )
 
 func main() {
+	args := os.Args[1]
+	if len(args) != 1 {
+		fmt.Println("Please type one search word.")
+		return
+	}
+
 	in := bufio.NewScanner(os.Stdin)
 	in.Split(bufio.ScanWords)
 
