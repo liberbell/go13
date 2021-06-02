@@ -2,6 +2,7 @@ package main
 
 import (
 	"bufio"
+	"fmt"
 	"os"
 	"strings"
 )
@@ -19,5 +20,9 @@ func main() {
 		if len(word) > 2 {
 			words[word] = true
 		}
+	}
+	query := "sun"
+	if _, ok := words[query]; ok {
+		fmt.Printf("")
 	}
 }
