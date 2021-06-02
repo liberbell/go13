@@ -2,8 +2,8 @@ package main
 
 import (
 	"bufio"
-	"fmt"
 	"os"
+	"strings"
 )
 
 func main() {
@@ -13,6 +13,11 @@ func main() {
 	words := make(map[string]bool)
 
 	for in.Scan() {
-		fmt.Println(in.Text())
+		// fmt.Println(in.Text())
+		word := strings.ToLower(in.Text())
+
+		if len(word) > 2 {
+			words[word] = true
+		}
 	}
 }
