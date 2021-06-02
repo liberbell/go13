@@ -24,5 +24,7 @@ func main() {
 	query := "sun"
 	if _, ok := words[query]; ok {
 		fmt.Printf("The input contains %q.\n", query)
+		return
 	}
+	fmt.Printf("Sorry, input does not contain %q.\n", query)
 }
