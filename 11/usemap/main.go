@@ -30,6 +30,10 @@ func main() {
 			words[word] = true
 		}
 	}
+
+	for word := range words {
+		fmt.Println(word)
+	}
 	// fmt.Println("sun:", words["sun"], "tesla:", words["tesla"])
 
 	// query := "many"
