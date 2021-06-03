@@ -31,7 +31,7 @@ func main() {
 	// fmt.Println("sun:", words["sun"], "tesla:", words["tesla"])
 
 	// query := "many"
-	if _, ok := words[query]; ok {
+	if words[query] {
 		fmt.Printf("The input contains %q.\n", query)
 		return
 	}
