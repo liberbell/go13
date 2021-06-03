@@ -35,6 +35,7 @@ func main() {
 	// query := "many"
 	if words[query] {
 		fmt.Printf("The input contains %q\n", query)
+		return
 	}
 
 	fmt.Printf("Sorry, input does not contain %q.\n", query)
