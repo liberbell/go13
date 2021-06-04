@@ -8,6 +8,9 @@ import (
 )
 
 func main() {
+	var sum map[string]int
+	sum = make(map[string]int)
+
 	in := bufio.NewScanner(os.Stdin)
 
 	for in.Scan() {
