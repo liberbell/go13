@@ -4,6 +4,7 @@ import (
 	"bufio"
 	"fmt"
 	"os"
+	"strconv"
 	"strings"
 )
 
@@ -17,7 +18,9 @@ func main() {
 		fields := strings.Fields(in.Text())
 
 		domain := fields[0]
-		visits := fields[1]
+		visits, _ := strconv.Atoi(fields[1])
+
+		sum[domain] += visits
 		fmt.Printf("domain: %s - visits: %s\n", domain, visits)
 	}
 }
