@@ -31,7 +31,7 @@ func main() {
 		domain := fields[0]
 		visits, err := strconv.Atoi(fields[1])
 		if err != nil {
-			fmt.Printf("Wrong input: %q\n", fields[1])
+			fmt.Printf("Wrong input: %q (line #%d)\n", fields[1], lines)
 			return
 		}
 
