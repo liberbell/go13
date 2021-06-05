@@ -20,6 +20,10 @@ func main() {
 
 	for in.Scan() {
 		fields := strings.Fields(in.Text())
+		if len(fields) != 2 {
+			fmt.Printf("Wrong input: %v\n", fields)
+			return
+		}
 
 		domain := fields[0]
 		visits, _ := strconv.Atoi(fields[1])
