@@ -53,4 +53,8 @@ func main() {
 		fmt.Printf("%-30s %10d\n", domain, visits)
 	}
 	fmt.Printf("\n%-30s %10d\n", "Total", total)
+
+	if err := in.Err(); err != nil {
+		fmt.Println("> Err: ", err)
+	}
 }
