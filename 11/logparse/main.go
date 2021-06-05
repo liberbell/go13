@@ -26,7 +26,11 @@ func main() {
 		}
 
 		domain := fields[0]
-		visits, _ := strconv.Atoi(fields[1])
+		visits, err := strconv.Atoi(fields[1])
+		if err != nil {
+			fmt.Printf("Wrong input: %q\n", fields[1])
+			return
+		}
 
 		if _, ok := sum[domain]; !ok {
 			domains = append(domains, domain)
