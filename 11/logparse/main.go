@@ -27,6 +27,7 @@ func main() {
 			domains = append(domains, domain)
 		}
 
+		total += visits
 		sum[domain] += visits
 	}
 	fmt.Printf("%-30s %10s\n", "Domain", "Visits")
@@ -39,4 +40,5 @@ func main() {
 		visits := sum[domain]
 		fmt.Printf("%-30s %10d\n", domain, visits)
 	}
+	fmt.Printf("\n%-30s %10d\n", "Total", total)
 }
