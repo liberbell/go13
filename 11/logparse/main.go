@@ -13,15 +13,18 @@ func main() {
 		sum     map[string]int
 		domains []string
 		total   int
+		lines   int
 	)
 	sum = make(map[string]int)
 
 	in := bufio.NewScanner(os.Stdin)
 
 	for in.Scan() {
+		lines++
+
 		fields := strings.Fields(in.Text())
 		if len(fields) != 2 {
-			fmt.Printf("Wrong input: %v\n", fields)
+			fmt.Printf("Wrong input: %v (line #%d)\n", fields, lines)
 			return
 		}
 
