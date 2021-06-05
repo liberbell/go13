@@ -8,4 +8,6 @@ func main() {
 		name2, lastname2 string
 		age2             int
 	)
+
+	name, lastname, age = "Pablo", "Picasso", 91
 }
