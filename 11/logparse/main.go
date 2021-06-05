@@ -9,7 +9,10 @@ import (
 )
 
 func main() {
-	var sum map[string]int
+	var (
+		sum     map[string]int
+		domains []string
+	)
 	sum = make(map[string]int)
 
 	in := bufio.NewScanner(os.Stdin)
@@ -19,6 +22,10 @@ func main() {
 
 		domain := fields[0]
 		visits, _ := strconv.Atoi(fields[1])
+
+		if _, ok := sum[domain]; !ok {
+			domains = append(domains, domain)
+		}
 
 		sum[domain] += visits
 	}
