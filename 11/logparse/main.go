@@ -21,6 +21,7 @@ func main() {
 		visits, _ := strconv.Atoi(fields[1])
 
 		sum[domain] += visits
-		fmt.Printf("domain: %s - visits: %s\n", domain, visits)
 	}
+	fmt.Printf("%-30s %10s\n", "Domain", "Visits")
+	fmt.Println(strings.Repeat("-", 45))
 }
