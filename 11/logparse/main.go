@@ -12,6 +12,7 @@ func main() {
 	var (
 		sum     map[string]int
 		domains []string
+		total   int
 	)
 	sum = make(map[string]int)
 
