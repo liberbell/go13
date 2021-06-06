@@ -36,6 +36,6 @@ func main() {
 
 	fmt.Printf("\n%s age is %d\n", picasso.lastname, picasso.age)
 
-	fmt.Printf("\nPicasso: %+v\n", picasso)
-	fmt.Printf("Freud: %+v\n", freud)
+	fmt.Printf("\nPicasso: %#v\n", picasso)
+	fmt.Printf("Freud: %#v\n", freud)
 }
