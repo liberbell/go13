@@ -25,6 +25,10 @@ func main() {
 	var picasso person
 	var freud person
 
+	picasso.name = "Pablo"
+	picasso.lastname = "Picasso"
+	picasso.age = 91
+
 	fmt.Printf("\nPicasso: %+v\n", picasso)
 	fmt.Printf("Freud: %+v\n", freud)
 }
