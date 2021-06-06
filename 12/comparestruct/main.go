@@ -11,8 +11,8 @@ type playlist struct {
 }
 
 func main() {
-	song1 := song{title: "wonderwall", artist: "Oasis"}
-	song2 := song{title: "super sonic", artist: "Oasis"}
+	// song1 := song{title: "wonderwall", artist: "Oasis"}
+	// song2 := song{title: "super sonic", artist: "Oasis"}
 
 	// song1 = song2
 
@@ -25,8 +25,8 @@ func main() {
 	// 	fmt.Println("songs are not equal.")
 	// }
 
-	rock := playlist{genre: "indie rock", songs: []song{
-		song{title: "wonderwall", artist: "Oasis"},
-		song{title: "super sonic", artist: "Oasis"},
-	}}
+	songs := []song{
+		{title: "wonderwall", artist: "Oasis"},
+		{title: "super sonic", artist: "Oasis"},
+	}
 }
