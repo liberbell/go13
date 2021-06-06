@@ -28,7 +28,7 @@ func main() {
 	picasso := person{
 		name:     "Pablo",
 		lastname: "Picasso",
-		age:      91,
+		// age:      91,
 	}
 
 	var freud person
