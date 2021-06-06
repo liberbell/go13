@@ -22,4 +22,9 @@ func main() {
 		lastname string
 		age      int
 	}
+
+	var freud struct {
+		name, lastname string
+		age            int
+	}
 }
