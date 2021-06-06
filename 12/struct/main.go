@@ -27,4 +27,6 @@ func main() {
 		name, lastname string
 		age            int
 	}
+	fmt.Printf("\nPicasso: %+v\n", picasso)
+	fmt.Printf("Freud: %+v\n", freud)
 }
