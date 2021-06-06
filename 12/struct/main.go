@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 	var (
@@ -28,6 +30,10 @@ func main() {
 	picasso.name = "Pablo"
 	picasso.lastname = "Picasso"
 	picasso.age = 91
+
+	freud.name = "Sigmund"
+	freud.lastname = "Freud"
+	freud.age = 83
 
 	fmt.Printf("\nPicasso: %+v\n", picasso)
 	fmt.Printf("Freud: %+v\n", freud)
