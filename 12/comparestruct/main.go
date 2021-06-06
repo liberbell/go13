@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 type song struct {
 	title, artist string
 }
@@ -29,4 +31,7 @@ func main() {
 		{title: "wonderwall", artist: "Oasis"},
 		{title: "super sonic", artist: "Oasis"},
 	}
+
+	fmt.Printf("%-20s %20s\n", "Title", "Artist")
+
 }
