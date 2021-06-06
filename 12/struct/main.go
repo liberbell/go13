@@ -39,6 +39,7 @@ func main() {
 
 	freud.name = "Sigmund"
 	freud.lastname = "Freud"
+	freud.age = 83
 
 	fmt.Printf("\n%s age is %d\n", picasso.lastname, picasso.age)
 
