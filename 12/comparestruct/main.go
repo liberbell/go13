@@ -6,6 +6,12 @@ type song struct {
 	title, artist string
 }
 
+type playlist struct {
+	genre string
+
+	songs []song
+}
+
 func main() {
 	song1 := song{title: "wonderwall", artist: "Oasis"}
 	song2 := song{title: "super sonic", artist: "Oasis"}
