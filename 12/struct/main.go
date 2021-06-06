@@ -22,16 +22,9 @@ func main() {
 		age            int
 	}
 
-	var picasso struct {
-		name     string
-		lastname string
-		age      int
-	}
+	var picasso person
+	var freud person
 
-	var freud struct {
-		name, lastname string
-		age            int
-	}
 	fmt.Printf("\nPicasso: %+v\n", picasso)
 	fmt.Printf("Freud: %+v\n", freud)
 }
