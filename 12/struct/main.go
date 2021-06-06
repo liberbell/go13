@@ -24,7 +24,8 @@ func main() {
 		age            int
 	}
 
-	var picasso person
+	// var picasso person
+	picasso := main.person{name: "Pablo", lastname: "Picasso", age: 91}
 	var freud person
 
 	picasso.name = "Pablo"
