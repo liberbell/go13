@@ -17,6 +17,11 @@ func main() {
 	fmt.Println("Picasso: ", name, lastname, age)
 	fmt.Println("Sigmund: ", name2, lastname2, age2)
 
+	type person struct {
+		name, lastname string
+		age            int
+	}
+
 	var picasso struct {
 		name     string
 		lastname string
