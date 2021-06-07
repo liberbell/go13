@@ -37,7 +37,7 @@ func main() {
 	song := rock.songs[0]
 	song.title = "live forever"
 
-	fmt.Printf("%+v\n%+v\n\n", song, song.title[0])
+	fmt.Printf("%+v\n%+v\n\n", song, rock.songs[0])
 
 	fmt.Printf("%-20s %20s\n", "Title", "Artist")
 	for _, s := range rock.songs {
