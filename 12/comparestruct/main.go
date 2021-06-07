@@ -34,6 +34,9 @@ func main() {
 
 	rock := playlist{genre: "indie rock", songs: songs}
 
+	song := rock.songs[0]
+	song.title = "live forever"
+
 	fmt.Printf("%-20s %20s\n", "Title", "Artist")
 	for _, s := range rock.songs {
 		fmt.Printf("%-20s %20s\n", s.title, s.artist)
