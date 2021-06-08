@@ -4,6 +4,7 @@ import (
 	"bufio"
 	"fmt"
 	"os"
+	"strconv"
 	"strings"
 )
 
@@ -31,6 +32,10 @@ func main() {
 		field := strings.Fields(in.Text())
 		if len(field) != 2 {
 			fmt.Printf("wrong input: %v (line #%d)\n", field, lines)
+			return
 		}
+
+		domains := field[0]
+		visits, err := strconv.Atoi(field[1])
 	}
 }
