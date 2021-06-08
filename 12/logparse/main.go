@@ -1,8 +1,11 @@
 package main
 
+type parser struct {
+	sum map[string]int
+}
+
 func main() {
 	var (
-		sum     map[string]int
 		domains []string
 		total   int
 		lines   int
