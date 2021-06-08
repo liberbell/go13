@@ -9,9 +9,8 @@ func main() {
 	}
 
 	type book struct {
-		title string
-		words int
-		isbn  string
+		text
+		isbn string
 	}
 
 	moby := book{title: "mody dick", words: 206052, isbn: "102030"}
