@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 type song struct {
 	title, artist string
 }
@@ -34,16 +32,16 @@ func main() {
 
 	rock := playlist{genre: "indie rock", songs: songs}
 
-	song := rock.songs[0]
-	song.title = "live forever"
+	// song := rock.songs[0]
+	// song.title = "live forever"
 
-	rock.songs[0].title = "live forever"
+	// rock.songs[0].title = "live forever"
 
-	fmt.Printf("%+v\n%+v\n\n", song, rock.songs[0])
+	// fmt.Printf("%+v\n%+v\n\n", song, rock.songs[0])
 
-	fmt.Printf("%-20s %20s\n", "Title", "Artist")
-	for _, s := range rock.songs {
-		fmt.Printf("%-20s %20s\n", s.title, s.artist)
-	}
+	// fmt.Printf("%-20s %20s\n", "Title", "Artist")
+	// for _, s := range rock.songs {
+	// 	fmt.Printf("%-20s %20s\n", s.title, s.artist)
+	// }
 
 }
