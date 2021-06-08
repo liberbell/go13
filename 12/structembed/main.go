@@ -18,5 +18,8 @@ func main() {
 		isbn: "102030",
 	}
 
+	moby.text.words = 1000
+	moby.words++
+
 	fmt.Printf("%s has %d words (isbn: %s)\n", moby.title, moby.words, moby.isbn)
 }
