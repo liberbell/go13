@@ -10,14 +10,14 @@ import (
 )
 
 type parser struct {
-	sum map[string]int
+	sum     map[string]int
+	domains []string
 }
 
 func main() {
 	var (
-		domains []string
-		total   int
-		lines   int
+		total int
+		lines int
 	)
 
 	p := parser{
