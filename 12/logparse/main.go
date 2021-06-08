@@ -4,6 +4,7 @@ import (
 	"bufio"
 	"fmt"
 	"os"
+	"sort"
 	"strconv"
 	"strings"
 )
@@ -46,5 +47,8 @@ func main() {
 		if _, ok := p.sum[domain]; ok {
 			domains = append(domains, domain)
 		}
+		total += visits
+		p.sum[domain] += visits
 	}
+	sort.Strings(domains)
 }
