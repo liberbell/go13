@@ -51,4 +51,7 @@ func main() {
 		p.sum[domain] += visits
 	}
 	sort.Strings(domains)
+
+	fmt.Printf("%-30s %10s\n", "DOMAIN", "VISITS")
+	fmt.Println(strings.Repeat("-", 45))
 }
