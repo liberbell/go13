@@ -44,8 +44,8 @@ func main() {
 			return
 		}
 
-		if _, ok := p.sum[domain]; ok {
-			domains = append(domains, domain)
+		if _, ok := p.sum[domain]; !ok {
+			p.domains = append(p.domains, domain)
 		}
 		total += visits
 		p.sum[domain] += visits
