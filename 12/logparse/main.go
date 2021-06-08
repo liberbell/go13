@@ -59,4 +59,10 @@ func main() {
 		visits := p.sum[domain]
 		fmt.Printf("%-30s %10d\n", domain, visits)
 	}
+
+	fmt.Printf("\n%-30s %10d\n", "DOMAIN", total)
+
+	if err := in.Err(); err != nil {
+		fmt.Println("> Err: ", err)
+	}
 }
