@@ -5,4 +5,10 @@ func main() {
 		title string
 		words int
 	}
+
+	type book struct {
+		title string
+		words int
+		isbn  string
+	}
 }
