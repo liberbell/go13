@@ -12,11 +12,11 @@ import (
 type parser struct {
 	sum     map[string]int
 	domains []string
+	total   int
 }
 
 func main() {
 	var (
-		total int
 		lines int
 	)
 
@@ -47,7 +47,7 @@ func main() {
 		if _, ok := p.sum[domain]; !ok {
 			p.domains = append(p.domains, domain)
 		}
-		total += visits
+		p.total += visits
 		p.sum[domain] += visits
 	}
 	sort.Strings(p.domains)
@@ -60,7 +60,7 @@ func main() {
 		fmt.Printf("%-30s %10d\n", domain, visits)
 	}
 
-	fmt.Printf("\n%-30s %10d\n", "DOMAIN", total)
+	fmt.Printf("\n%-30s %10d\n", "DOMAIN", p.total)
 
 	if err := in.Err(); err != nil {
 		fmt.Println("> Err: ", err)
