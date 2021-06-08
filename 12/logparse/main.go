@@ -54,4 +54,9 @@ func main() {
 
 	fmt.Printf("%-30s %10s\n", "DOMAIN", "VISITS")
 	fmt.Println(strings.Repeat("-", 45))
+
+	for _, domain := range domains {
+		visits := p.sum[domain]
+		fmt.Printf("%-30s %10d\n", domain, visits)
+	}
 }
