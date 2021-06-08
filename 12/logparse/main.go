@@ -50,12 +50,12 @@ func main() {
 		total += visits
 		p.sum[domain] += visits
 	}
-	sort.Strings(domains)
+	sort.Strings(p.domains)
 
 	fmt.Printf("%-30s %10s\n", "DOMAIN", "VISITS")
 	fmt.Println(strings.Repeat("-", 45))
 
-	for _, domain := range domains {
+	for _, domain := range p.domains {
 		visits := p.sum[domain]
 		fmt.Printf("%-30s %10d\n", domain, visits)
 	}
