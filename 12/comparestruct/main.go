@@ -47,4 +47,9 @@ func main() {
 		fmt.Printf("%-20s %20s\n", s.title, s.artist)
 	}
 
+	fmt.Printf("%-20s %20s\n", "Title", "Artist")
+	for _, s := range rock.songs {
+		fmt.Printf("%-20s %20s\n", s.title, s.artist)
+	}
+
 }
