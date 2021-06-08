@@ -39,6 +39,7 @@ func main() {
 		visits, err := strconv.Atoi(field[1])
 		if visits < 0 || err != nil {
 			fmt.Printf("wrong input: %q (lines #%d)\n", field[1], lines)
+			return
 		}
 	}
 }
