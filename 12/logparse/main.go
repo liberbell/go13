@@ -13,12 +13,11 @@ type parser struct {
 	sum     map[string]int
 	domains []string
 	total   int
+	lines   int
 }
 
 func main() {
-	var (
-		lines int
-	)
+	var ()
 
 	p := parser{
 		sum: make(map[string]int),
@@ -28,11 +27,11 @@ func main() {
 
 	in := bufio.NewScanner(os.Stdin)
 	for in.Scan() {
-		lines++
+		p.lines++
 
 		field := strings.Fields(in.Text())
 		if len(field) != 2 {
-			fmt.Printf("wrong input: %v (line #%d)\n", field, lines)
+			fmt.Printf("wrong input: %v (line #%d)\n", field, p.lines)
 			return
 		}
 
@@ -40,7 +39,7 @@ func main() {
 
 		visits, err := strconv.Atoi(field[1])
 		if visits < 0 || err != nil {
-			fmt.Printf("wrong input: %q (lines #%d)\n", field[1], lines)
+			fmt.Printf("wrong input: %q (lines #%d)\n", field[1], p.lines)
 			return
 		}
 
