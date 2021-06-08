@@ -18,7 +18,12 @@ func main() {
 		lines   int
 	)
 
-	sum = make(map[string]int)
+	p := parser{
+		sum: make(map[string]int),
+	}
+
+	// sum = make(map[string]int)
+
 	in := bufio.NewScanner(os.Stdin)
 	for in.Scan() {
 		lines++
