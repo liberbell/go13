@@ -2,6 +2,7 @@ package main
 
 import (
 	"bufio"
+	"fmt"
 	"os"
 	"strings"
 )
@@ -23,5 +24,8 @@ func main() {
 		lines++
 
 		field := strings.Fields(in.Text())
+		if len(field) != 2 {
+			fmt.Printf("wrong input: %v (line #%d)\n", field, lines)
+		}
 	}
 }
