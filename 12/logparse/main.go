@@ -1,5 +1,10 @@
 package main
 
+import (
+	"bufio"
+	"os"
+)
+
 type parser struct {
 	sum map[string]int
 }
@@ -10,4 +15,7 @@ func main() {
 		total   int
 		lines   int
 	)
+
+	sum = make(map[string]int)
+	in := bufio.NewScanner(os.Stdin)
 }
