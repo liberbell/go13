@@ -15,7 +15,7 @@ type result struct {
 }
 
 type parser struct {
-	sum     map[string]int
+	sum     map[string]result
 	domains []string
 	total   int
 	lines   int
