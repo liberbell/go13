@@ -55,6 +55,7 @@ func main() {
 			visits: visits + p.sum[domain].visits,
 		}
 		// p.sum[domain].result += visits
+		p.sum[domain] = r
 	}
 	sort.Strings(p.domains)
 
