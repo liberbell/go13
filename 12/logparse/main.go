@@ -9,6 +9,11 @@ import (
 	"strings"
 )
 
+type result struct {
+	domain string
+	visits int
+}
+
 type parser struct {
 	sum     map[string]int
 	domains []string
