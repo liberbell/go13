@@ -23,7 +23,7 @@ type parser struct {
 
 func main() {
 	p := parser{
-		sum: make(map[string]int),
+		sum: make(map[string]result),
 	}
 
 	// sum = make(map[string]int)
@@ -50,7 +50,11 @@ func main() {
 			p.domains = append(p.domains, domain)
 		}
 		p.total += visits
-		p.sum[domain] += visits
+		r := result{
+			domain: domain,
+			visits: visits + p.sum[domain].visits,
+		}
+		// p.sum[domain].result += visits
 	}
 	sort.Strings(p.domains)
 
