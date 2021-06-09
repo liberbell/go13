@@ -17,8 +17,6 @@ type parser struct {
 }
 
 func main() {
-	var ()
-
 	p := parser{
 		sum: make(map[string]int),
 	}
