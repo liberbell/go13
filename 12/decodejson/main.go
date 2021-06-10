@@ -8,9 +8,9 @@ import (
 type permissions map[string]bool
 
 type user struct {
-	User     string
-	Password string
-	permissions
+	User        string
+	Password    string
+	Permissions permissions
 }
 
 func main() {
@@ -20,7 +20,7 @@ func main() {
 		{"devil", "666", permissions{"write": true}},
 	}
 
-	out, err := json.MarshalIndent(users, "", "\t")
+	out, err := json.MarshalIndent(users, ">>", "\t")
 	if err != nil {
 		fmt.Println(err)
 		return
