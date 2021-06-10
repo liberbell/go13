@@ -25,4 +25,5 @@ func main() {
 		fmt.Println(err)
 		return
 	}
+	fmt.Println(string(out))
 }
