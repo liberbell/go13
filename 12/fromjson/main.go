@@ -2,6 +2,8 @@ package main
 
 import (
 	"bufio"
+	"encoding/json"
+	"fmt"
 	"os"
 )
 
@@ -18,4 +20,10 @@ func main() {
 	}
 	// fmt.Println(string(input))
 	var users []user
+
+	err := json.Unmarshal()
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
 }
