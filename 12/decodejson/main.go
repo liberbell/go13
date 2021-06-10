@@ -20,7 +20,7 @@ func main() {
 		{"devil", "666", permissions{"write": true}},
 	}
 
-	out, err := json.Marshal(users)
+	out, err := json.MarshalIndent(users, "", "\t")
 	if err != nil {
 		fmt.Println(err)
 		return
