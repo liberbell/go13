@@ -10,7 +10,7 @@ type permissions map[string]bool
 type user struct {
 	User        string      `json:"username"`
 	Password    string      `json:"-"`
-	Permissions permissions `json:"perms"`
+	Permissions permissions `json:",omitempty"`
 }
 
 func main() {
