@@ -6,7 +6,8 @@ import (
 )
 
 var user struct {
-	Name string
+	Name        string
+	Permissions map[string]bool
 }
 
 func main() {
