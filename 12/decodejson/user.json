@@ -4,13 +4,13 @@
 	},
 	{
 		"username": "god",
-		"Permissions": {
+		"perms": {
 			"admin": true
 		}
 	},
 	{
 		"username": "devil",
-		"Permissions": {
+		"perms": {
 			"write": true
 		}
 	}
