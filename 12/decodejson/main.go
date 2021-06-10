@@ -11,7 +11,7 @@ type user struct {
 func main() {
 	users := []user{
 		{"inanc", "1234", nil},
-		{"god", "42", map[string]bool{"admin": true}},
-		{"devil", "666", map[string]bool{"write": true}},
+		{"god", "42", permissions{"admin": true}},
+		{"devil", "666", permissions{"write": true}},
 	}
 }
