@@ -11,5 +11,5 @@ func main() {
 	for in := bufio.NewScanner(os.Stdin); in.Scan(); {
 		input = append(input, in.Bytes()...)
 	}
-	fmt.Println(input)
+	fmt.Println(string(input))
 }
