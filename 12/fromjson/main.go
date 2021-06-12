@@ -21,9 +21,10 @@ func main() {
 	// fmt.Println(string(input))
 	var users []user
 
-	err := json.Unmarshal()
+	err := json.Unmarshal(input, users)
 	if err != nil {
 		fmt.Println(err)
 		return
 	}
+	fmt.Println(users)
 }
