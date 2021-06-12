@@ -7,7 +7,7 @@ import (
 	"os"
 )
 
-var user struct {
+type user struct {
 	Name        string
 	Permissions map[string]bool
 }
