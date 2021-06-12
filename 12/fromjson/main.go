@@ -37,5 +37,6 @@ func main() {
 		case p["write"]:
 			fmt.Print(" can write.")
 		}
+		fmt.Println()
 	}
 }
