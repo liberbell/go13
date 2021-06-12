@@ -8,8 +8,8 @@ import (
 )
 
 type user struct {
-	Name        string `json:"username"`
-	Permissions map[string]bool
+	Name        string          `json:"username"`
+	Permissions map[string]bool `json:"perms"`
 }
 
 func main() {
