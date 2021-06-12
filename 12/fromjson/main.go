@@ -27,6 +27,11 @@ func main() {
 		return
 	}
 	for _, user := range users {
-		fmt.Print("+ ", user.Name, user.Permissions)
+		fmt.Print("+ ", user.Name)
+
+		switch p := user.Permissions; {
+		case p == nil:
+			fmt.Print(" has no power.")
+		}
 	}
 }
