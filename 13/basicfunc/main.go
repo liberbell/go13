@@ -7,3 +7,8 @@ func main() {
 	result := multiply(m, n)
 	fmt.Println(result)
 }
+
+func multiply(m, n) {
+	r = m * n
+	return r
+}
