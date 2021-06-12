@@ -5,6 +5,7 @@ import "fmt"
 var N int
 
 func main() {
+	showN()
 }
 
 func showN() {
