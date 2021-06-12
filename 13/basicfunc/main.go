@@ -4,11 +4,11 @@ import "fmt"
 
 func main() {
 	m, n := 5, 2
-	result := multiply(m, n)
-	fmt.Println(result)
+	res := multiply(m, n)
+	fmt.Println(res)
 }
 
-func multiply(m, n) {
+func multiply(a, b int) int {
 	r = m * n
 	return r
 }
