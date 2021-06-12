@@ -9,6 +9,6 @@ func main() {
 }
 
 func multiply(a, b int) int {
-	r = m * n
+	r := a * b
 	return r
 }
