@@ -8,7 +8,7 @@ import (
 )
 
 type user struct {
-	Name        string
+	Name        string `json:"username"`
 	Permissions map[string]bool
 }
 
