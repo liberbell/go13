@@ -26,5 +26,7 @@ func main() {
 		fmt.Println(err)
 		return
 	}
-	fmt.Println(users)
+	for _, user := range users {
+		fmt.Print("+ ", user.Name, user.Permissions)
+	}
 }
