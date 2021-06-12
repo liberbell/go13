@@ -32,6 +32,10 @@ func main() {
 		switch p := user.Permissions; {
 		case p == nil:
 			fmt.Print(" has no power.")
+		case p["admin"]:
+			fmt.Print(" is an admin.")
+		case p["write"]:
+			fmt.Print(" can write.")
 		}
 	}
 }
