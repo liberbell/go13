@@ -5,9 +5,11 @@ import "fmt"
 var N int
 
 func main() {
-	abc
 }
 
-func showN()  {
-	fmt.Printf("showN       : N", var)
+func showN() {
+	if N == 0 {
+
+	}
+	fmt.Printf("showN       : N is %d\n", N)
 }
