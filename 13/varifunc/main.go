@@ -18,7 +18,7 @@ func main() {
 	local = incrBy(local, 5)
 	show(local)
 
-	_, err := incrStr(local, "TWO")
+	_, err := incrByStr(local, "TWO")
 }
 
 func show(n int) {
@@ -38,7 +38,7 @@ func incrBy(n, factor int) int {
 	return n * factor
 }
 
-func incrStr(n, factor string) (int, error) {
+func incrByStr(n, factor string) (int, error) {
 	m, err := strconv.Atoi(factor)
 	n = incrBy(n, m)
 	return n, err
