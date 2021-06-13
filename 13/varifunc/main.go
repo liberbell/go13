@@ -5,7 +5,9 @@ import "fmt"
 func main() {
 	local := 10
 	show(local)
+
 	incrWrong(local)
+	fmt.Printf("main -> n = %d\n", n)
 }
 
 func show(n int) {
