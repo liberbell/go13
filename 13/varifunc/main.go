@@ -20,7 +20,7 @@ func main() {
 
 	_, err := incrByStr(local, "TWO")
 	if err != nil {
-		fmt.Println("Error: ", err)
+		fmt.Printf("Error: %s\n", err)
 	}
 }
 
