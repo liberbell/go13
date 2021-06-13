@@ -1,10 +1,11 @@
 package main
 
-var N int
+import "fmt"
 
 func main() {
-	showN()
-	incrN()
-	incrN()
-	showN()
+	local := 10
+}
+
+func show() {
+	fmt.Printf("show -> n = %d\n", local)
 }
