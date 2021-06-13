@@ -6,7 +6,7 @@ func main() {
 	local := 10
 	show(local)
 
-	// incrWrong(local)
+	incrWrong(local)
 	fmt.Printf("main -> local = %d\n", local)
 
 	incr(local)
@@ -15,6 +15,10 @@ func main() {
 
 func show(n int) {
 	fmt.Printf("show -> n = %d\n", n)
+}
+
+func incrWrong(n int) int {
+	n++
 }
 
 func incr(n int) int {
