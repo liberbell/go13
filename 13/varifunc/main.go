@@ -24,6 +24,7 @@ func main() {
 	}
 	local, _ = incrByStr(local, "2")
 	show(local)
+	show(incrByStr(local, "2"))
 }
 
 func show(n int) {
