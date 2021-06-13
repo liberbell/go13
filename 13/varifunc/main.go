@@ -4,9 +4,9 @@ import "fmt"
 
 func main() {
 	local := 10
-	show()
+	show(local)
 }
 
-func show() int {
-	fmt.Printf("show -> n = %d\n", local)
+func show(n int) {
+	fmt.Printf("show -> n = %d\n", n)
 }
