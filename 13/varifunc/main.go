@@ -19,6 +19,9 @@ func main() {
 	show(local)
 
 	_, err := incrByStr(local, "TWO")
+	if err != nil {
+		fmt.Println("Error: ", err)
+	}
 }
 
 func show(n int) {
