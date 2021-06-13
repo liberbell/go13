@@ -7,7 +7,7 @@ func main() {
 	show(local)
 
 	incrWrong(local)
-	fmt.Printf("main -> n = %d\n", n)
+	fmt.Printf("main -> local = %d\n", local)
 }
 
 func show(n int) {
