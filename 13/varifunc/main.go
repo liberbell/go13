@@ -10,3 +10,7 @@ func main() {
 func show(n int) {
 	fmt.Printf("show -> n = %d\n", n)
 }
+
+func incrWrong(n int) {
+	n++
+}
