@@ -22,7 +22,7 @@ func main() {
 	if err != nil {
 		fmt.Printf("Error: %s\n", err)
 	}
-	local, _ := incrByStr(local, 2)
+	local, _ = incrByStr(local, "2")
 	show(local)
 }
 
