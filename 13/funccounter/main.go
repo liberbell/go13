@@ -5,6 +5,8 @@ import "fmt"
 var N int
 
 func main() {
+	incrN()
+	incrN()
 	showN()
 }
 
@@ -13,4 +15,8 @@ func showN() {
 		return
 	}
 	fmt.Printf("showN       : N is %d\n", N)
+}
+
+func incrN() {
+	N++
 }
