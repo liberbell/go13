@@ -49,3 +49,9 @@ func incrByStr(n int, factor string) (int, error) {
 	n = incrBy(n, m)
 	return n, err
 }
+
+func senitize(n int, err error) int {
+	if err != nil {
+		return 0
+	}
+}
