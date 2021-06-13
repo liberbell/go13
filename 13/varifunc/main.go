@@ -11,6 +11,8 @@ func main() {
 
 	local = incr(local)
 	show(local)
+
+	local = incrBy(local, 5)
 }
 
 func show(n int) {
@@ -24,4 +26,8 @@ func incrWrong(n int) {
 func incr(n int) int {
 	n++
 	return n
+}
+
+func incrBy(n, factor int) int {
+	return n * factor
 }
