@@ -38,7 +38,7 @@ func incrBy(n, factor int) int {
 	return n * factor
 }
 
-func incrByStr(n, factor string) (int, error) {
+func incrByStr(n int, factor string) (int, error) {
 	m, err := strconv.Atoi(factor)
 	n = incrBy(n, m)
 	return n, err
