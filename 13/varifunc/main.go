@@ -17,6 +17,8 @@ func main() {
 
 	local = incrBy(local, 5)
 	show(local)
+
+	_, err := incrStr(local, "TWO")
 }
 
 func show(n int) {
