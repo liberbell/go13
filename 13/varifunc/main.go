@@ -5,6 +5,7 @@ import "fmt"
 func main() {
 	local := 10
 	show(local)
+	incrWrong(local)
 }
 
 func show(n int) {
