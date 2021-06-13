@@ -9,7 +9,7 @@ func main() {
 	incrWrong(local)
 	fmt.Printf("main -> local = %d\n", local)
 
-	incr(local)
+	local = incr(local)
 	show(local)
 }
 
