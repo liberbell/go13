@@ -17,7 +17,7 @@ func show(n int) {
 	fmt.Printf("show -> n = %d\n", n)
 }
 
-func incrWrong(n int) int {
+func incrWrong(n int) {
 	n++
 }
 
