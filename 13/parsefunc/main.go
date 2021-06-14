@@ -37,6 +37,11 @@ func main() {
 		visits, err := strconv.Atoi(fields[1])
 		if visits < 0 || err != nil {
 			fmt.Printf("wrong input: %q (lines #%d)\n", fields[1], p.lines)
+			return
+		}
+
+		if _, ok := p.sum[domain]; !ok {
+			p.domains = append(p.domains, domain)
 		}
 	}
 }
