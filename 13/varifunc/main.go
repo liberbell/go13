@@ -65,4 +65,5 @@ func limit(n, lim int) (m int) {
 	if m >= lim {
 		m = lim
 	}
+	return
 }
