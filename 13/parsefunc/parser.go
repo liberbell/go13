@@ -10,7 +10,7 @@ func newParser() parser {
 	return parser{sum: make(map[string]result)}
 }
 
-func parse(line string) {
+func parse(p parser, line string) {
 	fields := strings.Fields(in.Text())
 	if len(fields) != 2 {
 		fmt.Printf("wrong input: %v (line #%d)\n", fields, p.lines)
