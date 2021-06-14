@@ -29,7 +29,7 @@ func main() {
 	local = sanitize(incrByStr(local, "2"))
 	show(local)
 
-	local = incrBy(local, 5)
+	local = limit(incrBy(local, 5), 1000)
 	show(local)
 }
 
