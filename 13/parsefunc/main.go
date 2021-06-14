@@ -1,5 +1,7 @@
 package main
 
+import "bufio"
+
 type result struct {
 	domain string
 	visits int
@@ -13,5 +15,7 @@ type parser struct {
 }
 
 func main() {
-	p := new
+	p := newParser()
+
+	in := bufio.NewScanner(os.stdin)
 }
