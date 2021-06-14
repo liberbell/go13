@@ -61,5 +61,8 @@ func sanitize(n int, err error) int {
 }
 
 func limit(n, lim int) (m int) {
-
+	m = n
+	if m >= lim {
+		m = lim
+	}
 }
