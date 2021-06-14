@@ -3,6 +3,7 @@ package main
 import (
 	"bufio"
 	"os"
+	"strings"
 )
 
 type result struct {
@@ -21,4 +22,9 @@ func main() {
 	p := newParser()
 
 	in := bufio.NewScanner(os.Stdin)
+	for in.Scan() {
+		p.lines++
+
+		fields := strings.Fields(in.Text())
+	}
 }
