@@ -25,6 +25,9 @@ func main() {
 	local, _ = incrByStr(local, "2")
 	show(local)
 	show(incrBy(local, 2))
+
+	local = sanitize(incrByStr(local, "NOPE"))
+	show(local)
 }
 
 func show(n int) {
@@ -50,8 +53,9 @@ func incrByStr(n int, factor string) (int, error) {
 	return n, err
 }
 
-func senitize(n int, err error) int {
+func sanitize(n int, err error) int {
 	if err != nil {
 		return 0
 	}
+	return 0
 }
