@@ -26,7 +26,7 @@ func main() {
 	show(local)
 	show(incrBy(local, 2))
 
-	local = sanitize(incrByStr(local, "NOPE"))
+	local = sanitize(incrByStr(local, "2"))
 	show(local)
 }
 
@@ -57,5 +57,5 @@ func sanitize(n int, err error) int {
 	if err != nil {
 		return 0
 	}
-	return 0
+	return n
 }
