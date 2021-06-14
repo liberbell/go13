@@ -13,5 +13,5 @@ type parser struct {
 }
 
 func main() {
-	a
+	p := new
 }
