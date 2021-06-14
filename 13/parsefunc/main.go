@@ -5,6 +5,13 @@ type result struct {
 	visits int
 }
 
+type parser struct {
+	sum     map[string]result
+	domains []string
+	total   int
+	lines   int
+}
+
 func main() {
 	a
 }
