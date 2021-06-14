@@ -28,6 +28,9 @@ func main() {
 
 	local = sanitize(incrByStr(local, "2"))
 	show(local)
+
+	local = incrBy(local, 5)
+	show(local)
 }
 
 func show(n int) {
