@@ -23,4 +23,5 @@ func parse(p parser, line string) {
 		fmt.Printf("wrong input: %q (lines #%d)\n", fields[1], p.lines)
 		return
 	}
+	return result{domain: domain, visits: vists}
 }
