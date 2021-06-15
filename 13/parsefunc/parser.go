@@ -11,6 +11,8 @@ func newParser() parser {
 }
 
 func parse(p parser, line string) {
+	var parsed result
+
 	fields := strings.Fields(line)
 	if len(fields) != 2 {
 		fmt.Printf("wrong input: %v (line #%d)\n", fields, p.lines)
