@@ -12,7 +12,7 @@ func main() {
 	for in.Scan() {
 		p.lines++
 
-		parse(p, in.Text())
+		parsed := parse(p, in.Text())
 
 		if _, ok := p.sum[domain]; !ok {
 			p.domains = append(p.domains, domain)
