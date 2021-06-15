@@ -11,7 +11,10 @@ func newParser() parser {
 }
 
 func parse(p parser, line string) {
-	var parsed result
+	var (
+		parsed result
+		err    error
+	)
 
 	fields := strings.Fields(line)
 	if len(fields) != 2 {
@@ -20,6 +23,7 @@ func parse(p parser, line string) {
 	}
 
 	domain := fields[0]
+
 	visits, err := strconv.Atoi(fields[1])
 	if visits < 0 || err != nil {
 		fmt.Printf("wrong input: %q (lines #%d)\n", fields[1], p.lines)
