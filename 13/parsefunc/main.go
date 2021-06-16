@@ -31,5 +31,6 @@ func main() {
 
 	for _, domain := range p.domains {
 		parsed := p.sum[domain]
+		fmt.Printf("%-30s %10s\n", domain, parsed.visits)
 	}
 }
