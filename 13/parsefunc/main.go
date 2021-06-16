@@ -4,6 +4,7 @@ import (
 	"bufio"
 	"fmt"
 	"os"
+	"sort"
 )
 
 func main() {
@@ -22,4 +23,7 @@ func main() {
 		update(p, parsed)
 
 	}
+	sort.Strings(p.domains)
+
+	fmt.Printf("%-30s %10s\n", "DOMAIN", "VISITS")
 }
