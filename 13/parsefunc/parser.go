@@ -30,16 +30,16 @@ func parse(p parser, line string) {
 
 	fields := strings.Fields(line)
 	if len(fields) != 2 {
-		err = fmt.Printf("wrong input: %v (line #%d)\n", fields, p.lines)
-		return parsed
+		err = fmt.Printf("wrong input: %v (line #%d)", fields, p.lines)
+		return parsed, err
 	}
 
 	parsed.domain := fields[0]
 
 	parsed.visits, err := strconv.Atoi(fields[1])
 	if parsed.visits < 0 || err != nil {
-		err = fmt.Printf("wrong input: %q (lines #%d)\n", fields[1], p.lines)
-		return parsed
+		err = fmt.Printf("wrong input: %q (lines #%d)", fields[1], p.lines)
+		return parsed, err
 	}
 	return parsed
 }
