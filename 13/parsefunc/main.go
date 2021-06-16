@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"os"
 	"sort"
+	"strings"
 )
 
 func main() {
@@ -26,4 +27,9 @@ func main() {
 	sort.Strings(p.domains)
 
 	fmt.Printf("%-30s %10s\n", "DOMAIN", "VISITS")
+	fmt.Println(strings.Repeat("-", 45))
+
+	for _, domain := range p.domains {
+		parsed := p.sum[domain]
+	}
 }
