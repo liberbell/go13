@@ -2,6 +2,7 @@ package main
 
 import (
 	"bufio"
+	"fmt"
 	"os"
 )
 
@@ -14,7 +15,7 @@ func main() {
 
 		parsed, err := parse(p, in.Text())
 		if err != nil {
-			fmt.println(err)
+			fmt.Println(err)
 			return
 		}
 		domain, visits := parsed.domain, parsed.visits
