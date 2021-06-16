@@ -22,16 +22,12 @@ func newParser() parser {
 	return parser{sum: make(map[string]result)}
 }
 
-func parse(p parser, line string) {
-	var (
-		parsed result
-		err    error
-	)
+func parse(p parser, line string) (parsed result, err error) {
 
 	fields := strings.Fields(line)
 	if len(fields) != 2 {
 		err = fmt.Printf("wrong input: %v (line #%d)", fields, p.lines)
-		return parsed, err
+		return
 	}
 
 	parsed.domain := fields[0]
@@ -39,7 +35,7 @@ func parse(p parser, line string) {
 	parsed.visits, err := strconv.Atoi(fields[1])
 	if parsed.visits < 0 || err != nil {
 		err = fmt.Printf("wrong input: %q (lines #%d)", fields[1], p.lines)
-		return parsed, err
+		return
 	}
-	return parsed
+	return
 }
