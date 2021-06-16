@@ -13,6 +13,10 @@ func main() {
 		p.lines++
 
 		parsed, err := parse(p, in.Text())
+		if err != nil {
+			fmt.println(err)
+			return
+		}
 		domain, visits := parsed.domain, parsed.visits
 
 		if _, ok := p.sum[domain]; !ok {
