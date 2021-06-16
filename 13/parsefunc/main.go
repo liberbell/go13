@@ -33,4 +33,10 @@ func main() {
 		parsed := p.sum[domain]
 		fmt.Printf("%-30s %10s\n", domain, parsed.visits)
 	}
+
+	fmt.Printf("%-30s %10s\n", "TOTAL", p.total)
+
+	if err := in.Err(); err != nil {
+		fmt.Println("> Err:", err)
+	}
 }
