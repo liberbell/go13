@@ -12,7 +12,7 @@ func main() {
 	for in.Scan() {
 		p.lines++
 
-		parsed := parse(p, in.Text())
+		parsed, err := parse(p, in.Text())
 		domain, visits := parsed.domain, parsed.visits
 
 		if _, ok := p.sum[domain]; !ok {
