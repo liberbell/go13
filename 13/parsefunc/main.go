@@ -18,6 +18,9 @@ func main() {
 			fmt.Println(err)
 			return
 		}
+
+		update(p, parsed)
+
 		domain, visits := parsed.domain, parsed.visits
 
 		if _, ok := p.sum[domain]; !ok {
