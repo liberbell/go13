@@ -40,7 +40,7 @@ func parse(p parser, line string) (parsed result, err error) {
 	return
 }
 
-func update(p parser, parsed result) {
+func update(p parser, parsed result) parser {
 	domain, visits := parsed.domain, parsed.visits
 
 	if _, ok := p.sum[domain]; !ok {
@@ -53,4 +53,5 @@ func update(p parser, parsed result) {
 		visits: visits + p.sum[domain].visits,
 	}
 	fmt.Printf("main.parser after: \n\t%+v\n", p)
+	return p
 }
