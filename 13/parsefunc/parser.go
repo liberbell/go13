@@ -26,21 +26,21 @@ func parse(p parser, line string) (parsed result, err error) {
 
 	fields := strings.Fields(line)
 	if len(fields) != 2 {
-		err = fmt.Printf("wrong input: %v (line #%d)", fields, p.lines)
+		err = fmt.Errorf("wrong input: %v (line #%d)", fields, p.lines)
 		return
 	}
 
-	parsed.domain := fields[0]
+	parsed.domain = fields[0]
 
-	parsed.visits, err := strconv.Atoi(fields[1])
+	parsed.visits, err = strconv.Atoi(fields[1])
 	if parsed.visits < 0 || err != nil {
-		err = fmt.Printf("wrong input: %q (lines #%d)", fields[1], p.lines)
+		err = fmt.Errorf("wrong input: %q (lines #%d)", fields[1], p.lines)
 		return
 	}
 	return
 }
 
-func update(p parser, parsed result)  {
+func update(p parser, parsed result) {
 	domain, visits := parsed.domain, parsed.visits
 
 	if _, ok := p.sum[domain]; !ok {
