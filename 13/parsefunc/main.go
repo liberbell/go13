@@ -22,7 +22,7 @@ func main() {
 		}
 
 		fmt.Printf("main.parser before: \n\t%+v\n", p)
-		update(p, parsed)
+		p = update(p, parsed)
 		fmt.Printf("main.parser after: \n\t%+v\n", p)
 
 	}
@@ -33,10 +33,10 @@ func main() {
 
 	for _, domain := range p.domains {
 		parsed := p.sum[domain]
-		fmt.Printf("%-30s %10s\n", domain, parsed.visits)
+		fmt.Printf("%-30s %10d\n", domain, parsed.visits)
 	}
 
-	fmt.Printf("%-30s %10s\n", "TOTAL", p.total)
+	fmt.Printf("\n%-30s %10d\n", "TOTAL", p.total)
 
 	if err := in.Err(); err != nil {
 		fmt.Println("> Err:", err)
