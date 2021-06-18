@@ -27,4 +27,7 @@ func main() {
 	fmt.Printf("V      : %-13d addr: %13p\n", V, &V)
 
 	fmt.Println("\n......... change counter")
+
+	counter = 10
+	fmt.Printf("counter: %-13d addr: %13p\n", counter, &counter)
 }
