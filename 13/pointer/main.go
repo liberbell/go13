@@ -25,4 +25,6 @@ func main() {
 	fmt.Printf("counter: %-13d addr: %13p\n", counter, &counter)
 	fmt.Printf("P      : %-13p addr: %13p *P: %-13d\n", P, &P, *P)
 	fmt.Printf("V      : %-13d addr: %13p\n", V, &V)
+
+	fmt.Println("\n......... change counter")
 }
