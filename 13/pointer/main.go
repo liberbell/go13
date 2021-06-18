@@ -33,4 +33,9 @@ func main() {
 
 	fmt.Println("\n......... change counter in passVal()")
 	passVal(counter)
+	fmt.Printf("counter: %-13d addr: %13p\n", counter, &counter)
+}
+
+func passVal(n int) {
+	a
 }
