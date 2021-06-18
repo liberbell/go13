@@ -30,4 +30,7 @@ func main() {
 
 	counter = 10
 	fmt.Printf("counter: %-13d addr: %13p\n", counter, &counter)
+
+	fmt.Println("\n......... change counter in passVal()")
+	passVal(counter)
 }
