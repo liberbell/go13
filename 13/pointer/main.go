@@ -21,4 +21,5 @@ func main() {
 	// }
 
 	fmt.Printf("counter: %-13d addr: %13p\n", counter, &counter)
+	fmt.Printf("P      : %-13d addr: %13p *P: %-13d\n", P, &P, *P)
 }
