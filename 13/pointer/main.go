@@ -15,6 +15,6 @@ func main() {
 	}
 
 	if P == &counter {
-		fmt.Printf("P is equal to counter`s address %p\n", P)
+		fmt.Printf("P is equal to counter`s address %p == %p\n", P, &counter)
 	}
 }
