@@ -17,6 +17,7 @@ func arrays() {
 }
 
 func incr(nums [3]int) {
+	fmt.Printf("incr nums    : %p\n", &nums)
 	for i := range nums {
 		nums[i]++
 	}
