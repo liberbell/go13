@@ -12,3 +12,9 @@ func arrays() {
 	incr(nums)
 	fmt.Println(nums)
 }
+
+func incr(nums [3]int) {
+	for i := range nums {
+		nums[i]++
+	}
+}
