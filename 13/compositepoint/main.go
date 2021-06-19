@@ -12,6 +12,7 @@ func arrays() {
 
 	incr(nums)
 	fmt.Printf("array nums    : %p\n", &nums)
+	fmt.Println(nums)
 
 	incrByPtr(&nums)
 	fmt.Println(nums)
