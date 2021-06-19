@@ -29,6 +29,6 @@ func incr(nums [3]int) {
 func incrByPtr(nums *[3]int) {
 	fmt.Printf("incrByPtr nums    : %p\n", &nums)
 	for i := range nums {
-		nums[i]++
+		(*nums)[i]++
 	}
 }
