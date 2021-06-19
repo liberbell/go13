@@ -36,6 +36,10 @@ func main() {
 	fmt.Printf("counter: %-13d addr: %13p\n", counter, &counter)
 }
 
+func passPtrVal(pn *int) {
+	fmt.Printf("pn      : %-13d addr: %13p\n", pn, &pn)
+}
+
 func passVal(n int) {
 	n = 50
 	fmt.Printf("n      : %-13d addr: %13p\n", n, &n)
