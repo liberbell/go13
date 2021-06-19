@@ -9,7 +9,10 @@ func main() {
 
 func arrays() {
 	nums := [...]int{1, 2, 3}
+
 	incr(nums)
+	fmt.Printf("array nums    : %p\n", &nums)
+
 	fmt.Println(nums)
 }
 
