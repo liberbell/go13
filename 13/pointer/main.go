@@ -38,6 +38,7 @@ func main() {
 
 func passPtrVal(pn *int) {
 	fmt.Printf("pn      : %-13d addr: %13p *pn: %-13d\n", pn, &pn, *pn)
+	(*pn)++
 }
 
 func passVal(n int) {
