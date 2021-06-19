@@ -5,6 +5,9 @@ import "fmt"
 func main() {
 	fmt.Println("......ARRAYS")
 	arrays()
+
+	fmt.Println("......SLICES")
+	slices()
 }
 
 func arrays() {
