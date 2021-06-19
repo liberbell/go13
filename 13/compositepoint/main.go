@@ -13,11 +13,20 @@ func arrays() {
 	incr(nums)
 	fmt.Printf("array nums    : %p\n", &nums)
 
+	incrByPtr(&nums)
 	fmt.Println(nums)
+
 }
 
 func incr(nums [3]int) {
 	fmt.Printf("incr nums    : %p\n", &nums)
+	for i := range nums {
+		nums[i]++
+	}
+}
+
+func incrByPtr(nums *[3]int) {
+	fmt.Printf("incrByPtr nums    : %p\n", &nums)
 	for i := range nums {
 		nums[i]++
 	}
