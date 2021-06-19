@@ -37,5 +37,6 @@ func main() {
 }
 
 func passVal(n int) {
-	a
+	n = 50
+	fmt.Printf("n      : %-13d addr: %13p\n", n, &n)
 }
