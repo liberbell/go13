@@ -10,6 +10,10 @@ func main() {
 	slices()
 }
 
+func slices() {
+	dirs := []string("up", "down", "left", "right")
+}
+
 func arrays() {
 	nums := [...]int{1, 2, 3}
 
