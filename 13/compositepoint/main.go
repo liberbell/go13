@@ -28,7 +28,12 @@ func structs() {
 	myHouse := house{name: " My House", rooms: 5}
 
 	addRoom(myHouse)
-	fmt.Printf("%+v\n", myHouse)
+	// fmt.Printf("%+v\n", myHouse)
+	fmt.Printf("structs()    : %p %+v\n", &myHouse, myHouse)
+}
+
+func addRoom(h house) {
+	h.rooms++
 }
 
 func maps() {
