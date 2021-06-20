@@ -9,7 +9,7 @@ func main() {
 	fmt.Println("......ARRAYS")
 	arrays()
 
-	fmt.Println("......SLICES")
+	fmt.Println("\n......SLICES")
 	slices()
 }
 
@@ -31,7 +31,7 @@ func upPtr(list *[]string) {
 		lv[i] = strings.ToUpper(lv[i])
 	}
 	*list = append(*list, "HEISEN BUG")
-	fmt.Printf("upPtr list      : %p %q\n", &list, list)
+	fmt.Printf("upPtr list     : %p %q\n", &list, list)
 }
 
 func up(list []string) {
@@ -47,7 +47,7 @@ func arrays() {
 	nums := [...]int{1, 2, 3}
 
 	incr(nums)
-	fmt.Printf("array nums    : %p\n", &nums)
+	fmt.Printf("arrays nums    : %p\n", &nums)
 	fmt.Println(nums)
 
 	incrByPtr(&nums)
