@@ -18,12 +18,15 @@ func slices() {
 
 	up(dirs)
 	fmt.Println(dirs)
+	fmt.Printf("sl_list      : %p %q\n", &list, list)
 }
 
 func up(list []string) {
 	for i := range list {
 		list[i] = strings.ToUpper(list[i])
 	}
+
+	list = append(list, "HEISEN BUG")
 }
 
 func arrays() {
