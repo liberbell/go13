@@ -23,6 +23,11 @@ func maps() {
 	fmt.Println(confused)
 }
 
+func fix(m map[string]int) {
+	m["one"] = 1
+	m["two"] = 2
+}
+
 func slices() {
 	dirs := []string{"up", "down", "left", "right"}
 
