@@ -26,6 +26,7 @@ func maps() {
 func fix(m map[string]int) {
 	m["one"] = 1
 	m["two"] = 2
+	m["three"] = 3
 }
 
 func slices() {
