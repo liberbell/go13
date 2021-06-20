@@ -17,7 +17,7 @@ func slices() {
 	dirs := []string{"up", "down", "left", "right"}
 
 	up(dirs)
-	fmt.Println(dirs)
+	// fmt.Println(dirs)
 	fmt.Printf("slices list    : %p %q\n", &dirs, dirs)
 }
 
@@ -27,7 +27,7 @@ func up(list []string) {
 	}
 
 	list = append(list, "HEISEN BUG")
-	fmt.Printf("up_list      : %p %q\n", &list, list)
+	fmt.Printf("up_list        : %p %q\n", &list, list)
 }
 
 func arrays() {
