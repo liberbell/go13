@@ -27,7 +27,7 @@ func up(list []string) {
 	}
 
 	list = append(list, "HEISEN BUG")
-	fmt.Printf("sl_list      : %p %q\n", &list, list)
+	fmt.Printf("up_list      : %p %q\n", &list, list)
 }
 
 func arrays() {
