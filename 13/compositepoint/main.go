@@ -12,6 +12,8 @@ func main() {
 
 func slices() {
 	dirs := []string{"up", "down", "left", "right"}
+
+	up()
 }
 
 func arrays() {
