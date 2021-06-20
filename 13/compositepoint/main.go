@@ -19,6 +19,8 @@ func main() {
 
 func maps() {
 	confused := map[string]int{"one": 2, "two": 1}
+	fix(confused)
+	fmt.Println(confused)
 }
 
 func slices() {
