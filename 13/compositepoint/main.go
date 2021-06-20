@@ -15,6 +15,13 @@ func main() {
 	fmt.Println("......MAPS")
 	maps()
 
+	fmt.Println("......STRUCTS")
+	structs()
+}
+
+type house struct {
+	name  string
+	rooms int
 }
 
 func maps() {
