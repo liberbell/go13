@@ -34,6 +34,7 @@ func structs() {
 
 func addRoom(h house) {
 	h.rooms++
+	fmt.Printf("addRoom()   : %p %+v\n", &h, h)
 }
 
 func maps() {
