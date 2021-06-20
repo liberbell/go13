@@ -26,6 +26,8 @@ type house struct {
 
 func structs() {
 	myHouse := house{name: " My House", rooms: 5}
+
+	addRoom(myHouse)
 }
 
 func maps() {
