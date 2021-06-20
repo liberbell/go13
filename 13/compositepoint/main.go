@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func main() {
 	fmt.Println("......ARRAYS")
@@ -13,7 +16,14 @@ func main() {
 func slices() {
 	dirs := []string{"up", "down", "left", "right"}
 
-	up()
+	up(dirs)
+	fmt.Println(dirs)
+}
+
+func up(list []string) {
+	for i := range list {
+		list[i] = strings.ToUpper(list[i])
+	}
 }
 
 func arrays() {
