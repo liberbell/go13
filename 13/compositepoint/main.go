@@ -9,8 +9,16 @@ func main() {
 	fmt.Println("......ARRAYS")
 	arrays()
 
-	fmt.Println("\n......SLICES")
+	fmt.Println("......SLICES")
 	slices()
+
+	fmt.Println("......MAPS")
+	maps()
+
+}
+
+func maps() {
+	confused := map[string]int{"one": 2, "two": 1}
 }
 
 func slices() {
