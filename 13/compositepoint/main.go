@@ -19,6 +19,19 @@ func slices() {
 	up(dirs)
 	// fmt.Println(dirs)
 	fmt.Printf("slices list    : %p %q\n", &dirs, dirs)
+
+	upPtr(&dirs)
+	fmt.Printf("slices list    : %p %q\n", &dirs, dirs)
+}
+
+func upPtr(list *[]string) {
+	lv := *list
+
+	for i := range lv {
+		lv[i] = strings.ToUpper(lv[i])
+	}
+	*list = append(*list, "HEISEN BUG")
+	fmt.Printf("upPtr list      : %p %q\n", &list, list)
 }
 
 func up(list []string) {
