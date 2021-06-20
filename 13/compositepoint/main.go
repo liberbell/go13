@@ -24,6 +24,10 @@ type house struct {
 	rooms int
 }
 
+func structs() {
+	myHouse := house{name: " My House", rooms: 5}
+}
+
 func maps() {
 	confused := map[string]int{"one": 2, "two": 1}
 	fix(confused)
