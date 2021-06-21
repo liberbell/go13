@@ -41,6 +41,7 @@ func parse(p parser, line string) (parsed result, err error) {
 }
 
 func update(p *parser, parsed result) {
+	fmt.Printf("update.p     : %p - %p\n\n", p, &p)
 	domain, visits := parsed.domain, parsed.visits
 
 	if _, ok := p.sum[domain]; !ok {
