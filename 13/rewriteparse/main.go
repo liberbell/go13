@@ -23,6 +23,8 @@ func main() {
 
 		update(&p, parsed)
 	}
+	summarize(p)
+	
 	if err := in.Err(); err != nil {
 		fmt.Println("> Err:", err)
 }
