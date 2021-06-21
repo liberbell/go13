@@ -21,10 +21,7 @@ func main() {
 			return
 		}
 
-		fmt.Printf("main.parser before: \n\t%+v\n", p)
 		p = update(p, parsed)
-		fmt.Printf("main.parser after: \n\t%+v\n", p)
-
 	}
 	sort.Strings(p.domains)
 
