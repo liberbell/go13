@@ -21,7 +21,7 @@ func main() {
 			return
 		}
 
-		p = update(p, parsed)
+		update(&p, parsed)
 	}
 	sort.Strings(p.domains)
 
