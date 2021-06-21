@@ -23,6 +23,9 @@ func main() {
 
 		update(&p, parsed)
 	}
+}
+
+func summarize(p parse) {
 	sort.Strings(p.domains)
 
 	fmt.Printf("%-30s %10s\n", "DOMAIN", "VISITS")
