@@ -14,7 +14,6 @@ func main() {
 
 	in := bufio.NewScanner(os.Stdin)
 	for in.Scan() {
-		p.lines++
 
 		parsed, err := parse(p, in.Text())
 		if err != nil {
