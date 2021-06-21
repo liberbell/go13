@@ -30,16 +30,19 @@ func structs() {
 	addRoom(myHouse)
 	// fmt.Printf("%+v\n", myHouse)
 	fmt.Printf("structs()    : %p %+v\n", &myHouse, myHouse)
+
+	addRoomPtr(&myHouse)
+	fmt.Printf("structs()    : %p %+v\n", &myHouse, myHouse)
 }
 
 func addRoomPtr(h *house) {
 	h.rooms++
-	fmt.Printf("addRoom()    : %p %+v\n", &h, h)
+	fmt.Printf("addRoomPtr()    : %p %+v\n", &h, h)
 }
 
-func addRoom(h *house) {
+func addRoom(h house) {
 	h.rooms++
-	fmt.Printf("addRoom()    : %p %+v\n", h, h)
+	fmt.Printf("addRoom()    : %p %+v\n", &h, h)
 }
 
 func maps() {
