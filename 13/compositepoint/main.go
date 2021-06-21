@@ -105,6 +105,7 @@ func incr(nums [3]int) {
 	fmt.Printf("incr nums    : %p\n", &nums)
 	for i := range nums {
 		nums[i]++
+		fmt.Printf("incr.nums[%d] :%p\n", i, &nums[i])
 	}
 }
 
