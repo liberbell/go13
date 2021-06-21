@@ -52,6 +52,6 @@ func update(p parser, parsed result) parser {
 		domain: domain,
 		visits: visits + p.sum[domain].visits,
 	}
-	fmt.Printf("main.parser after: \n\t%+v\n", p)
+
 	return p
 }
