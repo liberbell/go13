@@ -10,11 +10,9 @@ import (
 
 func main() {
 	p := newParser()
-	fmt.Printf("&main.p     : %p\n\n", &p)
 
 	in := bufio.NewScanner(os.Stdin)
 	for in.Scan() {
-
 		parsed, err := parse(&p, in.Text())
 		if err != nil {
 			fmt.Println(err)
