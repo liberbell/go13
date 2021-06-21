@@ -52,6 +52,6 @@ func update(p *parser, parsed result) {
 
 	p.sum[domain] = result{
 		domain: domain,
-		visits: visits + p.sum[domain].visits,
+		// visits: visits + p.sum[domain].visits,
 	}
 }
