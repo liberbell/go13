@@ -39,7 +39,7 @@ func addRoomPtr(h *house) {
 	h.rooms++
 	fmt.Printf("addRoomPtr() : %p %+v\n", &h, h)
 	fmt.Printf("&myHouse.name: %p\n", &h.name)
-	fmt.Printf("addRoomPtr() : %p %+v\n", &h, h)
+	fmt.Printf("&myHouse.room: %p\n", &h.rooms)
 }
 
 func addRoom(h house) {
