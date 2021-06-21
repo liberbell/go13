@@ -13,12 +13,7 @@ func main() {
 
 	in := bufio.NewScanner(os.Stdin)
 	for in.Scan() {
-		parsed, err := parse(&p, in.Text())
-		if err != nil {
-			fmt.Println(err)
-			return
-		}
-
+		parsed, _ := parse(&p, in.Text())
 		update(&p, parsed)
 	}
 	summarize(p)
