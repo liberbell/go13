@@ -37,7 +37,7 @@ func addRoomPtr(h *house) {
 	fmt.Printf("addRoom()    : %p %+v\n", &h, h)
 }
 
-func addRoom(h house) {
+func addRoom(h *house) {
 	h.rooms++
 	fmt.Printf("addRoom()    : %p %+v\n", h, h)
 }
