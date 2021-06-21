@@ -40,7 +40,7 @@ func parse(p parser, line string) (parsed result, err error) {
 	return
 }
 
-func update(p parser, parsed result) parser {
+func update(p parser, parsed result) {
 	domain, visits := parsed.domain, parsed.visits
 
 	if _, ok := p.sum[domain]; !ok {
@@ -52,6 +52,4 @@ func update(p parser, parsed result) parser {
 		domain: domain,
 		visits: visits + p.sum[domain].visits,
 	}
-
-	return p
 }
