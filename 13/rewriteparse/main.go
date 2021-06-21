@@ -23,6 +23,8 @@ func main() {
 
 		update(&p, parsed)
 	}
+	if err := in.Err(); err != nil {
+		fmt.Println("> Err:", err)
 }
 
 func summarize(p parse) {
@@ -37,8 +39,5 @@ func summarize(p parse) {
 	}
 
 	fmt.Printf("\n%-30s %10d\n", "TOTAL", p.total)
-
-	if err := in.Err(); err != nil {
-		fmt.Println("> Err:", err)
 	}
 }
