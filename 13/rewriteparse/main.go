@@ -24,12 +24,12 @@ func main() {
 		update(&p, parsed)
 	}
 	summarize(p)
-	
+
 	if err := in.Err(); err != nil {
 		fmt.Println("> Err:", err)
 }
 
-func summarize(p parse) {
+func summarize(p parser) {
 	sort.Strings(p.domains)
 
 	fmt.Printf("%-30s %10s\n", "DOMAIN", "VISITS")
