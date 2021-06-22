@@ -17,13 +17,21 @@ func main() {
 		update(&p, parsed)
 	}
 	summarize(p)
+}
 
+func dumpErr(errs []error) {
 	if p.lerr != nil {
 		fmt.Println("> Err:", p.lerr)
 	}
 
 	if err := in.Err(); err != nil {
 		fmt.Println("> Err:", err)
+	}
+
+	for _, err := range errs {
+		if err != nil {
+			fmt.Println("> Err:", err)
+		}
 	}
 }
 
