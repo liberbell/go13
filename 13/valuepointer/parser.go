@@ -24,6 +24,10 @@ func newParser() parser {
 }
 
 func parse(p *parser, line string) (parsed result) {
+	if p.lerr != nil {
+		return
+	}
+
 	p.lines++
 
 	fields := strings.Fields(line)
