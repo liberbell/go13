@@ -18,6 +18,10 @@ func main() {
 	}
 	summarize(p)
 
+	if p.lerr != nil {
+		fmt.Println("> Err:", p.lerr)
+	}
+
 	if err := in.Err(); err != nil {
 		fmt.Println("> Err:", err)
 	}
