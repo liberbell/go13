@@ -23,7 +23,7 @@ func newParser() parser {
 	return parser{sum: make(map[string]result)}
 }
 
-func parse(p *parser, line string) (parsed result, err error) {
+func parse(p *parser, line string) (parsed result) {
 	p.lines++
 
 	fields := strings.Fields(line)
