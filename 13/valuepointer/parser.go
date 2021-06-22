@@ -38,7 +38,7 @@ func parse(p *parser, line string) (parsed result) {
 
 	parsed.visits, err = strconv.Atoi(fields[1])
 	if parsed.visits < 0 || err != nil {
-		err = fmt.Errorf("wrong input: %q (lines #%d)", fields[1], p.lines)
+		p.lerr = fmt.Errorf("wrong input: %q (lines #%d)", fields[1], p.lines)
 	}
 	return
 }
