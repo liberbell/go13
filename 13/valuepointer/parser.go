@@ -16,6 +16,7 @@ type parser struct {
 	domains []string
 	total   int
 	lines   int
+	lerr    error
 }
 
 func newParser() parser {
