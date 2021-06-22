@@ -28,9 +28,11 @@ func parse(p *parser, line string) (parsed result, err error) {
 
 	fields := strings.Fields(line)
 	if len(fields) != 2 {
-		err = fmt.Errorf("wrong input: %v (line #%d)", fields, p.lines)
+		p.lerr = fmt.Errorf("wrong input: %v (line #%d)", fields, p.lines)
 		return
 	}
+
+	var err error
 
 	parsed.domain = fields[0]
 
