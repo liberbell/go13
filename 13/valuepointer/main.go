@@ -17,7 +17,7 @@ func main() {
 		update(&p, parsed)
 	}
 	summarize(p)
-	dumpErr([]error{in.Err(), p.lerr})
+	dumpErr([]error{in.Err(), err(p)})
 }
 
 func dumpErr(errs []error) {
