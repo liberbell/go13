@@ -36,7 +36,7 @@ func dumpErr(errs []error) {
 	}
 }
 
-func summarize(p parser) {
+func summarize(p *parser) {
 	sort.Strings(p.domains)
 
 	fmt.Printf("%-30s %10s\n", "DOMAIN", "VISITS")
