@@ -23,7 +23,7 @@ func newParser() *parser {
 	return &parser{sum: make(map[string]result)}
 }
 
-func parse(p *parser, line string) (parsed result) {
+func parse(p *parser, line string) (r result) {
 	if p.lerr != nil {
 		return
 	}
@@ -47,7 +47,7 @@ func parse(p *parser, line string) (parsed result) {
 	return
 }
 
-func update(p *parser, parsed result) {
+func update(p *parser, r result) {
 	fmt.Printf("update.p     : %p - %p\n\n", p, &p)
 	domain, visits := parsed.domain, parsed.visits
 
