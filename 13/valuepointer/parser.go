@@ -62,6 +62,6 @@ func update(p *parser, r result) {
 	}
 }
 
-func err(p parser) error {
+func err(p *parser) error {
 	return p.lerr
 }
