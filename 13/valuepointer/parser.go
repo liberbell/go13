@@ -49,16 +49,16 @@ func parse(p *parser, line string) (r result) {
 
 func update(p *parser, r result) {
 	fmt.Printf("update.p     : %p - %p\n\n", p, &p)
-	domain, visits := r.domain, r.visits
+	// domain, visits := r.domain, r.visits
 
-	if _, ok := p.sum[domain]; !ok {
-		p.domains = append(p.domains, domain)
+	if _, ok := p.sum[r.domain]; !ok {
+		p.domains = append(p.domains, r.domain)
 	}
-	p.total += visits
+	p.total += r.visits
 
-	p.sum[domain] = result{
-		domain: domain,
-		// visits: visits + p.sum[domain].visits,
+	p.sum[r.domain] = result{
+		domain: r.domain,
+		visits: r.visits + p.sum[r.domain].visits,
 	}
 }
 
