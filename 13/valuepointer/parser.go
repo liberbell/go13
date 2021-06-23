@@ -61,3 +61,7 @@ func update(p *parser, parsed result) {
 		// visits: visits + p.sum[domain].visits,
 	}
 }
+
+func err(p parser) error {
+	return p.lerr
+}
