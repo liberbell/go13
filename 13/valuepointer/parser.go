@@ -19,8 +19,8 @@ type parser struct {
 	lerr    error
 }
 
-func newParser() parser {
-	return parser{sum: make(map[string]result)}
+func newParser() *parser {
+	return &parser{sum: make(map[string]result)}
 }
 
 func parse(p *parser, line string) (parsed result) {
