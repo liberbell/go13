@@ -43,8 +43,8 @@ func summarize(p *parser) {
 	fmt.Println(strings.Repeat("-", 45))
 
 	for _, domain := range p.domains {
-		parsed := p.sum[domain]
-		fmt.Printf("%-30s %10d\n", domain, parsed.visits)
+		// parsed := p.sum[domain]
+		fmt.Printf("%-30s %10d\n", domain, p.sum[domain].visits)
 	}
 
 	fmt.Printf("\n%-30s %10d\n", "TOTAL", p.total)
