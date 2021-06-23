@@ -38,10 +38,10 @@ func parse(p *parser, line string) (r result) {
 
 	var err error
 
-	parsed.domain = fields[0]
+	r.domain = fields[0]
 
-	parsed.visits, err = strconv.Atoi(fields[1])
-	if parsed.visits < 0 || err != nil {
+	r.visits, err = strconv.Atoi(fields[1])
+	if r.visits < 0 || err != nil {
 		p.lerr = fmt.Errorf("wrong input: %q (lines #%d)", fields[1], p.lines)
 	}
 	return
@@ -49,7 +49,7 @@ func parse(p *parser, line string) (r result) {
 
 func update(p *parser, r result) {
 	fmt.Printf("update.p     : %p - %p\n\n", p, &p)
-	domain, visits := parsed.domain, parsed.visits
+	domain, visits := r.domain, r.visits
 
 	if _, ok := p.sum[domain]; !ok {
 		p.domains = append(p.domains, domain)
