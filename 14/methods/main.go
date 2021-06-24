@@ -6,11 +6,11 @@ func main() {
 		price: 10,
 	}
 
-	game1 := game{
-		title: "game title",
+	minecraft := game{
+		title: "minecraft",
 		price: 20,
 	}
 
 	printBook(modydick)
-	printGame(game1)
+	printGame(minecraft)
 }
