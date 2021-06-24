@@ -11,6 +11,12 @@ func main() {
 		price: 20,
 	}
 
+	tetris := game{
+		title: "tetris",
+		price: 5,
+	}
+
 	modydick.printBook()
 	minecraft.printGame()
+	tetris.printGame()
 }
