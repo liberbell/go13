@@ -7,6 +7,6 @@ type game struct {
 	price float64
 }
 
-func printBook(g game) {
+func printGame(g game) {
 	fmt.Printf("%-15s: $%.2f\n", g.title, g.price)
 }
