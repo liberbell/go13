@@ -6,5 +6,11 @@ func main() {
 		price: 10,
 	}
 
+	minecraft := game{
+		title: "minecraft",
+		price: 20,
+	}
+
 	printBook(modybook)
+	printGame(minecraft)
 }
