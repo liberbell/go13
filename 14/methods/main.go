@@ -12,5 +12,5 @@ func main() {
 	}
 
 	modydick.printBook()
-	printGame(minecraft)
+	minecraft.printGame()
 }
