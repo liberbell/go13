@@ -1,7 +1,7 @@
 package main
 
-func main()  {
-	modydick := {
+func main() {
+	modydick := book{
 		title: "mody dick",
 		price: 10,
 	}
