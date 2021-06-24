@@ -11,6 +11,6 @@ func main() {
 		price: 20,
 	}
 
-	printBook(modydick)
+	modydick.printBook()
 	printGame(minecraft)
 }
