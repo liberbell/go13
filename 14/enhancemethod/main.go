@@ -5,4 +5,6 @@ func main() {
 		title: "mody book",
 		price: 10,
 	}
+
+	printBook(modybook)
 }
