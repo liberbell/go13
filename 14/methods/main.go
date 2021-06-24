@@ -1,7 +1,7 @@
 package main
 
 func main()  {
-	bodydick := {
+	modydick := {
 		title: "mody dick",
 		price: 10,
 	}
