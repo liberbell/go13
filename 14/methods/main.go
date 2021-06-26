@@ -9,8 +9,5 @@ func main() {
 
 	game.print(minecraft)
 	game.print(tetris)
-
-	modydick.print()
-	minecraft.print()
-	tetris.print()
+	book.print(modydick)
 }
