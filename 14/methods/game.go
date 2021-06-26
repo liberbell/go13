@@ -7,7 +7,7 @@ type game struct {
 	price float64
 }
 
-func (g game) print() {
+func (g *game) print() {
 	fmt.Printf("%-15s: $%.2f\n", g.title, g.price)
 }
 
