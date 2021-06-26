@@ -13,3 +13,5 @@ func main() {
 	minecraft.print()
 	tetris.print()
 }
+
+var h huge
