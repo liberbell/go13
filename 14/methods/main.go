@@ -16,7 +16,7 @@ func main() {
 		price: 5,
 	}
 
-	modydick.printBook()
-	minecraft.printGame()
-	tetris.printGame()
+	modydick.print()
+	minecraft.print()
+	tetris.print()
 }
