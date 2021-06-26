@@ -7,6 +7,9 @@ func main() {
 		tetris    = game{title: "tetris", price: 5}
 	)
 
+	game.print(minecraft)
+	game.print(tetris)
+
 	modydick.print()
 	minecraft.print()
 	tetris.print()
