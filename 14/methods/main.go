@@ -10,10 +10,6 @@ func main() {
 	var items []*game
 	items = append(items, &minecraft, &tetris)
 
-	for _, it := range items {
-		it.print()
-	}
-
 	// minecraft.discount(.5)
 
 	// modydick.print()
