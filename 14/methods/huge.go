@@ -6,6 +6,6 @@ type huge struct {
 	games [10000000]game
 }
 
-func (h huge) addr() {
+func (h *huge) addr() {
 	fmt.Printf("%p\n", &h)
 }
