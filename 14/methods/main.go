@@ -2,13 +2,13 @@ package main
 
 func main() {
 	var (
-		modydick  = book{title: "mody dick", price: 10}
+		// modydick  = book{title: "mody dick", price: 10}
 		minecraft = game{title: "minecraft", price: 20}
 		tetris    = game{title: "tetris", price: 5}
 	)
 
 	var items []*game
-	items = append(items, &minecraft, &tetris, &modydick)
+	items = append(items, &minecraft, &tetris)
 
 	minecraft.discount(.5)
 
