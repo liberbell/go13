@@ -10,11 +10,15 @@ func main() {
 	var items []*game
 	items = append(items, &minecraft, &tetris)
 
-	minecraft.discount(.5)
+	for _, it := range items {
+		it.print()
+	}
 
-	modydick.print()
-	minecraft.print()
-	tetris.print()
+	// minecraft.discount(.5)
+
+	// modydick.print()
+	// minecraft.print()
+	// tetris.print()
 
 	// var h huge
 
