@@ -11,6 +11,7 @@ func main() {
 	items = append(items, &minecraft, &tetris)
 
 	my := list(items)
+	my = nil
 	my.print()
 
 	// minecraft.discount(.5)
