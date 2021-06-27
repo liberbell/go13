@@ -10,6 +10,8 @@ func main() {
 	var items []*game
 	items = append(items, &minecraft, &tetris)
 
+	my := list(items)
+
 	// minecraft.discount(.5)
 
 	// modydick.print()
