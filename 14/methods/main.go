@@ -7,12 +7,14 @@ func main() {
 		tetris    = game{title: "tetris", price: 5}
 	)
 
-	var items []*game
-	items = append(items, &minecraft, &tetris)
+	var store list
 
-	my := list(items)
-	// my = nil
-	my.print()
+	// var items []*game
+	// items = append(items, &minecraft, &tetris)
+
+	// my := list(items)
+	// // my = nil
+	// my.print()
 
 	// minecraft.discount(.5)
 
