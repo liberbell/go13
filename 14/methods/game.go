@@ -8,9 +8,9 @@ type game struct {
 }
 
 func (g *game) print() {
-	fmt.Printf("%-15s: $%s\n", g.title, g.price.string())
+	fmt.Printf("%-15s: %s\n", g.title, g.price.string())
 }
 
 func (g *game) discount(ratio float64) {
-	g.price *= (1 - ratio)
+	g.price *= money(1 - ratio)
 }
