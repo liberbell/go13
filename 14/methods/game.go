@@ -4,7 +4,7 @@ import "fmt"
 
 type game struct {
 	title string
-	price float64
+	price money
 }
 
 func (g *game) print() {
