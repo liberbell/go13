@@ -15,7 +15,7 @@ func (l list) print() {
 	}
 
 	for _, it := range l {
-		fmt.Printf("(%-10T) --> ", it)
+		// fmt.Printf("(%-10T) --> ", it)
 		it.print()
 	}
 }
