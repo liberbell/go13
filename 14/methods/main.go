@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func main() {
 	var (
 		modydick  = book{title: "mody dick", price: 10}
@@ -11,6 +13,9 @@ func main() {
 	var store list
 	store = append(store, &minecraft, &tetris, modydick, rubik)
 	store.print()
+
+	fmt.Println(store[0] == &minecraft)
+	fmt.Println(store[3] == rubik)
 
 	// var items []*game
 	// items = append(items, &minecraft, &tetris)
