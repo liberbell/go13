@@ -2,7 +2,11 @@ package main
 
 import "fmt"
 
-type list []*game
+type printer interface {
+	print()
+}
+
+type list []printer
 
 func (l list) print() {
 	if len(l) == 0 {
