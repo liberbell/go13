@@ -8,5 +8,5 @@ type puzzle struct {
 }
 
 func (p puzzle) print() {
-	fmt.Sprintf("%-15s: %s\n", p.title, p.price.string())
+	fmt.Printf("%-15s: %s\n", p.title, p.price.string())
 }
