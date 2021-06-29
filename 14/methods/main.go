@@ -1,9 +1,5 @@
 package main
 
-import (
-	"fmt"
-)
-
 func main() {
 	var (
 		modydick  = book{title: "mody dick", price: 10}
@@ -17,7 +13,8 @@ func main() {
 	// store.print()
 
 	var p printer
-	fmt.Println(p)
+	p = &tetris
+	p.print()
 
 	// fmt.Println(store[0] == &minecraft)
 	// fmt.Println(store[3] == rubik)
