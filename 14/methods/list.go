@@ -19,3 +19,10 @@ func (l list) print() {
 		it.print()
 	}
 }
+
+func (l list) discount(ratio float64) {
+	for _, it := range l {
+		it.discount(ratio)
+	}
+
+}
