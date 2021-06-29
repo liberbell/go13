@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 	var (
@@ -12,10 +14,13 @@ func main() {
 
 	var store list
 	store = append(store, &minecraft, &tetris, modydick, rubik)
-	store.print()
+	// store.print()
 
-	fmt.Println(store[0] == &minecraft)
-	fmt.Println(store[3] == rubik)
+	var p printer
+	fmt.Println(p)
+
+	// fmt.Println(store[0] == &minecraft)
+	// fmt.Println(store[3] == rubik)
 
 	// var items []*game
 	// items = append(items, &minecraft, &tetris)
