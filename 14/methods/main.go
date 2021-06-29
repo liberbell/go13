@@ -10,16 +10,18 @@ func main() {
 
 	var store list
 	store = append(store, &minecraft, &tetris, modydick, rubik)
-	// store.print()
+	store.discount(.5)
 
-	var p printer
+	store.print()
 
-	p = modydick
-	p = rubik
-	p = &minecraft
-	p = &tetris
-	tetris.discount(.5)
-	p.print()
+	// var p printer
+
+	// p = modydick
+	// p = rubik
+	// p = &minecraft
+	// p = &tetris
+	// tetris.discount(.5)
+	// p.print()
 
 	// fmt.Println(store[0] == &minecraft)
 	// fmt.Println(store[3] == rubik)
