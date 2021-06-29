@@ -13,7 +13,12 @@ func main() {
 	// store.print()
 
 	var p printer
+
+	p = modydick
+	p = rubik
+	p = &minecraft
 	p = &tetris
+	tetris.discount(.5)
 	p.print()
 
 	// fmt.Println(store[0] == &minecraft)
