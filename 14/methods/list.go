@@ -26,7 +26,7 @@ func (l list) discount(ratio float64) {
 	}
 
 	for _, it := range l {
-		g, ok := it.(discount)
+		g, ok := it.(discounter)
 		if !ok {
 			continue
 		}
