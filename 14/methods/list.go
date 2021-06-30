@@ -21,8 +21,12 @@ func (l list) print() {
 }
 
 func (l list) discount(ratio float64) {
+	type discounter interface {
+		discount(float64)
+	}
+
 	for _, it := range l {
-		g, ok := it.(interface{ discount(float64) })
+		g, ok := it.(discount)
 		if !ok {
 			continue
 		}
