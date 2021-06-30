@@ -6,7 +6,7 @@ func main() {
 		minecraft = game{title: "minecraft", price: 20}
 		tetris    = game{title: "tetris", price: 5}
 		rubik     = puzzle{title: "rubik`s cube", price: 5}
-		// yoda      = toy{title: "yoda", price: 150}
+		yoda      = toy{title: "yoda", price: 150}
 	)
 
 	var store list
