@@ -22,7 +22,8 @@ func (l list) print() {
 
 func (l list) discount(ratio float64) {
 	for _, it := range l {
-		it.discount(ratio)
+		g := it.(*game)
+		g.discount(ratio)
 	}
 
 }
