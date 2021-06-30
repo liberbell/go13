@@ -22,7 +22,7 @@ func (l list) print() {
 
 func (l list) discount(ratio float64) {
 	for _, it := range l {
-		g, ok := it.(interface{ discount(ratio) })
+		g, ok := it.(interface{ discount(float64) })
 		if !ok {
 			continue
 		}
