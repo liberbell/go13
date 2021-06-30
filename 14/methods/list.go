@@ -22,7 +22,10 @@ func (l list) print() {
 
 func (l list) discount(ratio float64) {
 	for _, it := range l {
-		g := it.(*game)
+		g, isGame := it.(*game)
+		if !isGame {
+			continue
+		}
 		g.discount(ratio)
 	}
 
