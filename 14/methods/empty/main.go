@@ -9,5 +9,7 @@ func main() {
 	any = map[int]bool{1: true, 2: false}
 	any = "hello"
 	any = 3
+	// any = any * 2
+	any = any.(int) * 2
 	fmt.Println(any)
 }
