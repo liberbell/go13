@@ -1,8 +1,10 @@
 package main
 
+import "fmt"
+
 func main() {
 	var any interface{}
 
-	var = []{1, 2, 3}
+	any = []int{1, 2, 3}
 	fmt.Println(var)
 }
