@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func main() {
 	nums := []int{1, 2, 3}
 
@@ -14,4 +16,5 @@ func main() {
 	for _, n := range nums {
 		many = append(many, n)
 	}
+	fmt.Println(many)
 }
