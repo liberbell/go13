@@ -3,8 +3,9 @@ package main
 import "fmt"
 
 type book struct {
-	title string
-	price money
+	title     string
+	price     money
+	published interface{}
 }
 
 func (b book) print() {
