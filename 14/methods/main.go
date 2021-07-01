@@ -1,16 +1,14 @@
 package main
 
 func main() {
-	var (
-		modydick  = book{title: "mody dick", price: 10}
-		minecraft = game{title: "minecraft", price: 20}
-		tetris    = game{title: "tetris", price: 5}
-		rubik     = puzzle{title: "rubik`s cube", price: 5}
-		yoda      = toy{title: "yoda", price: 150}
-	)
+	store := list{
+		book{title: "mody dick", price: 10},
+		game{title: "minecraft", price: 20},
+		&game{title: "tetris", price: 5},
+		&puzzle{title: "rubik`s cube", price: 5},
+		&toy{title: "yoda", price: 150},
+	}
 
-	var store list
-	store = append(store, &minecraft, &tetris, modydick, rubik, &yoda)
 	store.discount(.5)
 
 	store.print()
