@@ -6,5 +6,5 @@ func main() {
 	var any interface{}
 
 	any = []int{1, 2, 3}
-	fmt.Println(var)
+	fmt.Println(any)
 }
