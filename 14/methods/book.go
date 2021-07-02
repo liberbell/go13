@@ -14,5 +14,8 @@ func (b book) print() {
 }
 
 func format(v interface{}) string {
-	return "unknown"
+	if v == nil {
+		return "unknown"
+	}
+	return ""
 }
