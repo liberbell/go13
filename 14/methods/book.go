@@ -18,22 +18,14 @@ func (b book) print() {
 }
 
 func format(v interface{}) string {
+	var t int
 	switch v.(type) {
 	case int:
-		fmt.Println("int     ->")
+		t = v
 	case string:
-		fmt.Println("string  ->")
+		t, _ = strconv.Atoi(v)
 	default:
 		return "unknown"
-	}
-
-	if v == nil {
-		return "unknown"
-	}
-	var t int
-
-	if v, ok := v.(int); ok {
-		t = v
 	}
 
 	if v, ok := v.(string); ok {
