@@ -20,7 +20,11 @@ func (b book) print() {
 func format(v interface{}) string {
 	switch v.(type) {
 	case int:
+		fmt.Println("int     ->")
 	case string:
+		fmt.Println("string  ->")
+	default:
+		fmt.Println("nil     ->")
 	}
 
 	if v == nil {
