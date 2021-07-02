@@ -26,6 +26,6 @@ func format(v interface{}) string {
 		t = v
 	}
 
-	u := time.Unix(t, 0)
-	return ""
+	u := time.Unix(int64(t), 0)
+	return u.String()
 }
