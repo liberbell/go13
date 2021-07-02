@@ -29,6 +29,8 @@ func format(v interface{}) string {
 		return "unknown"
 	}
 
+	const layout = "1993, Oct"
+
 	u := time.Unix(int64(t), 0)
 	return u.String()
 }
