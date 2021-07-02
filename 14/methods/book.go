@@ -19,7 +19,8 @@ func (b book) print() {
 
 func format(v interface{}) string {
 	switch v.(type) {
-
+	case int:
+	case string:
 	}
 
 	if v == nil {
