@@ -9,6 +9,7 @@ type book struct {
 }
 
 func (b book) print() {
+	p := format(b.published)
 	fmt.Printf("%-15s: %s - (%v)\n", b.title, b.price.string(), p)
 }
 
