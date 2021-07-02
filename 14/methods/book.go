@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"strconv"
 	"time"
 )
 
@@ -24,6 +25,10 @@ func format(v interface{}) string {
 
 	if v, ok := v.(int); ok {
 		t = v
+	}
+
+	if v, ok := v.(string); ok {
+		t, _ = strconv.Atoi(v)
 	}
 
 	u := time.Unix(int64(t), 0)
