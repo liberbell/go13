@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 type book struct {
 	title     string
@@ -17,5 +20,12 @@ func format(v interface{}) string {
 	if v == nil {
 		return "unknown"
 	}
+	var t int
+
+	if v, ok := v.(int); ok {
+		t = v
+	}
+
+	u := time.Unix(t, 0)
 	return ""
 }
