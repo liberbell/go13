@@ -18,6 +18,10 @@ func (b book) print() {
 }
 
 func format(v interface{}) string {
+	switch v.(type) {
+
+	}
+
 	if v == nil {
 		return "unknown"
 	}
