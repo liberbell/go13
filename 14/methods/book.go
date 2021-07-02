@@ -24,7 +24,7 @@ func format(v interface{}) string {
 	case string:
 		fmt.Println("string  ->")
 	default:
-		fmt.Println("nil     ->")
+		return "unknown"
 	}
 
 	if v == nil {
