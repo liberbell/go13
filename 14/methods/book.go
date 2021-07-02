@@ -19,6 +19,7 @@ func (b book) print() {
 
 func format(v interface{}) string {
 	var t int
+
 	switch v.(type) {
 	case int:
 		t = v
@@ -26,10 +27,6 @@ func format(v interface{}) string {
 		t, _ = strconv.Atoi(v)
 	default:
 		return "unknown"
-	}
-
-	if v, ok := v.(string); ok {
-		t, _ = strconv.Atoi(v)
 	}
 
 	u := time.Unix(int64(t), 0)
