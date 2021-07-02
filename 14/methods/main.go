@@ -3,7 +3,7 @@ package main
 func main() {
 	store := list{
 		book{title: "mody dick", price: 10, published: 118281600},
-		book{title: "odyssey", price: 10, published: "723340855"},
+		book{title: "odyssey", price: 10, published: "723622855"},
 		book{title: "hobbit", price: 10},
 		&game{title: "minecraft", price: 20},
 		&game{title: "tetris", price: 5},
