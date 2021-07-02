@@ -20,7 +20,7 @@ func (b book) print() {
 func format(v interface{}) string {
 	var t int
 
-	switch v.(type) {
+	switch v := v.(type) {
 	case int:
 		t = v
 	case string:
