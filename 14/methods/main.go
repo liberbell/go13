@@ -2,13 +2,13 @@ package main
 
 func main() {
 	store := list{
-		book{title: "mody dick", price: 10, published: 118281600},
-		book{title: "odyssey", price: 10, published: "723622855"},
-		book{title: "hobbit", price: 25},
-		&game{title: "minecraft", price: 20},
-		&game{title: "tetris", price: 5},
-		puzzle{title: "rubik`s cube", price: 5},
-		&toy{title: "yoda", price: 150},
+		book{"mody dick", 10, published: 118281600},
+		book{"odyssey", 10, published: "723622855"},
+		book{"hobbit", 25},
+		&game{"minecraft", 20},
+		&game{"tetris", 5},
+		puzzle{"rubik`s cube", 5},
+		&toy{"yoda", 150},
 	}
 
 	store.discount(.5)
