@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func main() {
 	store := list{
 		&book{product{"mody dick", 10}, 118281600},
@@ -13,7 +15,10 @@ func main() {
 
 	store.discount(.5)
 
-	store.print()
+	// store.print()
+
+	t := &toy{product{"yoda", 150}}
+	fmt.Printf("%#v\n", t)
 
 	// var p printer
 
