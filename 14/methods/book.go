@@ -29,7 +29,7 @@ func format(v interface{}) string {
 		return "unknown"
 	}
 
-	const layout = "2006, Jan"
+	const layout = "2006/01/02"
 
 	u := time.Unix(int64(t), 0)
 	return u.Format(layout)
