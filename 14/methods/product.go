@@ -12,5 +12,5 @@ func (p *product) print() {
 }
 
 func (p *product) discount(ratio float64) {
-	t.price *= money(1 - ratio)
+	p.price *= money(1 - ratio)
 }
