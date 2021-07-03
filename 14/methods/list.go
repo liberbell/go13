@@ -4,6 +4,7 @@ import "fmt"
 
 type printer interface {
 	print()
+	discount(ratio float64)
 }
 
 type list []printer
@@ -21,15 +22,7 @@ func (l list) print() {
 }
 
 func (l list) discount(ratio float64) {
-	type discounter interface {
-		discount(float64)
-	}
-
 	for _, it := range l {
-		g, ok := it.(discounter)
-		if !ok {
-			continue
-		}
-		g.discount(ratio)
+		it.discount(ratio)
 	}
 }
