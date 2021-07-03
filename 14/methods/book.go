@@ -11,7 +11,7 @@ type book struct {
 	published interface{}
 }
 
-func (b book) print() {
+func (b *book) print() {
 	b.product.print()
 
 	p := format(b.published)
