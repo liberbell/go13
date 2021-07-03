@@ -15,7 +15,7 @@ func (b book) print() {
 	b.product.print()
 
 	p := format(b.published)
-	fmt.Printf("%-15s: %s - (%v)\n", b.title, b.price.string(), p)
+	fmt.Printf("\t - (%v)\n", p)
 }
 
 func format(v interface{}) string {
