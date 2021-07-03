@@ -20,6 +20,9 @@ func main() {
 	t := &toy{product{"yoda", 150}}
 	fmt.Printf("%#v\n", t)
 
+	b := &book{product{"mody dick", 10}, 118281600}
+	fmt.Printf("%#v\n", b)
+
 	// var p printer
 
 	// p = modydick
