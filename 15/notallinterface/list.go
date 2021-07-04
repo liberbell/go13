@@ -2,12 +2,7 @@ package main
 
 import "fmt"
 
-type item interface {
-	print()
-	discount(ratio float64)
-}
-
-type list []item
+type list []*product
 
 func (l list) print() {
 	if len(l) == 0 {
