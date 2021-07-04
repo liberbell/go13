@@ -9,7 +9,7 @@ import (
 type product struct {
 	title    string
 	price    money
-	released interface{}
+	released timestamp
 }
 
 func (p *product) print() {
