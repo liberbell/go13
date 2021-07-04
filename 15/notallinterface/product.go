@@ -7,8 +7,9 @@ import (
 )
 
 type product struct {
-	title string
-	price money
+	title    string
+	price    money
+	released interface{}
 }
 
 func (p *product) print() {
