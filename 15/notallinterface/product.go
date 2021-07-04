@@ -13,7 +13,7 @@ type product struct {
 }
 
 func (p *product) print() {
-	fmt.Printf("%-15s: %s (%s)\n", p.title, p.price.string(), format(p.released))
+	fmt.Printf("%s: %s (%s)\n", p.title, p.price.string(), format(p.released))
 }
 
 func (p *product) discount(ratio float64) {
