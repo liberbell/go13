@@ -1,7 +1,7 @@
 package main
 
 func main() {
-	store := list{
+	l := list{
 		{title: "mody dick", price: 10, released: 118281600},
 		{title: "odyssey", price: 10, released: "723622855"},
 		{title: "hobbit", price: 25},
@@ -11,7 +11,7 @@ func main() {
 		{title: "yoda", price: 150},
 	}
 
-	store.discount(.5)
-	store.print()
+	l.discount(.5)
+	l.print()
 
 }
