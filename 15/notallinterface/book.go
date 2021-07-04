@@ -6,7 +6,6 @@ import (
 
 type book struct {
 	product
-	published interface{}
 }
 
 func (b *book) print() {
