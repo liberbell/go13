@@ -10,14 +10,14 @@ func (l list) print() {
 		return
 	}
 
-	for _, it := range l {
+	for _, p := range l {
 		// fmt.Printf("(%-10T) --> ", it)
-		it.print()
+		p.print()
 	}
 }
 
 func (l list) discount(ratio float64) {
-	for _, it := range l {
-		it.discount(ratio)
+	for _, p := range l {
+		p.discount(ratio)
 	}
 }
