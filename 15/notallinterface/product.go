@@ -28,12 +28,8 @@ func toTimestamp(v interface{}) (ts timestamp) {
 		t = v
 	case string:
 		t, _ = strconv.Atoi(v)
-	default:
-		return "unknown"
 	}
 
-	const layout = "2006/01/02"
-
-	u := time.Unix(int64(t), 0)
+	ts.Time := time.Unix(int64(t), 0)
 	return u.Format(layout)
 }
