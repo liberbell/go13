@@ -30,6 +30,6 @@ func toTimestamp(v interface{}) (ts timestamp) {
 		t, _ = strconv.Atoi(v)
 	}
 
-	ts.Time := time.Unix(int64(t), 0)
+	ts.Time = time.Unix(int64(t), 0)
 	return ts
 }
