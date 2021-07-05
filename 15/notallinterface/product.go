@@ -20,7 +20,7 @@ func (p *product) discount(ratio float64) {
 	p.price *= money(1 - ratio)
 }
 
-func format(v interface{}) string {
+func toTimestamp(v interface{}) (ts timestamp) {
 	var t int
 
 	switch v := v.(type) {
