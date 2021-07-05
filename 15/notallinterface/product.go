@@ -31,5 +31,5 @@ func toTimestamp(v interface{}) (ts timestamp) {
 	}
 
 	ts.Time := time.Unix(int64(t), 0)
-	return u.Format(layout)
+	return ts
 }
