@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func main() {
 	l := list{
 		{title: "mody dick", price: 10, released: toTimestamp(118281600)},
@@ -12,6 +14,7 @@ func main() {
 	}
 
 	l.discount(.5)
-	l.print()
+	// l.print()
+	fmt.Print(l)
 
 }
