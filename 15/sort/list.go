@@ -13,3 +13,7 @@ func (l list) discount(ratio float64) {
 func (l list) len() int {
 	return len(l)
 }
+
+func (l list) Less(i, j int) bool {
+	return l[i].title < l[j].title
+}
