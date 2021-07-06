@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"strings"
+)
 
 type list []*product
 
@@ -9,10 +11,14 @@ func (l list) String() string {
 		return "Sorry. We`re waiting for delivery."
 	}
 
+	var str strings.Builder
+
 	for _, p := range l {
 		// fmt.Printf("(%-10T) --> ", it)
 		// p.print()
-		fmt.Printf("* %s\n", p)
+		// fmt.Printf("* %s\n", p)
+		str.WriteString("* ")
+		str.WriteString(p)
 	}
 }
 
