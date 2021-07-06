@@ -20,7 +20,9 @@ func (l list) String() string {
 }
 
 func (l list) discount(ratio float64) {
-	// abc
+	for _, p := range l {
+		p.discount(ratio)
+	}
 }
 
 func (l list) len() int {
