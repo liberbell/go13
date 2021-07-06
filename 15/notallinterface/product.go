@@ -10,7 +10,7 @@ type product struct {
 	released timestamp
 }
 
-func (p *product) print() {
+func (p *product) String() string {
 	fmt.Printf("%s: %s (%s)\n", p.title, p.price, p.released.string())
 }
 
