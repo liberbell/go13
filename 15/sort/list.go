@@ -25,7 +25,7 @@ func (l list) discount(ratio float64) {
 	}
 }
 
-func (l list) len() int {
+func (l list) Len() int {
 	return len(l)
 }
 
