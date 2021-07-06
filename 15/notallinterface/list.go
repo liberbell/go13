@@ -4,7 +4,7 @@ import "fmt"
 
 type list []*product
 
-func (l list) print() {
+func (l list) String() string {
 	if len(l) == 0 {
 		fmt.Println("Sorry. We`re waiting for delivery.")
 		return
