@@ -18,8 +18,10 @@ func (l list) String() string {
 		// p.print()
 		// fmt.Printf("* %s\n", p)
 		str.WriteString("* ")
-		str.WriteString(p)
+		str.WriteString(p.String())
+		str.WriteRune('\n')
 	}
+	return str.String()
 }
 
 func (l list) discount(ratio float64) {
