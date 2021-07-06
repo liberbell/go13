@@ -15,3 +15,7 @@ func (l list) len() int {
 func (l list) Less(i, j int) bool {
 	return l[i].title < l[j].title
 }
+
+func (l list) Swap(i, j int) {
+	l[i], l[j] = l[j], l[i]
+}
