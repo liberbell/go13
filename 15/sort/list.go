@@ -36,3 +36,10 @@ func (l list) Less(i, j int) bool {
 func (l list) Swap(i, j int) {
 	l[i], l[j] = l[j], l[i]
 }
+
+type byRelease struct {
+	list
+}
+func byReleaseDate(l list) sort.interface {
+	return &byRelease(l)
+}
