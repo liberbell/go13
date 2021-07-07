@@ -45,7 +45,7 @@ type byRelease struct {
 }
 
 func (br byRelease) Less(i, j int) bool {
-	return br.list[i].released.Before(br.list[j].released)
+	return br.list[i].released.Before(br.list[j].released.Time)
 }
 
 func byReleaseDate(l list) sort.Interface {
