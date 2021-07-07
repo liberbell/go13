@@ -3,6 +3,7 @@ package main
 import (
 	"encoding/json"
 	"fmt"
+	"log"
 )
 
 func main() {
@@ -14,9 +15,9 @@ func main() {
 
 	data, err := json.MarshalIndent(l, "", " ")
 	if err != nil {
-		// log.Fatal(err)
-		fmt.Println(err)
-		return
+		log.Fatal(err)
+		// fmt.Println(err)
+		// return
 	}
 
 	fmt.Println(string(data))
