@@ -1,6 +1,9 @@
 package main
 
-import "strings"
+import (
+	"sort"
+	"strings"
+)
 
 type list []*product
 
@@ -40,6 +43,7 @@ func (l list) Swap(i, j int) {
 type byRelease struct {
 	list
 }
-func byReleaseDate(l list) sort.interface {
+
+func byReleaseDate(l list) sort.Interface {
 	return &byRelease(l)
 }
