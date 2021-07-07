@@ -12,6 +12,6 @@ func main() {
 		{title: "hobbit", price: 25},
 	}
 
-	sort.Sort(l)
+	sort.Sort(sort.Reverse(l))
 	fmt.Print(l)
 }
