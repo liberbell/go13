@@ -8,9 +8,9 @@ import (
 
 func main() {
 	l := list{
-		{title: "mody dick", price: 10, released: toTimestamp(118281600)},
-		{title: "odyssey", price: 10, released: toTimestamp("723622855")},
-		{title: "hobbit", price: 25},
+		{Title: "mody dick", Price: 10, Released: toTimestamp(118281600)},
+		{Title: "odyssey", Price: 10, Released: toTimestamp("723622855")},
+		{Title: "hobbit", Price: 25},
 	}
 
 	data, err := json.MarshalIndent(l, "", " ")
