@@ -49,5 +49,5 @@ func (br byRelease) Less(i, j int) bool {
 }
 
 func byReleaseDate(l list) sort.Interface {
-	return &byRelease(l)
+	return &byRelease{l}
 }
