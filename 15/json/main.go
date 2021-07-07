@@ -1,6 +1,10 @@
 package main
 
-import "encoding/json"
+import (
+	"encoding/json"
+	"fmt"
+	"log"
+)
 
 func main() {
 	l := list{
@@ -9,5 +13,10 @@ func main() {
 		{title: "hobbit", price: 25},
 	}
 
-	json.MarshalIndent(l, "", " ")
+	data, err := json.MarshalIndent(l, "", " ")
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	fmt.Println(string(data))
 }
