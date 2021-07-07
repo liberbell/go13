@@ -1,9 +1,6 @@
 package main
 
-import (
-	"fmt"
-	"sort"
-)
+import "encoding/json"
 
 func main() {
 	l := list{
@@ -12,6 +9,5 @@ func main() {
 		{title: "hobbit", price: 25},
 	}
 
-	sort.Sort(sort.Reverse(byReleaseDate(l)))
-	fmt.Print(l)
+	json.MarshalIndent(l, "", " ")
 }
