@@ -18,6 +18,10 @@ func (ts timestamp) String() string {
 	return ts.Format(layout)
 }
 
+func (ts timestamp) MarchalJSON() (data []byte, _ error) {
+	strconv.AppendInt(data, integer, 10)
+}
+
 func toTimestamp(v interface{}) (ts timestamp) {
 	var t int
 
