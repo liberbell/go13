@@ -2,7 +2,6 @@ package main
 
 import (
 	"encoding/json"
-	"fmt"
 	"log"
 )
 
@@ -25,18 +24,25 @@ const data = `[
    ]`
 
 func main() {
-	l := list{
-		{Title: "mody dick", Price: 10, Released: toTimestamp(118281600)},
-		{Title: "odyssey", Price: 10, Released: toTimestamp("723622855")},
-		{Title: "hobbit", Price: 25},
-	}
+	var l list
 
-	data, err := json.MarshalIndent(l, "", " ")
+	err := json.Unmarshal(data, &l)
 	if err != nil {
 		log.Fatal(err)
-		// fmt.Println(err)
-		// return
+		return
 	}
+	// l := list{
+	// 	{Title: "mody dick", Price: 10, Released: toTimestamp(118281600)},
+	// 	{Title: "odyssey", Price: 10, Released: toTimestamp("723622855")},
+	// 	{Title: "hobbit", Price: 25},
+	// }
 
-	fmt.Println(string(data))
+	// data, err := json.MarshalIndent(l, "", " ")
+	// if err != nil {
+	// 	log.Fatal(err)
+	// 	// fmt.Println(err)
+	// 	// return
+	// }
+
+	// fmt.Println(string(data))
 }
