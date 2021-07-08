@@ -6,6 +6,24 @@ import (
 	"log"
 )
 
+const data = `[
+	{
+	 "Title": "mody dick",
+	 "Price": 10,
+	 "Released": 118281600
+	},
+	{
+	 "Title": "odyssey",
+	 "Price": 10,
+	 "Released": 723622855
+	},
+	{
+	 "Title": "hobbit",
+	 "Price": 25,
+	 "Released": -62135596800
+	}
+   ]`
+
 func main() {
 	l := list{
 		{Title: "mody dick", Price: 10, Released: toTimestamp(118281600)},
