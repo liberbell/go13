@@ -19,7 +19,7 @@ func (ts timestamp) String() string {
 }
 
 func (ts timestamp) MarchalJSON() (data []byte, _ error) {
-	strconv.AppendInt(data, integer, 10)
+	return strconv.AppendInt(data, ts.Unix(), 10), nil
 }
 
 func toTimestamp(v interface{}) (ts timestamp) {
