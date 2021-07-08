@@ -22,6 +22,11 @@ func (ts timestamp) MarshalJSON() (data []byte, _ error) {
 	return strconv.AppendInt(data, ts.Unix(), 10), nil
 }
 
+func (ts *timestamp) UnmarshalJSON(data []byte) error {
+	*ts = toTimestamp(string(data))
+	return nil
+}
+
 func toTimestamp(v interface{}) (ts timestamp) {
 	var t int
 
