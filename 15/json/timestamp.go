@@ -18,7 +18,7 @@ func (ts timestamp) String() string {
 	return ts.Format(layout)
 }
 
-func (ts timestamp) MarchalJSON() (data []byte, _ error) {
+func (ts timestamp) MarshalJSON() (data []byte, _ error) {
 	return strconv.AppendInt(data, ts.Unix(), 10), nil
 }
 
