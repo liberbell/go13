@@ -27,7 +27,7 @@ const data = `[
 func main() {
 	var l list
 
-	err := json.Unmarshal(data, &l)
+	err := json.Unmarshal([]byte(data), &l)
 	if err != nil {
 		log.Fatal(err)
 		return
