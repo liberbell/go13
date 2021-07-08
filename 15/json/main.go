@@ -2,6 +2,7 @@ package main
 
 import (
 	"encoding/json"
+	"fmt"
 	"log"
 )
 
@@ -31,6 +32,7 @@ func main() {
 		log.Fatal(err)
 		return
 	}
+	fmt.Print(l)
 	// l := list{
 	// 	{Title: "mody dick", Price: 10, Released: toTimestamp(118281600)},
 	// 	{Title: "odyssey", Price: 10, Released: toTimestamp("723622855")},
